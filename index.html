@@ -183,7 +183,7 @@
 					</td>
 				</tr>
 					</table>
-					<button type="button" id="envoyer" style="visibility:hidden;" class="center btn btn-success btn-round button-submit" onclick="window.location='#result'">Show Benchmark</button>
+					<button type="button" id="envoyer" style="visibility:hidden;" class="center btn btn-success btn-round button-submit" onclick="document.getElementById('result').style='visibility:true';window.location='#result'">Show Benchmark</button>
 					<section class="tabs">
 			    		<input id="tab-1" type="radio" name="radio-set" class="tab-selector-1" />
 			    		<input id="tab-2" type="radio" name="radio-set" class="tab-selector-2" />
@@ -301,7 +301,7 @@
 	    
         </div>
 		
-				<section class="results" id="result">
+				<section class="results" id="result" style="visibility:hidden">
 					<div class="container">               
 						<div class="row">
 	                            <span class="label label-danger" style="margin:10%"><h2 style="text-align:center">Maturity:&nbsp;&nbsp;<b>2,1</b></h2><br>
