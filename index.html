@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="utf-8" />
@@ -7,18 +7,25 @@
     <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-    <title>Barometer</title>
+    <title>Barometer: Ecodesign Maturity Meter</title>
 
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
 
     <!-- CSS -->
 	<link href="test.css" rel="stylesheet" />
+
+    <!-- Bootstrap core CSS     -->
 	<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
 	<link href="assets/css/paper-kit.css?v=2.1.0" rel="stylesheet"/>
+
+	<!--  CSS -->
 	<link href="assets/css/demo.css" rel="stylesheet" />
+
+    <!--     Fonts and icons     -->
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,300,700' rel='stylesheet' type='text/css'>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/nucleo-icons.css" rel="stylesheet" />
 
 </head>
 
@@ -31,60 +38,85 @@
                     <span class="navbar-toggler-bar"></span>
                     <span class="navbar-toggler-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#home"><i class="fa fa-thermometer-half"></i>Barometer</a>
+                <a class="navbar-brand" href="#home"><i class="fa fa-thermometer-half"></i>Barometer: Ecodesign Maturity Meter</a>
             </div>
             <div class="collapse navbar-collapse" id="navbarToggler">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a href="#why" class="nav-link">Why<i class="fa fa-question-circle"></i></a>
+                    <!--<li class="nav-item">
+                        <a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://twitter.com/" target="_blank">
+                            <i class="fa fa-twitter"></i>
+                            <p class="d-lg-none">Twitter</p>
+                        </a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/" target="_blank">
+                            <i class="fa fa-facebook-square"></i>
+                            <p class="d-lg-none">Facebook</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="https://www.instagram.com/" target="_blank">
+                            <i class="fa fa-instagram"></i>
+                            <p class="d-lg-none">Instagram</p>
+                        </a>
+                    </li>-->
+                    <li class="nav-item">
+                        <a href="#why" class="nav-link">Why&nbsp;<i class="fa fa-question-circle"></i></a>
+                    </li>
+                    <!--<li class="nav-item">
 						<a href="#you" class="nav-link">Your Compnany&nbsp;&nbsp;<i class="fa fa-users"></i></a>
+					</li>-->
+                    <li class="nav-item">
+						<!--<a href="#game" class="btn btn-danger btn-round">Enter the Game&nbsp;<i class="fa fa-gamepad"></i></a>-->
+						<a href="game.html" class="btn btn-danger btn-round">Enter the Game&nbsp;<i class="fa fa-gamepad"></i></a>
 					</li>
                     <li class="nav-item">
-						<a href="#game" class="btn btn-danger btn-round">Enter the Game <i class="fa fa-gamepad"></i></a>
-					</li>
-                    <li class="nav-item">
-                        <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="#team">Our Team <i class="fa fa-themeisle"></i></a>
+                        <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="#team">Our Team&nbsp;&nbsp;<i class="fa fa-themeisle"></i></a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
     <div class="wrapper" id="home">
-        <div class="page-header section-dark" style="background-image: url('assets/img/fabio-mangione.jpg')">
+        <div class="page-header section-dark" style="background-image: url('assets/img/industrial-metal.jpg')"><!--antoine-barres.jpg-->
             <div class="filter"></div>
     		<div class="content-center">
     			<div class="container">
     				<div class="title-brand">
-    					<h1 class="presentation-title">Barometer</h1>
+    					<h1>Measure Your<br>Ecodesign Maturity</h1><br><br><br>
+						<h2>Get a free report and benefit from the experience of <span class="Single">12</span> companies</b><br>with an average maturity of&nbsp;<b>2,2&nbsp;<i class="fa fa-thermometer-half"></i></b><br><br><br></h2>
+						<!--<h3><i class="fa fa-arrow-down"></i></h3>-->
     				</div>
     			</div>
     		</div>
-            <div class="moving-clouds" style="background-image: url('assets/img/clouds.png'); ">
-
-            </div>
+	        <!--<div class="navigation-example content-center"><h2><a href="#why"><i class="fa fa-play"></i></a></h2></div>-->
     	</div>
+		
         <div id="why" class="navigation-example">
             <nav class="navbar navbar-expand-md navbar-transparent nav-no-padding">
                 <div class="container">
-                    <div class="btn btn-outline-danger btn-round">						
-                        <br><br><h1>Measure Your Maturity</h1><h2>This tool is a gamified platform to measure<br>the maturity of your company regarding eco-design<br>
-						It will provide you with<br>instant insight and benchmarks<br>in order to guide your progress<br>
-						You will get a free report<br>and benefit from experience<br><br>
-						from <b>12 companies</b><br><br>
-						Average maturity<br><b>2,2</b><br><br><br></h2>
+                    <div class="title-brand">						
+                        <br><br><br><br><br><h2>This tool is a gamified platform to measure the maturity of your company regarding eco-design.<br><br>
+						It will provide you with instant insight and benchmarks in order to guide your progress.
+						<!--You will get a free report and benefit from the experience of <span class="Single">12</span> companies</b><br><br>
+						with an average maturity of&nbsp;<b>2,2&nbsp;<i class="fa fa-thermometer-half"></i></b>--><br><br><br></h2>
+						<!--<div class="fog-low"><img src="assets/img/fog-low.png" alt=""></div>
+						<div class="fog-low right"><img src="assets/img/fog-low.png" alt=""></div>-->
+						<br><br>
+			            <div class="moving-clouds" style="bottom:15em;background-image: url('assets/img/clouds.png');"></div>
+						<br><br>
+						<a href="game.html" class="btn btn-danger btn-round">Enter the Game&nbsp;<i class="fa fa-gamepad"></i></a>
+						<br><br><br><br>	
 					</div>
-
                 </div>
             </nav>
 		</div>
+		
 		<div class="container">
-			
 				<script type="text/javascript">var submitted=false;</script>
 				<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='https://docs.google.com/spreadsheets/d/e/2PACX-1vQVMUJdvaMJpDslFF1LT2IX77A9fILAvJ0KdmYzjGXbaqTunbXurA2ACeeZpjJ_sUAbNpM1V0KYNTEd/pubchart?oid=1377281540&amp;format=interactive';}"></iframe>
 				<form action="https://docs.google.com/forms/d/e/1FAIpQLSfd2hOsNqU0GBmDukAjWFV4bG1Xts8HTG8G0UbVCW7eL38SKQ/formResponse?hl=fr" method="POST" id="mG61Hd" target="hidden_iframe" onsubmit="submitted=true;">
-		
+<!--		
         <div id="you" class="section section-buttons">
             <div class="container">
 				<div class="thetitle">
@@ -164,21 +196,21 @@
 					<table id="game" width="90%" align="center">
 						<tr>
 							<td id="td1" class="rcorners1 unlock" width="50%">
-								<h2>Connaissances des enjeux</h2><br><span id="point1" style="visibility:hidden;"><h1> 2,2</h1></span>
+								<h1 style="text-align:center;color:#2e9f64"><i class="fabig fa-book"></i></h1><h2>Connaissances des enjeux</h2><span id="point1" style="visibility:hidden;"><h1> 2,2</h1></span>
 								<button id="but1" style="visibility:hidden;" onclick="document.getElementById('tab-1').checked=true;document.getElementById('mycompany').style='visibility:hidden';window.location='#content1'" class="btn btn-danger btn-lg btn-just-icon"><i class="fa fa-gamepad"></i></button>
 							</td>
 							<td id="td2" class="rcorners2 lock" >
-								<h2>Leadership et intégration stratégique</h2><br><span id="point2" style="visibility:hidden;"><h1> 2,0</h1></span>
+								<h1 style="text-align:center;color:white"><i class="fabig fa-road"></i></h1><h2>Leadership et intégration stratégique</h2><span id="point2" style="visibility:hidden;"><h1> 2,0</h1></span>
 								<button id="but2" style="visibility:hidden;" onclick="document.getElementById('tab-2').checked=true;window.location='#content2'" class="btn btn-danger btn-just-icon btn-lg"><i class="fa fa-gamepad"></i></button>
 							</td>
 						</tr>
 						<tr>
 					<td id="td3" class="rcorners3 lock" >
-						<h2>Mise en œuvre et organisation opérationnelle</h2><br><span id="point3" style="visibility:hidden;"><h1> 2,1</h1></span>
+						<h1 style="text-align:center;color:navajowhite"><i class="fabig fa-cogs"></i></h1><h2>Mise en œuvre et organisation opérationnelle</h2><span id="point3" style="visibility:hidden;"><h1> 2,1</h1></span>
 						<button id="but3" style="visibility:hidden;" onclick="document.getElementById('tab-3').checked=true;window.location='#content3'" class="btn btn-danger btn-just-icon btn-lg"><i class="fa fa-gamepad"></i></button>
 					</td>
 					<td id="td4" class="rcorners4 lock" >
-						<h2>Performance atteinte ou attendue</h2><br><span id="point4" style="visibility:hidden;"><h1> 1,9</h1></span>
+						<h1 style="text-align:center;color:green"><i class="fabig fa-signal"></i></h1><h2>Performance atteinte ou attendue&nbsp;</h2><span id="point4" style="visibility:hidden;"><h1> 1,9</h1></span>
 						<button id="but4" style="visibility:hidden;" onclick="document.getElementById('tab-4').checked=true;window.location='#content4'" class="btn btn-danger btn-just-icon btn-lg"><i class="fa fa-gamepad"></i></button>					
 					</td>
 				</tr>
@@ -193,8 +225,7 @@
   <div class="page-header section-dark content" style="background: transparent">				
       
         <div id="content1" class="content-1">
-	   		<!--<h2>Connaissances des enjeux</h2>-->
-            <fieldset class="odd">
+	   		<fieldset class="odd">
 		 	<h3>Connaissance des enjeux environnementaux sur le cycle de vie</h3>
 		  		<input required type="radio" name="entry.830120896" value="1" /><h5>1. Les enjeux environnementaux tout au long du cycle de vie des produits/services ne sont pas connus</h5>
 				<input required type="radio"name="entry.830120896" value="2" /><h5>2. Certains enjeux environnementaux importants sont connus mais pas forcément rattachés au cycle de vie</h5>
@@ -215,12 +246,10 @@
 				<input required type="radio"name="entry.1235505382" value="3" /><h5>3. L'analyse des risques et opportunités est réalisée en lien avec les enjeux environnementaux tout au long du cycle de vie, les attentes ou exigences des parties intéressées et la sphère d'influence de l'entreprise mais elle n'est pas validée par la direction et partagée aux équipes projet.</h5>
 				<input required type="radio"name="entry.1235505382" value="4" /><h5>4. L'analyse des risques et opportunités est réalisée et validée, à la fois au niveau des projets que de l'entreprise (domaine d'activités ou business unit).</h5>			
 		  </fieldset>
-		
 			<button type="button" class="center btn btn-outline-danger btn-lg" onclick="document.getElementById('td1').classList.remove('unlock');document.getElementById('td2').classList.remove('lock');document.getElementById('td2').classList.add('unlock');document.getElementById('but1').style='visibility:hidden';document.getElementById('but2').style='visibility:true';document.getElementById('point1').style='visibility:true';window.location='#game'"><i class="fa fa-check-square"></i>Done</button>
         </div>
  
         <div id="content2" class="content-2">
-			
 			 	<h3>Intégration de la pensée en cycle de vie dans la stratégie d'entreprise avec un plan d'action</h3>
 			  		<input type="radio" name="entry.599628510" value="1" /><h5>1. La performance environnementale n'est pas ou peu intégrée dans la stratégie d'entreprise</h5>
 					<input required type="radio" name="entry.599628510" value="2" /><h5>2. La performance environnementale est intégrée dans la stratégie d'entreprise</h5>
@@ -238,11 +267,12 @@
 					<input required type="radio" name="entry.1315185936" value="2" /><h5>2. Les revues de direction abordent les enjeux environnementaux, sans les situer dans le cycle de vie de ses produits / services ni les élargir à la sphère d'influence de l'entreprise.</h5>
 					<input required type="radio" name="entry.1315185936" value="3" /><h5>3. Les revues de direction abordent les enjeux environnementaux dans une perspective de cycle de vie et la direction prend des décisions pour mettre en oeuvre l'éco-conception.</h5>
 					<input required type="radio" name="entry.1315185936" value="4" /><h5>4. Les revues de direction abordent la performance environnementale obtenue et mesurée lors de démarches d'éco-conception, la direction peut donc prendre les décisions appropriées afin d'améliorer la performance de l'entreprise.</h5>			
+			
 			<button type="button" class="center btn btn-outline-danger btn-lg" onclick="document.getElementById('td2').classList.remove('unlock');document.getElementById('td3').classList.remove('lock');document.getElementById('td3').classList.add('unlock');document.getElementById('but2').style='visibility:hidden';document.getElementById('but3').style='visibility:true';document.getElementById('point2').style='visibility:true';window.location='#game'"><i class="fa fa-check-square"></i>Done</button>			
         </div>
 	
         <div id="content3" class="content-3">
-        <!--<h1>Mise en œuvre et organisation opérationnelle</h1>-->
+        
       <fieldset class="odd">
 		<h3>Constitution d'une équipe pluridisciplinaire pour mener des projets d'éco-conception  (marketing, design, bureau d'étude, production, vente etc.)</h3>
 		  <input required type="radio" name="entry.1655300764" value="1" /><h5>Aucune équipe pluridisciplinaire n'est constituée.</h5>
@@ -264,12 +294,11 @@
 		  <input required type="radio" name="entry.1449748254" value="3" /><h5>Des indicateurs appropriés sont identifiés et comparent les résultats obtenus dans une démarche d'éco-conception avec une situation de référence. Ils sont basés sur une vision globale des flux, parfois convertis en indicateurs d'impacts issu de logiciel d'ACV, simplifié ou non.</h5>
 		  <input required type="radio" name="entry.1449748254" value="4" /><h5>Les indicateurs identifiés sont similaires au niveau précédent mais la performance est évaluée de manière plus approfondie avec des indicateurs détaillés, précis, nombreux. D'autres indicateurs montrent la capitalisation sur la démarche d'éco-conception afin de la démultiplier sur d'autres produits/services.</h5>
       </fieldset>  	
-		
 			<button type="button" class="center btn btn-outline-danger btn-lg" onclick="document.getElementById('td3').classList.remove('unlock');document.getElementById('td4').classList.remove('lock');document.getElementById('td4').classList.add('unlock');document.getElementById('but3').style='visibility:hidden';document.getElementById('but4').style='visibility:true';document.getElementById('point3').style='visibility:true';window.location='#game'"><i class="fa fa-check-square"></i>Done</button>
         </div>
 	
         <div id="content4" class="content-4">
-			<!--<h1>Performance atteinte ou attendue</h1>-->
+			
         	<h3>Sensibilisation et formation à l'éco-conception et l'économie circulaire pour des équipes compétentes</h3>
 		  		<input required type="radio" name="entry.2075187997" value="1" /><h5>1. Pas de compétences internes.</h5>
 		  		<input required type="radio" name="entry.2075187997" value="2" /><h5>2. L'entreprise fait appel ponctuellement à des ressources exterieures de type conseil et/ou une personne ressource a reçu une sensibilisation ou une courte formation.</h5>
@@ -292,15 +321,16 @@
 		</div>
    	  </div>						
   </div>
- 	
+       
 					</section>​			
 				</div>
 			</div>
 			
-		</form>
-	    
-        </div>
 		
+		</form>
+	    	
+        </div>
+            
 				<section class="results" id="result" style="visibility:hidden">
 					<div class="container">               
 						<div class="row">
@@ -312,29 +342,32 @@
 								<p>3. La démarche d'éco-conception est intégrée dans les processus de l'entreprise, dans une vision à court terme de l'amélioration de la performance environnementale.</p>
 								<p>4. L'éco-conception est mise en œuvre afin d'améliorer la performance environnementale sur le long terme, et démultipliée globalement sur tous les secteurs d'activités.</p>				
                                 <button type="button" class="btn btn-round center" onclick="window.print()"><i class="fa fa-print"></i>Print Results</button>
-								
 								<p></p>
 								</span>
+
 						</div>
-					
 					</div>
 				</section>
-				
+-->				
                     <div id="team">
                     	<div class="container">
                             <div class="thetitle">
-                                <h3>Team</h3>
+                                <br><h2 class="center">Team</h3><br><br><br>
                             </div>
                             <div class="row">
-                                <div class="col-8 col-sm-6 col-md-3">
+                                <!-- <div class="col-8 col-sm-6 col-md-3"> -->
+								<div class="col-6 col-sm-3 col-md-2 mr-auto ml-auto">	
                                     <h4 class="images-title">Project Coordination</h4>
-                                    <img src="assets/img/uriel-soberanes.jpg" class="img-rounded img-responsive" alt="Rounded Image">
+                                    <img src="assets/img/faces/clem-onojeghuo-3.jpg" class="img-circle img-no-padding img-responsive" alt="">
+                                    <p class="text-center">George</p>
+									
+                                    <!-- <img src="assets/img/uriel-soberanes.jpg" class="img-rounded img-responsive" alt="Rounded Image">
                                     <div class="img-details">
                                         <div class="author">
                                             <img src="assets/img/faces/clem-onojeghuo-2.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
                                         </div>
                                         <p>George</p>
-                                    </div>
+                                    </div> -->
                                 </div>
                                 <div class="col-6 col-sm-3 col-md-2 mr-auto ml-auto">
                                     <h4 class="images-title">Environmental Consulting</h4>
@@ -348,16 +381,206 @@
                                 </div>
                                 <div class="col-6 col-sm-3 col-md-2 mr-auto">
                                     <h4 class="images-title">Data Analytics</h4>
-                                    <img src="assets/img/faces/clem-onojeghuo-3.jpg" class="img-thumbnail img-responsive" alt="">
+                                    <img src="assets/img/faces/clem-onojeghuo-2.jpg" class="img-thumbnail img-responsive" alt="">
                                     <p class="text-center">Erik</p>
                                 </div>
                             </div>
-							<br><br>
+							<br><br><br><br>
                         </div>
                     </div>
                 </div>
             </div>
-		</div>
+            <!--<div class="section javascript-components">
+				<div class="container">
+					<div class="thetitle">
+						<h2>Javascript Components</h2>
+					</div>
+					<div class="row" id="modals">
+						<div class="col-md-6">
+							<div class="thetitle">
+								<h3>Modal</h3>
+							</div>
+
+							<button type="button" class="btn btn-outline-danger btn-round" data-toggle="modal" data-target="#myModal">
+							    Launch demo modal
+							</button>
+							 
+							<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title text-center" id="exampleModalLabel">Modal title</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body"> Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <div class="left-side">
+                                                <button type="button" class="btn btn-default btn-link" data-dismiss="modal">Never mind</button>
+                                            </div>
+                                            <div class="divider"></div>
+                                            <div class="right-side">
+                                                <button type="button" class="btn btn-danger btn-link">Delete</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="thetitle">
+								<h3>Popovers</h3>
+							</div>
+							<button type="button" class="btn btn-outline-danger btn-round" data-container="body" data-toggle="popover" data-placement="left" data-title="Popover on left" data-trigger="click"  data-content="Here will be some very useful information about this popover.">on left</button>
+                            <button type="button" class="btn btn-outline-danger btn-round" data-container="body" data-toggle="popover" data-placement="right" data-title="Popover on right" data-content="Here will be some very useful information about this popover.">on right</button>
+							<button type="button" class="btn btn-outline-danger btn-round" data-container="body" data-toggle="popover" data-placement="top" data-title="Popover on top" data-content="Here will be some very useful information about this popover.">on top</button>
+							<button type="button" class="btn btn-outline-danger btn-round" data-container="body" data-toggle="popover" data-placement="bottom" data-title="Popover on bottom" data-content="Here will be some very useful information about this popover.">on bottom</button>
+						</div>
+						<br/>
+						<div class="col-md-6">
+							<div class="thetitle">
+								<h3>Datepicker</h3>
+							</div>
+						    <div class="row">
+						        <div class='col-sm-6'>
+						            <div class="form-group">
+						                <div class='input-group date' id='datetimepicker'>
+						                    <input type='text' class="form-control datetimepicker" placeholder="05/08/2017" />
+						                    <span class="input-group-addon">
+						                        <span class="glyphicon glyphicon-calendar"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+						                    </span>
+						                </div>
+						            </div>
+						        </div>
+						    </div>
+						</div>
+						<div class="col-md-6">
+							<div class="thetitle">
+								<h3>Tooltips</h3>
+							</div>
+							<button type="button" class="btn btn-outline-danger btn-round" data-toggle="tooltip" data-placement="left" title="Tooltip on left">On left</button>
+                            <button type="button" class="btn btn-outline-danger btn-round" data-toggle="tooltip" data-placement="right" title="Tooltip on right">On right</button>
+							<button type="button" class="btn btn-outline-danger btn-round" data-toggle="tooltip" data-placement="top" title="Tooltip on top">On top</button>
+							<button type="button" class="btn btn-outline-danger btn-round" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">On bottom</button>
+						</div>
+					</div>
+					<div class="thetitle">
+						<h3>Benchmark</h3>
+					</div>
+				</div>
+			</div>-->
+			
+			
+			<!--<div class="section section-image section-login" style="background-image: url('assets/img/login-image.jpg');">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 ml-auto mr-auto">
+                            <div class="card card-register">
+                                <h3 class="title">Welcome</h3>
+                                <div class="social-line text-center">
+                                    <a href="#pablo" class="btn btn-neutral btn-facebook btn-just-icon">
+                                        <i class="fa fa-facebook-square"></i>
+                                    </a>
+                                    <a href="#pablo" class="btn btn-neutral btn-google btn-just-icon">
+                                        <i class="fa fa-google-plus"></i>
+                                    </a>
+                                    <a href="#pablo" class="btn btn-neutral btn-twitter btn-just-icon">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </div>
+                                <form class="register-form">
+                                    <label>Email</label>
+                                    <div class="input-group form-group-no-border">
+                                        <span class="input-group-addon">
+                                            <i class="nc-icon nc-email-85"></i>
+                                        </span>
+                                        <input type="text" class="form-control" placeholder="Email">
+                                    </div>
+
+                                    <label>Password</label>
+                                    <div class="input-group form-group-no-border">
+                                        <span class="input-group-addon">
+                                            <i class="nc-icon nc-key-25"></i>
+                                        </span>
+                                        <input type="text" class="form-control" placeholder="Password">
+                                    </div>
+                                    <button class="btn btn-danger btn-block btn-round">Register</button>
+                                </form>
+                                <div class="forgot">
+                                    <a href="#" class="btn btn-link btn-danger">Forgot password?</a>
+                                </div>
+                            </div>
+                            <div class="col text-center">
+                                <a href="examples/register.html" class="btn btn-outline-neutral btn-round btn-lg" target="_blank">View Register Page</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+            <!--<div class="section section-dark">
+                <div class="container">
+                    <div class="row example-page">
+                        <div class="col-md-6 text-center">
+                            <a href="examples/landing.html" target="_blank">
+                                <img src="assets\img\examples\landing-page.jpg" alt="Rounded Image" class="img-rounded img-responsive" style="width: 100%">
+                                <a href="examples/landing.html" class="btn btn-outline-neutral btn-round" target="_blank">Landing Page</a>
+                            </a>
+                        </div>
+                        <div class="col-md-6 text-center">
+                            <a href="examples/profile.html" target="_blank">
+                                <img src="assets\img\examples\profile-page.jpg" alt="Rounded Image" class="img-rounded img-responsive" style="width: 100%">
+                                <a href="examples/profile.html" class="btn btn-outline-neutral btn-round" target="_blank">Profile Page</a>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			<div class="section">
+				<div class="container text-center">
+					<div class="row">
+						<div class="col-md-8 ml-auto mr-auto text-center">
+							<h2 class="title">Do you like what you see?</h2>
+							<p class="description">Cause if you do, it can be yours for Free. Hit the button below and download it. Start a new project or give an old Bootstrap 4 project a new look.</p>
+						</div>
+						<div class="col-md-5 ml-auto mr-auto download-area">
+							<a href="" class="btn btn-danger btn-round">Download free HTML</a>
+						</div>
+					</div>
+                    <div class="row text-center upgrade-pro">
+    					<div class="col-md-8 ml-auto mr-auto">
+    	                    <h2 class="title">Want more?</h2>
+    	                    <p class="description">We've just launched <a href="" class="text-danger" target="_blank">Paper Kit 2 PRO</a>. It has a huge number of components, sections and example pages.</p>
+    	                </div>
+    					<div class="col-sm-5 ml-auto mr-auto">
+    						<a href="" class="btn btn-info btn-round" target="_blank">
+    							<i class="nc-icon nc-spaceship" aria-hidden="true"></i> Upgrade to PRO
+    						</a>
+    					</div>
+    	            </div>
+                    <div class="row justify-content-md-center sharing-area text-center">
+                        <div class="text-center col-md-12 col-lg-8">
+                            <h3>Thank you for supporting us!</h3>
+                        </div>
+                        <div class="text-center col-md-12 col-lg-8">
+                            <a href="#pablo" class="btn btn-twitter-bg twitter-sharrre btn-round" rel="tooltip" title="Tweet!">
+                                <i class="fa fa-twitter"></i> Twitter
+                            </a>
+                            <a href="#pablo" class="btn btn-google-bg linkedin-sharrre btn-round" rel="tooltip" title="Share!">
+                                <i class="fa fa-google-plus"></i> Google
+                            </a>
+                            <a href="#pablo" class="btn btn-facebook-bg facebook-sharrre btn-round" rel="tooltip" title="Share!">
+                                <i class="fa fa-facebook-square"></i> Facebook
+                            </a>
+                            <a href="" class="btn btn-github-bg btn-github sharrre btn-round" rel="tooltip" title="Star on Github">
+                                <i class="fa fa-github"></i> Star
+                            </a>
+                        </div>
+                    </div>
+				</div>
+			</div>-->
+        </div>
 	</div>
     <footer class="footer">
         <div class="container">
@@ -366,12 +589,12 @@
                     <ul>
                         <li><a href="">Privacy</a></li>
                         <li><a href="">Terms</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="mailto:demoaccount@null.net">Contact</a></li>
                     </ul>
                 </nav>
                 <div class="credits ml-auto">
                     <span class="copyright">
-                        © <script>document.write(new Date().getFullYear())</script> 
+                        © <script>document.write(new Date().getFullYear())</script> <!--made with <i class="fa fa-heart heart"></i> by-->
                     </span>
                 </div>
             </div>
@@ -379,12 +602,26 @@
     </footer>
 </body>
 
-<!-- JS Files -->
+<!-- Core JS Files -->
 <script src="assets/js/jquery-3.2.1.js" type="text/javascript"></script>
 <script src="assets/js/jquery-ui-1.12.1.custom.min.js" type="text/javascript"></script>
 <script src="assets/js/popper.js" type="text/javascript"></script>
 <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+
+<!-- Switches -->
 <script src="assets/js/bootstrap-switch.min.js"></script>
+
+<!--  Plugins for Slider -->
+<script src="assets/js/nouislider.js"></script>
+
+<!--  Plugins for DateTimePicker -->
+<script src="assets/js/moment.min.js"></script>
+<script src="assets/js/bootstrap-datetimepicker.min.js"></script>
+
+<!--  Paper Kit Initialization and functons -->
 <script src="assets/js/paper-kit.js?v=2.1.0"></script> 
+
+<!-- JS Files -->
+<script src="test.js" type="text/javascript"></script>
 
 </html>

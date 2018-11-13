@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="assets/img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>Barometer: Ecodesign Maturity Meter</title>
+
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+    <!-- CSS -->
+	<link href="test.css" rel="stylesheet" />
+
+    <!-- Bootstrap core CSS     -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="assets/css/paper-kit.css?v=2.1.0" rel="stylesheet"/>
+
+	<!--  CSS -->
+	<link href="assets/css/demo.css" rel="stylesheet" />
+
+    <!--     Fonts and icons     -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,300,700' rel='stylesheet' type='text/css'>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/nucleo-icons.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <!--<nav class="navbar navbar-expand-md fixed-top navbar-transparent" color-on-scroll="500">
+        <div class="container">
+            <div class="navbar-translate">
+                <button class="navbar-toggler navbar-toggler-right navbar-burger" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-bar"></span>
+                    <span class="navbar-toggler-bar"></span>
+                    <span class="navbar-toggler-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#home"><i class="fa fa-thermometer-half"></i>Barometer: Ecodesign Maturity Meter</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#why" class="nav-link">Why&nbsp;<i class="fa fa-question-circle"></i></a>
+                    </li>
+                    <li class="nav-item">
+						<a href="#you" class="nav-link">Your Compnany&nbsp;&nbsp;<i class="fa fa-users"></i></a>
+					</li>
+                    <li class="nav-item">
+						<a href="#game" class="btn btn-danger btn-round">Play the Game&nbsp;<i class="fa fa-gamepad"></i></a>
+					</li>
+                    <li class="nav-item">
+                        <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="#team">Our Team&nbsp;&nbsp;<i class="fa fa-themeisle"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>-->
+
+	<div class="container">
+		<script type="text/javascript">var submitted=false;</script>
+		<!--<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='https://docs.google.com/spreadsheets/d/e/2PACX-1vQVMUJdvaMJpDslFF1LT2IX77A9fILAvJ0KdmYzjGXbaqTunbXurA2ACeeZpjJ_sUAbNpM1V0KYNTEd/pubchart?oid=1006635721&amp;format=interactive';}"></iframe>-->
+		<!--<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){appendChart();document.getElementById('envoyer').style='display:none';document.getElementById('result').style='visibility:true';window.location='#result';}"></iframe>-->
+		<!--<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){appendChart();document.getElementById('envoyer').style='display:none';document.getElementById('result').style='visibility:true';window.location='https://docs.google.com/spreadsheets/d/e/2PACX-1vQVMUJdvaMJpDslFF1LT2IX77A9fILAvJ0KdmYzjGXbaqTunbXurA2ACeeZpjJ_sUAbNpM1V0KYNTEd/pubchart?oid=1006635721&format=interactive';}"></iframe>-->
+		<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){appendChart();document.getElementById('envoyer').style='display:none';document.getElementById('result').style='visibility:true';window.location='result.html';}"></iframe>
+		<form action="https://docs.google.com/forms/d/e/1FAIpQLSfd2hOsNqU0GBmDukAjWFV4bG1Xts8HTG8G0UbVCW7eL38SKQ/formResponse?hl=fr" method="POST" id="mG61Hd" target="hidden_iframe" onsubmit="submitted=true;">
+		
+        <div id="you" class="">
+            <div class="container">
+			    <div class="title-brand" id="votrentreprise">						
+		   		  <h1>Votre entreprise<br><br></h1>
+                </div>
+                <div class="row">
+						<ul>
+						  <li id="q1" class="question">
+							<h2 class="shadow framed fromleft">Quelle est la raison sociale de l'établissement et de l’entreprise?</h2><br><input required type="text" class="form-control form-control-success inshadow fromright" placeholder="" name="entry.774185163"  onchange="document.getElementById('q2').classList.remove('hid');document.getElementById('q1').classList.add('hid');">
+						  <br><br><br><br><br><br><br><br><br><br><br><br><br></li>	
+						  <li id="q2" class="question hid">
+						    <h2 class="shadow framed fromleft">Appartenez-vous un groupe multi établissement?</h2>
+		                        <br><br><br>
+								<label class="form-check-label spaceleft">	
+								    <input required class="form-check-input fromright" type="radio" id="q2a" name="entry.267617191" value="Oui" onchange="document.getElementById('q3').classList.remove('hid');document.getElementById('q2').classList.add('hid');">
+									<span class="turq2">Oui</span>
+									<span class="form-check-sign"></span>
+		                        </label>
+								<label class="form-check-label spaceright">
+								  <input required class="form-check-input fromright" type="radio" id="q2b" name="entry.267617191" value="Non"  onchange="document.getElementById('q3').classList.remove('hid');document.getElementById('q2').classList.add('hid');">
+									<span class="turq2">Non</span>
+									<span class="form-check-sign"></span>
+								</label>
+						  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></li>
+							<li id="q3" class="question hid">
+								<h2 class="shadow framed fromleft">Quelle est la localisation du siège social de l’entreprise?</h2>
+								<select required class="turq2 marg2" name="entry.1484011513"  onchange="document.getElementById('q4').classList.remove('hid');document.getElementById('q3').classList.add('hid');">
+							    	<option value="" disabled="disabled" selected="selected">localisation</option>
+							    	<option value="France">France</option>
+									<option value="Switzerland">Suisse</option>
+									<option value="Spain">Espagne</option>
+									<option value="Belgium">Belgique</option>
+									<option value="Germany">Allemagne</option>
+									<option value="United Kingdom">Royaume-Uni</option>
+								</select>
+						  <br><br><br><br><br><br><br><br><br><br><br><br><br></li>
+							
+  							<li id="q4" class="question hid">
+  						    	<h2 class="shadow framed fromleft">Quel est le secteur d’activité de votre établissement?</h2>
+  								<select required class="turq2 marg2" name="entry.292800088" onchange="document.getElementById('q5').classList.remove('hid');document.getElementById('q4').classList.add('hid');">
+							    	<option value="" disabled="disabled" selected="selected">Secteur</option>
+									<option value="Secteur agricole">Secteur agricole</option>
+									<option value="Secteur agroalimentaire">Secteur agroalimentaire</option>
+									<option value="Secteur bancaire et financier">Secteur bancaire et financier</option>
+									<option value="Secteur de l'énergie">Secteur de l'énergie</option>
+									<option value="Secteur de l'information">Secteur de l'information</option>
+									<option value="Secteur de la communication et des médias">Secteur de la communication et des médias</option>
+									<option value="Secteur de la distribution">Secteur de la distribution</option>
+									<option value="Secteur de la recherche">Secteur de la recherche</option>
+									<option value="Secteur de la santé">Secteur de la santé</option>
+									<option value="Secteur des constructions mécaniques">Secteur des constructions mécaniques</option>
+									<option value="Secteur des industries chimiques">Secteur des industries chimiques</option>
+									<option value="Secteur des loisirs et du tourisme">Secteur des loisirs et du tourisme</option>
+									<option value="Secteur des matières premières">Secteur des matières premières</option>
+									<option value="Secteur des services">Secteur des services</option>
+									<option value="Secteur des transports">Secteur des transports</option>
+									<option value="Secteur du bâtiment">Secteur du bâtiment</option>
+									<option value="Secteur électronique">Secteur électronique</option>
+									<option value="Secteur informatique">Secteur informatique</option>
+									<option value="Secteur métallurgique">Secteur métallurgique</option>
+									<option value="Secteur textile">Secteur textile</option>
+									<option value="Autre">Autre</option>
+								</select>
+  						  <br><br><br><br><br><br><br><br><br><br><br><br><br></li>
+							<!--<li id="q4" class="question hid">
+						    <h2 class="shadow framed fromleft">Quel est le secteur d’activité de votre établissement?</h2>
+								<br>
+								<label class="form-check-label spaceleft">
+								  <input required class="form-check-input fromright" type="radio" name="entry.292800088" value="Secteur agricole"  onchange="document.getElementById('q5').classList.remove('hid');document.getElementById('q4').classList.add('hid');">
+									<span class="turq2">Secteur agricole</span>
+									<span class="form-check-sign"></span> 
+								</label>
+								<label class="form-check-label spaceright">
+								  <input required class="form-check-input fromright" type="radio" name="entry.292800088" value="Secteur des services"  onchange="document.getElementById('q5').classList.remove('hid');document.getElementById('q4').classList.add('hid');">
+									<span class="turq2">Secteur des services</span>
+									<span class="form-check-sign"></span>
+								</label>
+						  <br><br><br><br><br><br><br><br><br><br><br><br><br></li>-->
+							<li id="q5" class="question hid">
+						    <h2 class="shadow framed fromleft">Quel est le nombre d'employés dans l’entreprise?</h2>
+								<label>
+								  <input required class="fromright marg2" type="number" name="entry.748385404" min="0" max="1000000"  onblur="document.getElementById('q6').classList.remove('hid');document.getElementById('q5').classList.add('hid');document.getElementById('mycompany').style='visibility:true';">
+								</label>
+						  <br><br><br><br><br><br><br><br><br><br><br><br><br></li>
+							<li id="q6" class="question hid">
+						    <h2 class="shadow framed fromleft">Qui sont les principaux utilisateurs de vos produits?</h2>
+								<br>
+								<label class="form-check-label spaceleft">
+								  <input required class="form-check-input fromright" type="radio" name="entry.539557091" value="B2C" onchange="document.getElementById('but1').style='visibility:true';document.getElementById('q6').style='display:none';document.getElementById('but0').style='display:none';document.getElementById('votrentreprise').style='display:none';document.getElementById('game').classList.remove('hid');">
+									<span class="turq2">Grand public (B2C)</span>
+									<span class="form-check-sign"></span>                        
+								</label>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<label class="form-check-label spaceright">
+								  <input required class="form-check-input fromright" type="radio" name="entry.539557091" value="B2B" onchange="document.getElementById('but1').style='visibility:true';document.getElementById('q6').style='display:none';document.getElementById('but0').style='display:none';document.getElementById('votrentreprise').style='display:none';document.getElementById('game').classList.remove('hid');">
+									<span class="turq2">D’autres entreprises (B2B)</span>
+									<span class="form-check-sign"></span>
+								</label>
+						  <br><br><br><br><br><br><br><br><br><br><br><br><br></li>
+						</ul>
+						&nbsp;&nbsp;<button id="but0" class="btn btn-outline-danger em5"><i class="fa fa-check"></i></button>
+						
+						<!--<button id="mycompany" style="visibility:hidden;" class="center btn btn-outline-danger btn-lg" onclick="document.getElementById('but1').style='visibility:true';document.getElementById('q6').classList.add('hid');document.getElementById('mycompany').style='visibility:hidden';document.getElementById('votrentreprise').style='display:none';"><i class="fa fa-check-square"></i>Done</button>-->
+						<!--<button id="mycompany" style="visibility:hidden;" class="center btn btn-outline-danger btn-lg" onclick="document.getElementById('but1').style='visibility:true';window.location='#game'"><i class="fa fa-check-square"></i>Done</button>-->
+		</div>
+					
+		<table id="game" class="hid" width="90%" align="center">
+			<tr>
+				<td id="td1" class="rcorners1 unlock" width="50%">
+						<h1 style="text-align:center;color:#2e9f64"><i class="fabig fa-book"></i></h1><h2>Connaissances des enjeux</h2><span id="point1" style="visibility:hidden;"><h1 class="glow"> 2,2</h1></span>
+						<button id="but1" style="visibility:hidden;" onclick="document.getElementById('tab-1').checked=true;window.location='#content1'" class="btn btn-game btn-round btn-lg">Play this Level <i class="fa fa-gamepad"></i></button>
+				</td>
+				<td id="td2" class="rcorners2 lock" >
+						<h1 style="text-align:center;color:white"><i class="fabig fa-road"></i></h1><h2>Leadership et intégration stratégique</h2><span id="point2" style="visibility:hidden;"><h1 class="glow"> 2,0</h1></span>
+						<button id="but2" style="visibility:hidden;" onclick="document.getElementById('tab-2').checked=true;window.location='#content2'" class="btn btn-game btn-round btn-lg">Play this Level <i class="fa fa-gamepad"></i></button>
+				</td>
+						</tr>
+						<tr>
+					<td id="td3" class="rcorners3 lock" >
+						<h1 style="text-align:center;color:navajowhite"><i class="fabig fa-cogs"></i></h1><h2>Mise en œuvre et organisation opérationnelle</h2><span id="point3" style="visibility:hidden;"><h1 class="glow"> 2,1</h1></span>
+						<button id="but3" style="visibility:hidden;" onclick="document.getElementById('tab-3').checked=true;window.location='#content3'" class="btn btn-game btn-round btn-lg">Play this Level <i class="fa fa-gamepad"></i></button>
+					</td>
+					<td id="td4" class="rcorners4 lock" >
+						<h1 style="text-align:center;color:green"><i class="fabig fa-signal"></i></h1><h2>Performance atteinte ou attendue&nbsp;</h2><span id="point4" style="visibility:hidden;"><h1 class="glow"> 1,9</h1></span>
+						<button id="but4" style="visibility:hidden;" onclick="document.getElementById('tab-4').checked=true;window.location='#content4'" class="btn btn-game btn-round btn-lg">Play this Level <i class="fa fa-gamepad"></i></button>					
+					</td>
+				</tr>
+					</table>
+					<!--<button onclick="" id="envoyer" style="visibility:hidden;" class="btn btn-danger btn-round button-submit">Show Benchmark <i class="fa fa-arrow-right"></i> </button>-->
+					<button onclick="" id="envoyer" style="visibility:hidden;" class="leftcenter btn btn-success btn-round button-submit glow"><h2>Show Benchmark!</h2></button>
+					<!--<button type="button" id="envoyer" style="visibility:hidden;" class="center btn btn-success btn-round button-submit glow" onclick="document.getElementById('result').style='visibility:true';window.location='#result'">Show Benchmark</button>-->
+					<section class="tabs" id="questions">
+			    		<input id="tab-1" type="radio" name="radio-set" class="tab-selector-1" />
+			    		<input id="tab-2" type="radio" name="radio-set" class="tab-selector-2" />
+						<input id="tab-3" type="radio" name="radio-set" class="tab-selector-3" />
+						<input id="tab-4" type="radio" name="radio-set" class="tab-selector-4" />
+	    				<div class="clear-shadow"></div>
+  <div class="page-header section-dark content" style="background: transparent">				
+        <div id="content1" class="content-1">
+	   		<!--<h2>Connaissances des enjeux</h2>-->
+          <fieldset class="odd" id="q7">				
+		  	<h2 class="fromleft">Connaissance des enjeux environnementaux sur le cycle de vie</h2>
+				<input required type="radio" id="q7a" class="form-check-input radioin" name="entry.830120896" value="1" onchange="document.getElementById('q7').style='display:none';document.getElementById('q8').style='display:block';document.getElementById('td1').classList.remove('unlock');document.getElementById('td1').classList.add('star1');">
+				<label for="q7a"><h3 class="framedtight bg1">1. Les enjeux environnementaux tout au long du cycle de vie des produits/services ne sont pas connus</h3></label>
+				<input required type="radio" id="q7b" class="form-check-input radioin" name="entry.830120896" value="2" onchange="document.getElementById('q7').style='display:none';document.getElementById('q8').style='display:block';document.getElementById('td1').classList.remove('unlock');document.getElementById('td1').classList.add('star1');">
+				<label for="q7b"><h3 class="framedtight bg2">2. Certains enjeux environnementaux importants sont connus mais pas forcément rattachés au cycle de vie</h3></label>
+				<input required type="radio" id="q7c" class="form-check-input radioin" name="entry.830120896" value="3" onchange="document.getElementById('q7').style='display:none';document.getElementById('q8').style='display:block';document.getElementById('td1').classList.remove('unlock');document.getElementById('td1').classList.add('star1');">
+				<label for="q7c"><h3 class="framedtight bg3">3. Les principaux enjeux environnementaux sont connus tout au long du cycle de vie</h3></label>
+				<input required type="radio" id="q7d" class="form-check-input radioin" name="entry.830120896" value="4" onchange="document.getElementById('q7').style='display:none';document.getElementById('q8').style='display:block';document.getElementById('td1').classList.remove('unlock');document.getElementById('td1').classList.add('star1');">
+				<label for="q7d"><h3 class="framedtight bg4">4. Les principaux enjeux environnementaux sont connus tout au long du cycle de vie et validés par la direction</h3></label>
+	  			<button id="but5" class="btn btn-outline-danger em2"><i class="fa fa-check"></i></button>
+		  </fieldset>		
+		  <fieldset class="even hid" id="q8">
+			<h2 class="fromleft">Connaissance des parties intéressées (clients, concurrents, fournisseurs, Etat etc.) et de leurs attentes ou exigences tout au long du cycle de vie</h2> 
+		  		<input required type="radio" id="q8a" class="form-check-input radioin" name="entry.575472594" value="1" onchange="document.getElementById('q8').style='display:none';document.getElementById('q9').style='display:block';document.getElementById('td1').classList.remove('unlock');document.getElementById('td1').classList.add('star2');">
+				<label for="q8a"><h3 class="framedtight bg1">1. Les parties intéressées sont partiellement identifiées, sur quelques étapes du cycle de vie, mais leurs attentes ou exigences ne sont pas (ou presque pas) collectées.</h3></label>
+				<input required type="radio" id="q8b" class="form-check-input radioin" name="entry.575472594" value="2" onchange="document.getElementById('q8').style='display:none';document.getElementById('q9').style='display:block';document.getElementById('td1').classList.remove('unlock');document.getElementById('td1').classList.add('star2');">
+				<label for="q8b"><h3 class="framedtight bg2">2. Les parties intéressées sont identifiées tout au long du cycle de vie, leurs attentes ou exigences sont connues uniquement lorsque les PI les portent à connaissance directement.</h3></label>
+				<input required type="radio" id="q8c" class="form-check-input radioin" name="entry.575472594" value="3" onchange="document.getElementById('q8').style='display:none';document.getElementById('q9').style='display:block';document.getElementById('td1').classList.remove('unlock');document.getElementById('td1').classList.add('star2');">
+				<label for="q8c"><h3 class="framedtight bg3">3. Les parties intéressées et leurs attentes ou exigences sont identifiées tout au long du cycle de vie, particulièrement leur positionnement au regard de l'éco-conception.</h3></label>
+				<input required type="radio" id="q8d" class="form-check-input radioin" name="entry.575472594" value="4" onchange="document.getElementById('q8').style='display:none';document.getElementById('q9').style='display:block';document.getElementById('td1').classList.remove('unlock');document.getElementById('td1').classList.add('star2');">
+				<label for="q8d"><h3 class="framedtight bg4">4. Les parties intéressées et leurs attentes ou exigences sont identifiées tout au long du cycle de vie, les PI sont associées aux projets d'éco-conception.</h3></label>
+	  			<button id="but6" class="btn btn-outline-danger em2"><i class="fa fa-check"></i></button>
+		  </fieldset>
+		  <fieldset class="three hid" id="q9">
+			<h2 class="fromleft">Analyse dynamique des risques et opportunités liés au cycle de vie des produits et services de l’entreprise</h2> 
+		  		<input required type="radio" id="q9a" class="form-check-input radioin" name="entry.1235505382" value="1" onchange="document.getElementById('q9').style='display:none';document.getElementById('r1').style='display:block';document.getElementById('td1').classList.remove('unlock');document.getElementById('td1').classList.add('star3');">
+				<label for="q9a"><h3 class="framedtight bg1">1. Aucune analyse risques et opportunités n'est pas réalisées.</h3></label>
+				<input required type="radio" id="q9b" class="form-check-input radioin" name="entry.1235505382" value="2" onchange="document.getElementById('q9').style='display:none';document.getElementById('r1').style='display:block';document.getElementById('td1').classList.remove('unlock');document.getElementById('td1').classList.add('star3');">
+				<label for="q9b"><h3 class="framedtight bg2">2. Une analyse risques et opportunités est partiellement réalisée, sans lien avec le cycle de vie.</h3></label>
+				<input required type="radio" id="q9c" class="form-check-input radioin" name="entry.1235505382" value="3" onchange="document.getElementById('q9').style='display:none';document.getElementById('r1').style='display:block';document.getElementById('td1').classList.remove('unlock');document.getElementById('td1').classList.add('star3');">
+				<label for="q9c"><h3 class="framedtight bg3">3. L'analyse des risques et opportunités est réalisée en lien avec les enjeux environnementaux tout au long du cycle de vie, les attentes ou exigences des parties intéressées et la sphère d'influence de l'entreprise mais elle n'est pas validée par la direction et partagée aux équipes projet.</h3></label>
+				<input required type="radio" id="q9d" class="form-check-input radioin" name="entry.1235505382" value="4" onchange="document.getElementById('q9').style='display:none';document.getElementById('r1').style='display:block';document.getElementById('td1').classList.remove('unlock');document.getElementById('td1').classList.add('star3');">
+				<label for="q9d"><h3 class="framedtight bg4">4. L'analyse des risques et opportunités est réalisée et validée, à la fois au niveau des projets que de l'entreprise (domaine d'activités ou business unit).</h3></label>			
+	  			<button id="but7" class="btn btn-outline-danger em2"><i class="fa fa-check"></i></button>
+		  </fieldset>		  
+		  <span id="r1" style="visibility:hidden"><br><h1 style="text-align:center;color:#2e9f64"><i class="fabig fa-book"></i><br><br><br>Niveau complété!<br><br><br><img src="assets/img/thumbup.png">
+				<button type="button" class="center btn btn-danger btn-lg btn-round hid" onclick="document.getElementById('td2').classList.remove('lock');document.getElementById('td2').classList.add('unlock');document.getElementById('but1').style='visibility:hidden';document.getElementById('but2').style='visibility:true';document.getElementById('point1').style='visibility:true';document.getElementById('r1').style='display:none';window.location='#game'">See your score <i class="fa fa-play"></i></button></h1>
+		  </span>
+        </div>
+ 
+        <div id="content2" class="content-2">
+			<!--<h1>Leadership et intégration stratégique</h1>-->
+            <fieldset class="odd" id="q10">				
+  		  		<h2 class="fromleft">Intégration de la pensée en cycle de vie dans la stratégie d'entreprise avec un plan d'action</h2>
+			  		<input required type="radio" id="q10a" class="form-check-input radioin" name="entry.599628510" value="1" onchange="document.getElementById('q10').style='display:none';document.getElementById('q11').style='display:block';document.getElementById('td2').classList.remove('unlock');document.getElementById('td2').classList.add('star1');">
+					<label for="q10a"><h3 class="framedtight bg1">1. La performance environnementale n'est pas ou peu intégrée dans la stratégie d'entreprise</h3></label>
+					<input required type="radio" id="q10b" class="form-check-input radioin" name="entry.599628510" value="2" onchange="document.getElementById('q10').style='display:none';document.getElementById('q11').style='display:block';document.getElementById('td2').classList.remove('unlock');document.getElementById('td2').classList.add('star1');">
+					<label for="q10b"><h3 class="framedtight bg2">2. La performance environnementale est intégrée dans la stratégie d'entreprise</h3></label>
+					<input required type="radio" id="q10c" class="form-check-input radioin" name="entry.599628510" value="3" onchange="document.getElementById('q10').style='display:none';document.getElementById('q11').style='display:block';document.getElementById('td2').classList.remove('unlock');document.getElementById('td2').classList.add('star1');">
+					<label for="q10c"><h3 class="framedtight bg3">3. La performance environnementale et la pensée en cycle de vie sont intégrées dans la stratégie d'entreprise</h3></label>
+					<input required type="radio" id="q10d" class="form-check-input radioin" name="entry.599628510" value="4" onchange="document.getElementById('q10').style='display:none';document.getElementById('q11').style='display:block';document.getElementById('td2').classList.remove('unlock');document.getElementById('td2').classList.add('star1');">
+					<label for="q10d"><h3 class="framedtight bg4">4. La performance environnementale et l'éco-conception sont intégrées dans la stratégie d'entreprise et font l'objet d'un plan d'action.</h3></label>
+	  				<button id="but8" class="btn btn-outline-danger em2"><i class="fa fa-check"></i></button>
+		  	</fieldset>		
+		  	<fieldset class="even hid" id="q11">
+				<h2 class="fromleft">Mise à disposition par la direction de moyens pour des projets d'éco-conception et de management du cycle de vie</h3> 
+			  		<input required type="radio" id="q11a" class="form-check-input radioin" name="entry.2021404149" value="1" onchange="document.getElementById('q11').style='display:none';document.getElementById('q12').style='display:block';document.getElementById('td2').classList.remove('star1');document.getElementById('td2').classList.add('star2');">
+					<label for="q11a"><h3 class="framedtight bg1">1. Aucun moyen spécifique (budget, personnel dédié, formation...) n'est alloué pour intégrer la pensée en cycle de vie et mener des projets d'éco-conception.</h3></label>
+					<input required type="radio" id="q11b" class="form-check-input radioin" name="entry.2021404149" value="2" onchange="document.getElementById('q11').style='display:none';document.getElementById('q12').style='display:block';document.getElementById('td2').classList.remove('star1');document.getElementById('td2').classList.add('star2');">
+					<label for="q11b"><h3 class="framedtight bg2">2. Des moyens sont alloués ponctuellement pour un projet.</h3></label>
+					<input required type="radio" id="q11c" class="form-check-input radioin" name="entry.2021404149" value="3" onchange="document.getElementById('q11').style='display:none';document.getElementById('q12').style='display:block';document.getElementById('td2').classList.remove('star1');document.getElementById('td2').classList.add('star2');">
+					<label for="q11c"><h3 class="framedtight bg3">3. Des moyens sont alloués mais restent insuffisants pour répondre aux enjeux environnementaux et à la stratégie d'entreprise sur le long terme.</h3></label>
+					<input required type="radio" id="q11d" class="form-check-input radioin" name="entry.2021404149" value="4" onchange="document.getElementById('q11').style='display:none';document.getElementById('q12').style='display:block';document.getElementById('td2').classList.remove('star1');document.getElementById('td2').classList.add('star2');">
+					<label for="q11d"><h3 class="framedtight bg4">4. Des moyens sont alloués, ils sont appropriés à la stratégie et à l'engagement de l'entreprise dans le management du cycle de vie et la mise en oeuvre de l'éco-conception</h3></label>
+	  				<button id="but9" class="btn btn-outline-danger em2"><i class="fa fa-check"></i></button>
+		  	</fieldset>		
+		  	<fieldset class="three hid" id="q12">
+				<h2 class="fromleft">Intégration de la pensée en cycle de vie et de l'éco-conception dans les revues de direction et processus de décision</h3> 
+			  		<input required type="radio" id="q12a" class="form-check-input radioin" name="entry.1315185936" value="1" onchange="document.getElementById('q12').style='display:none';document.getElementById('r2').style='display:block';document.getElementById('td2').classList.remove('star2');document.getElementById('td2').classList.add('star3');">
+					<label for="q12a"><h3 class="framedtight bg1">1. Les revues de direction n'abordent pas les enjeux environnementaux ni les moyens pour les traiter, aucun processus de décision ne prend en compte la performance environnementale.</h3></label>
+					<input required type="radio" id="q12b" class="form-check-input radioin" name="entry.1315185936" value="2" onchange="document.getElementById('q12').style='display:none';document.getElementById('r2').style='display:block';document.getElementById('td2').classList.remove('star2');document.getElementById('td2').classList.add('star3');">
+					<label for="q12b"><h3 class="framedtight bg2">2. Les revues de direction abordent les enjeux environnementaux, sans les situer dans le cycle de vie de ses produits / services ni les élargir à la sphère d'influence de l'entreprise.</h3></label>
+					<input required type="radio" id="q12c" class="form-check-input radioin" name="entry.1315185936" value="3" onchange="document.getElementById('q12').style='display:none';document.getElementById('r2').style='display:block';document.getElementById('td2').classList.remove('star2');document.getElementById('td2').classList.add('star3');">
+					<label for="q12c"><h3 class="framedtight bg3">3. Les revues de direction abordent les enjeux environnementaux dans une perspective de cycle de vie et la direction prend des décisions pour mettre en oeuvre l'éco-conception.</h3></label>
+					<input required type="radio" id="q12d" class="form-check-input radioin" name="entry.1315185936" value="4" onchange="document.getElementById('q12').style='display:none';document.getElementById('r2').style='display:block';document.getElementById('td2').classList.remove('star2');document.getElementById('td2').classList.add('star3');">
+					<label for="q12d"><h3 class="framedtight bg4">4. Les revues de direction abordent la performance environnementale obtenue et mesurée lors de démarches d'éco-conception, la direction peut donc prendre les décisions appropriées afin d'améliorer la performance de l'entreprise.</h3></label>			
+	  				<button id="but10" class="btn btn-outline-danger em2"><i class="fa fa-check"></i></button>
+		  	</fieldset>		
+		    <span id="r2" style="visibility:hidden"><br><h1 style="text-align:center;color:#2e9f64"><i class="fabig fa-book"></i><br><br><br>Niveau complété!<br><br><br><img src="assets/img/thumbup.png">
+				<button type="button" class="center btn btn-danger btn-lg btn-round hid" onclick="document.getElementById('td3').classList.remove('lock');document.getElementById('td3').classList.add('unlock');document.getElementById('but2').style='visibility:hidden';document.getElementById('but3').style='visibility:true';document.getElementById('point2').style='visibility:true';document.getElementById('r2').style='display:none';window.location='#game'">See your score <i class="fa fa-play"></i></button></h1>
+		    </span>
+        </div>
+	
+        <div id="content3" class="content-3">
+        <!--<h1>Mise en œuvre et organisation opérationnelle</h1>-->
+      		<fieldset class="odd" id="q13">
+				<h2 class="fromleft">Constitution d'une équipe pluridisciplinaire pour mener des projets d'éco-conception  (marketing, design, bureau d'étude, production, vente etc.)</h2>
+		  <input required type="radio" id="q13a" class="form-check-input radioin" name="entry.1655300764" value="1" onchange="document.getElementById('q13').style='display:none';document.getElementById('q14').style='display:block';document.getElementById('td3').classList.remove('unlock');document.getElementById('td3').classList.add('star1');">
+					<label for="q13a"><h3 class="framedtight bg1">Aucune équipe pluridisciplinaire n'est constituée.</h3></label>
+		  <input required type="radio" id="q13b" class="form-check-input radioin" name="entry.1655300764" value="2" onchange="document.getElementById('q13').style='display:none';document.getElementById('q14').style='display:block';document.getElementById('td3').classList.remove('unlock');document.getElementById('td3').classList.add('star1');">
+					<label for="q13b"><h3 class="framedtight bg2">L'équipe de conception et/ou R&D consulte le responsable environnement pour prendre en compte certains enjeux environnementaux, souvent sous contrainte réglementaire.</h3></label>
+		  <input required type="radio" id="q13c" class="form-check-input radioin" name="entry.1655300764" value="3" onchange="document.getElementById('q13').style='display:none';document.getElementById('q14').style='display:block';document.getElementById('td3').classList.remove('unlock');document.getElementById('td3').classList.add('star1');">
+					<label for="q13c"><h3 class="framedtight bg3">Une équipe projet est formée ponctuellement pour répondre aux enjeux environnementaux tout au long du cycle de vie des produits/services et ainsi mener une démarche d'éco-conception.</h3></label>
+		  <input required type="radio" id="q13d" class="form-check-input radioin" name="entry.1655300764" value="4" onchange="document.getElementById('q13').style='display:none';document.getElementById('q14').style='display:block';document.getElementById('td3').classList.remove('unlock');document.getElementById('td3').classList.add('star1');">
+					<label for="q13d"><h3 class="framedtight bg4">L'organisation en équipe projet est systématique et inscrite dans les procédures et méthodes de conception, intégrant ainsi le management du cycle de vie et des enjeux environnementaux.</h3></label>
+      		 </fieldset>
+			 <fieldset class="even hid" id="q14">
+				<h2 class="fromleft">Intégration des pratiques et méthodes d'éco-conception en vue de l'économie circulaire dans le développement des produits et services</h2>
+		  <input required type="radio" id="q14a" class="form-check-input radioin" name="entry.279307128" value="1"  onchange="document.getElementById('q14').style='display:none';document.getElementById('q15').style='display:block';document.getElementById('td3').classList.remove('star1');document.getElementById('td3').classList.add('star2');">
+					<label for="q14a"><h3 class="framedtight bg1">Aucune méthode ni pratique d'éco-conception n'est intégrée dans le développement des produits OU L'éco-conception peut être mise en oeuvre occasionnellement, sans méthode construite et reproductible".</h3></label>
+		  <input required type="radio" id="q14b" class="form-check-input radioin" name="entry.279307128" value="2"onchange="document.getElementById('q14').style='display:none';document.getElementById('q15').style='display:block';document.getElementById('td3').classList.remove('star1');document.getElementById('td3').classList.add('star2');">
+					<label for="q14b"><h3 class="framedtight bg2">Une démarche d'éco-conception est mise en oeuvre pour répondre à une demande (client, médiatique...) avec des outils type approche matricielle, sans nécessairement d'indicateurs de mesure.</h3></label>
+		  <input required type="radio" id="q14c" class="form-check-input radioin" name="entry.279307128" value="3"onchange="document.getElementById('q14').style='display:none';document.getElementById('q15').style='display:block';document.getElementById('td3').classList.remove('star1');document.getElementById('td3').classList.add('star2');">
+					<label for="q14c"><h3 class="framedtight bg3">Les méthodes d'éco-conception utilisées privilégient des approches simplifiées et quantifiées, dans une prise en compte complète du cycle de vie.</h3></label>
+		  <input required type="radio" id="q14d" class="form-check-input radioin" name="entry.279307128" value="4"onchange="document.getElementById('q14').style='display:none';document.getElementById('q15').style='display:block';document.getElementById('td3').classList.remove('star1');document.getElementById('td3').classList.add('star2');">
+					<label for="q14d"><h3 class="framedtight bg4">Les méthodes et outils d'éco-conception sont intégrés dans les processus de développement sous diverses formes telles que règles métier, check-list ou guide de bonnes pratiques. Des bases de données permettent de capitaliser sur les connaissances acquises et de démultiplier les démarches pour une mise en oeuvre plus efficace.</h3></label>
+      		 </fieldset>
+  		  	 <fieldset class="three hid" id="q15">
+  				<h2 class="fromleft">Définition et suivi des indicateurs de performance en éco-conception</h2>
+		  	  	<input required type="radio" id="q15a" class="form-check-input radioin" name="entry.1449748254" value="1" onchange="document.getElementById('q15').style='display:none';document.getElementById('r3').style='display:block';document.getElementById('td3').classList.remove('star2');document.getElementById('td3').classList.add('star3');">
+					<label for="q15a"><h3 class="framedtight bg1">Des indicateurs mesurant la performance environnementale de démarches d'éco-conception n'ont pas été identifiés précisément. D'éventuels indicateurs génériques peuvent exister,  s'apparentant à des stratégies/objectifs évasifs (ex : j'utilise du bois).</h3></label>
+		  		<input required type="radio" id="q15b" class="form-check-input radioin" name="entry.1449748254" value="2"onchange="document.getElementById('q15').style='display:none';document.getElementById('r3').style='display:block';document.getElementById('td3').classList.remove('star2');document.getElementById('td3').classList.add('star3');">
+					<label for="q15b"><h3 class="framedtight bg2">Des indicateurs sont identifiés mais restent assez vagues, les degrés de performance atteints sont souvent chiffrés en pourcentage ou en quantité de flux (ex : un moteur utilisant x litres en moins) sans comparaison validée.</h3></label>
+		  		<input required type="radio" id="q15c" class="form-check-input radioin" name="entry.1449748254" value="3"onchange="document.getElementById('q15').style='display:none';document.getElementById('r3').style='display:block';document.getElementById('td3').classList.remove('star2');document.getElementById('td3').classList.add('star3');">
+					<label for="q15c"><h3 class="framedtight bg3">Des indicateurs appropriés sont identifiés et comparent les résultats obtenus dans une démarche d'éco-conception avec une situation de référence. Ils sont basés sur une vision globale des flux, parfois convertis en indicateurs d'impacts issu de logiciel d'ACV, simplifié ou non.</h3></label>
+		  		<input required type="radio" id="q15d" class="form-check-input radioin" name="entry.1449748254" value="4"onchange="document.getElementById('q15').style='display:none';document.getElementById('r3').style='display:block';document.getElementById('td3').classList.remove('star2');document.getElementById('td3').classList.add('star3');">
+					<label for="q15d"><h3 class="framedtight bg4">Les indicateurs identifiés sont similaires au niveau précédent mais la performance est évaluée de manière plus approfondie avec des indicateurs détaillés, précis, nombreux. D'autres indicateurs montrent la capitalisation sur la démarche d'éco-conception afin de la démultiplier sur d'autres produits/services.</h3></label>
+	  				<button id="but11" class="btn btn-outline-danger em2"><i class="fa fa-check"></i></button>
+		  	</fieldset>		
+		    <span id="r3" style="visibility:hidden"><br><h1 style="text-align:center;color:#2e9f64"><i class="fabig fa-book"></i><br><br><br>Niveau complété!<br><br><br><img src="assets/img/thumbup.png">
+				<button type="button" class="center btn btn-danger btn-lg btn-round hid" onclick="document.getElementById('td4').classList.remove('lock');document.getElementById('td4').classList.add('unlock');document.getElementById('but3').style='visibility:hidden';document.getElementById('but4').style='visibility:true';document.getElementById('point3').style='visibility:true';document.getElementById('r3').style='display:none';window.location='#game'">See your score <i class="fa fa-play"></i></button></h1>
+		    </span>
+        </div>
+	
+        <div id="content4" class="content-4">
+			<!--<h1>Performance atteinte ou attendue</h1>-->
+      		<fieldset class="odd" id="q16">
+				<h2 class="fromleft">Sensibilisation et formation à l'éco-conception et l'économie circulaire pour des équipes compétentes</h2>
+		  		<input required type="radio" id="q16a" class="form-check-input radioin" name="entry.2075187997" value="1" onchange="document.getElementById('q16').style='display:none';document.getElementById('q17').style='display:block';document.getElementById('td4').classList.remove('unlock');document.getElementById('td4').classList.add('star1');">
+					<label for="q16a"><h3 class="framedtight bg1">1. Pas de compétences internes.</h3></label>
+		  		<input required type="radio" id="q16b" class="form-check-input radioin" name="entry.2075187997" value="2"onchange="document.getElementById('q16').style='display:none';document.getElementById('q17').style='display:block';document.getElementById('td4').classList.remove('unlock');document.getElementById('td4').classList.add('star1');">
+					<label for="q16b"><h3 class="framedtight bg2">2. L'entreprise fait appel ponctuellement à des ressources exterieures de type conseil et/ou une personne ressource a reçu une sensibilisation ou une courte formation.</h3></label>
+		  		<input required type="radio" id="q16c" class="form-check-input radioin" name="entry.2075187997" value="3"onchange="document.getElementById('q16').style='display:none';document.getElementById('q17').style='display:block';document.getElementById('td4').classList.remove('unlock');document.getElementById('td4').classList.add('star1');">
+					<label for="q16c"><h3 class="framedtight bg3">3. Une personne ressource dans l'entreprise a les connaissances et est en capacité d'animer les projets d'éco-conception.</h3></label>
+		  		<input required type="radio" id="q16d" class="form-check-input radioin" name="entry.2075187997" value="4"onchange="document.getElementById('q16').style='display:none';document.getElementById('q17').style='display:block';document.getElementById('td4').classList.remove('unlock');document.getElementById('td4').classList.add('star1');">
+					<label for="q16d"><h3 class="framedtight bg4">4. L'ensemble de l'équipe projet en lien avec le développement de produit ou service sont fomés et outillés et mettent en oeuvre l'éco-conception.</h3></label>
+      		 </fieldset>
+			 <fieldset class="even hid" id="q17">
+				<h2 class="fromleft">Developpement de produits ou services éco-conçus</h2>
+		  	  	<input required type="radio" id="q17a" class="form-check-input radioin" name="entry.275599064" value="1"  onchange="document.getElementById('q17').style='display:none';document.getElementById('q18').style='display:block';document.getElementById('td4').classList.remove('star1');document.getElementById('td4').classList.add('star2');">
+					<label for="q17a"><h3 class="framedtight bg1">1. Aucun produit n'a fait l'objet d'une démarche d'éco-conception.</h3></label>
+		  		<input required type="radio" id="q17b" class="form-check-input radioin" name="entry.275599064" value="2"onchange="document.getElementById('q17').style='display:none';document.getElementById('q18').style='display:block';document.getElementById('td4').classList.remove('star1');document.getElementById('td4').classList.add('star2');">
+					<label for="q17b"><h3 class="framedtight bg2">2. Un ou plusieurs produits ont été éco-conçus, en réaction à des demandes ou des enjeux subis par l'entreprise, sans capitalisation pour d'autres projets.</h3></label>
+		  		<input required type="radio" id="q17c" class="form-check-input radioin" name="entry.275599064" value="3"onchange="document.getElementById('q17').style='display:none';document.getElementById('q18').style='display:block';document.getElementById('td4').classList.remove('star1');document.getElementById('td4').classList.add('star2');">
+					<label for="q17c"><h3 class="framedtight bg3">3. Les outils et méthodes d'éco-conception sont intégrés dans le processus de développement de produit ou service de l'entreprise.</h3></label>
+		  		<input required type="radio" id="q17d" class="form-check-input radioin" name="entry.275599064" value="4"onchange="document.getElementById('q17').style='display:none';document.getElementById('q18').style='display:block';document.getElementById('td4').classList.remove('star1');document.getElementById('td4').classList.add('star2');">
+					<label for="q17d"><h3 class="framedtight bg4">4. Tous les produits et services sont éco-conçus selon la vision et la stratégie choisie et portée par l'entreprise.</h3></label>
+      		 </fieldset>
+  		  	 <fieldset class="three hid" id="q18">
+  				<h2 class="fromleft">Communication externe sur la performance environnementale de ses produits ou services</h2>
+		  	  	<input required type="radio" id="q18a" class="form-check-input radioin" name="entry.1580074078" value="1" onchange="document.getElementById('q18').style='display:none';document.getElementById('r4').style='display:block';document.getElementById('td4').classList.remove('star2');document.getElementById('td4').classList.add('star3');">
+					<label for="q18a"><h3 class="framedtight bg1">1. La performance environnementale des produits ou services ne fait l'objet d'aucune communication externe par l'entreprise.</h3></label>
+		  		<input required type="radio" id="q18b" class="form-check-input radioin" name="entry.1580074078" value="2" onchange="document.getElementById('q18').style='display:none';document.getElementById('r4').style='display:block';document.getElementById('td4').classList.remove('star2');document.getElementById('td4').classList.add('star3');">
+					<label for="q18b"><h3 class="framedtight bg2">2. Quelques allégations sur la performance environnementale des produits ou services sont diffusées, sans formalisation ni méthode.</h3></label>
+		 		<input required type="radio" id="q18c" class="form-check-input radioin" name="entry.1580074078" value="3" onchange="document.getElementById('q18').style='display:none';document.getElementById('r4').style='display:block';document.getElementById('td4').classList.remove('star2');document.getElementById('td4').classList.add('star3');">
+					<label for="q18c"><h3 class="framedtight bg3">3. L'entreprise a établi un processus / une méthode de communication environnementale sur ces produits et services à destination essentiellement des clients et des fournisseurs.</h3></label>
+				<input required type="radio" id="q18d" class="form-check-input radioin" name="entry.1580074078" value="4" onchange="document.getElementById('q18').style='display:none';document.getElementById('r4').style='display:block';document.getElementById('td4').classList.remove('star2');document.getElementById('td4').classList.add('star3');">
+					<label for="q18d"><h3 class="framedtight bg4">4. La communication externe sur la performance environnementale des produits et services de l'entreprise est établie, ciblant de toutes les parties prenantes au regard du cycle de vie (cllients/utilisateurs, fournisseurs, ONG, acteurs de la fin de vie, etc.).</h3></label>
+	  				<button id="but12" class="btn btn-outline-danger em2"><i class="fa fa-check"></i></button>
+		  	</fieldset>		
+		    <span id="r4" style="visibility:hidden"><br><h1 style="text-align:center;color:#2e9f64"><i class="fabig fa-book"></i><br><br><br>Niveau complété!<br><br><br><img src="assets/img/thumbup.png">
+				<button type="button" class="center btn btn-danger btn-lg btn-round hid" onclick="document.getElementById('but4').style='visibility:hidden';document.getElementById('point4').style='visibility:true';document.getElementById('envoyer').style='visibility:true';document.getElementById('r4').style='display:none';document.getElementById('questions').style='display:none';window.location='#game'">See your score <i class="fa fa-play"></i></button></h1>
+		    </span>
+		</div>
+   	  </div>						
+  </div>
+       <!--<div class="col-md-8"><button onclick="#result" class="btn btn-danger btn-round button-submit">Next <i class="fa fa-arrow-right"></i></button></div>-->
+					</section>​			
+				</div>
+			</div>
+		</form>
+      </div>
+
+				<section class="results" id="result" style="visibility:hidden">
+					<div class="container">               
+						<div class="row">
+	                            <span class="label label-danger" style="margin:10%"><h2 style="text-align:center">Maturity:&nbsp;&nbsp;<b>2,1</b></h2><br>
+								<!--<iframe width="854" height="812" seamless frameborder="0" scrolling="no" style="margin-left:2.5%" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQVMUJdvaMJpDslFF1LT2IX77A9fILAvJ0KdmYzjGXbaqTunbXurA2ACeeZpjJ_sUAbNpM1V0KYNTEd/pubchart?oid=1377281540&amp;format=interactive"></iframe>-->
+								<!--<iframe width="836" height="754" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQVMUJdvaMJpDslFF1LT2IX77A9fILAvJ0KdmYzjGXbaqTunbXurA2ACeeZpjJ_sUAbNpM1V0KYNTEd/pubchart?oid=1006635721&amp;format=interactive"></iframe>-->
+								<div id="chartdiv"></div>
+								<h3>Action Plan</h3><br>
+								<p>1. L'éco-conception n'est pas appliquée ou est appliquée de façon anecdotique par l'entreprise.</p>
+								<p>2. L'éco-conception est mise en oeuvre de manière opportune, pour corriger un problème ou répondre à une demande, sans méthode formalisée et systématique.</p>
+								<p>3. La démarche d'éco-conception est intégrée dans les processus de l'entreprise, dans une vision à court terme de l'amélioration de la performance environnementale.</p>
+								<p>4. L'éco-conception est mise en œuvre afin d'améliorer la performance environnementale sur le long terme, et démultipliée globalement sur tous les secteurs d'activités.</p>				
+                                <button type="button" class="btn btn-round center" onclick="window.print()"><i class="fa fa-print"></i>Print My Report</button>
+								<p></p>
+								</span>
+						</div>
+					
+					</div>
+				</section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="">Privacy</a></li>
+                        <li><a href="">Terms</a></li>
+                        <li><a href="mailto:demoaccount@null.net">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="credits ml-auto">
+                    <span class="copyright">
+                        © <script>document.write(new Date().getFullYear())</script> <!--made with <i class="fa fa-heart heart"></i> by-->
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<!-- Core JS Files -->
+<script src="assets/js/jquery-3.2.1.js" type="text/javascript"></script>
+<script src="assets/js/jquery-ui-1.12.1.custom.min.js" type="text/javascript"></script>
+<script src="assets/js/popper.js" type="text/javascript"></script>
+<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+
+<!-- Switches -->
+<script src="assets/js/bootstrap-switch.min.js"></script>
+
+<!--  Plugins for Slider -->
+<script src="assets/js/nouislider.js"></script>
+
+<!--  Plugins for DateTimePicker -->
+<script src="assets/js/moment.min.js"></script>
+<script src="assets/js/bootstrap-datetimepicker.min.js"></script>
+
+<!--  Paper Kit Initialization and functons -->
+<script src="assets/js/paper-kit.js?v=2.1.0"></script> 
+
+<!-- JS Files -->
+<script src="test.js" type="text/javascript"></script>
+
+</html>
