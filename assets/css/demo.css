@@ -71,12 +71,19 @@
 
 }
 .navigation-example{
-    background-image: url('../img/ilya-yakover.jpg');
+	background: rgb(167,207,223); /* Old browsers */
+	background: -moz-linear-gradient(45deg, rgba(167,207,223,1) 0%, rgba(35,83,138,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(45deg, rgba(167,207,223,1) 0%,rgba(35,83,138,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(45deg, rgba(167,207,223,1) 0%,rgba(35,83,138,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7cfdf', endColorstr='#23538a',GradientType=1 ); /* IE6-9 */
+	
+    /* background-image: url('../img/industrial-background.jpg');
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
-    margin-top:0;
+    margin-top:0;*/
 }
+
 #notifications{
     background-color: #FFFFFF;
     display: block;
