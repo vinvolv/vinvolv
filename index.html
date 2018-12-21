@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="utf-8" />
@@ -7,26 +7,28 @@
     <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-    <title>Barometer: Ecodesign Maturity Meter</title>
+    <title>Ecodesign Maturity Meter</title>
 
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
 
     <!-- CSS -->
 	<link href="test.css" rel="stylesheet" />
+	<link href="assets/css/demo.css" rel="stylesheet" />
 
     <!-- Bootstrap core CSS     -->
 	<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
 	<link href="assets/css/paper-kit.css?v=2.1.0" rel="stylesheet"/>
 
-	<!--  CSS -->
-	<link href="assets/css/demo.css" rel="stylesheet" />
-
     <!--     Fonts and icons     -->
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,300,700' rel='stylesheet' type='text/css'>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
-    <link href="assets/css/nucleo-icons.css" rel="stylesheet" />
+    <!--<link href="assets/css/nucleo-icons.css" rel="stylesheet" />-->
 
+	<!--  Plugin to read sheet data -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sheetrock/1.1.4/dist/sheetrock.min.js"></script>
+	
 </head>
 
 <body>
@@ -38,7 +40,7 @@
                     <span class="navbar-toggler-bar"></span>
                     <span class="navbar-toggler-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#home"><i class="fa fa-thermometer-half"></i>Barometer: Ecodesign Maturity Meter</a>
+                <a class="navbar-brand" href="#home"><i class="fa fa-thermometer-half"></i>Ecodesign Maturity Meter</a>
             </div>
             <div class="collapse navbar-collapse" id="navbarToggler">
                 <ul class="navbar-nav ml-auto">
@@ -61,35 +63,66 @@
                         </a>
                     </li>-->
                     <li class="nav-item">
-                        <a href="#why" class="nav-link">Why&nbsp;<i class="fa fa-question-circle"></i></a>
+						<a class="nav-link" rel="tooltip" title="le mètre de maturité" data-placement="bottom" onclick="$('html, body').delay(100).animate({scrollTop: $('#why').offset().top }, 2000);">Why&nbsp;<i class="fa fa-question-circle"></i></a>
                     </li>
                     <!--<li class="nav-item">
 						<a href="#you" class="nav-link">Your Compnany&nbsp;&nbsp;<i class="fa fa-users"></i></a>
 					</li>-->
                     <li class="nav-item">
 						<!--<a href="#game" class="btn btn-danger btn-round">Enter the Game&nbsp;<i class="fa fa-gamepad"></i></a>-->
-						<a href="game.html" class="btn btn-danger btn-round">Enter the Game&nbsp;<i class="fa fa-gamepad"></i></a>
+						<button type="button" class="btn btn-danger btn-round" data-toggle="modal" data-target="#myModal">Enter the Game&nbsp;<i class="fa fa-gamepad"></i></button>
+                        <!--<a href="game.html" class="btn btn-danger btn-round">Enter the Game&nbsp;<i class="fa fa-gamepad"></i></a>-->
 					</li>
                     <li class="nav-item">
-                        <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="#team">Our Team&nbsp;&nbsp;<i class="fa fa-themeisle"></i></a>
+                        <a class="nav-link" rel="tooltip" title="la méthode" data-placement="bottom" onclick="$('html, body').delay(100).animate({scrollTop: $('#about').offset().top }, 2000);">About&nbsp;&nbsp;<i class="fa fa-file-text-o"></i></a>
+                    </li>					
+                    <li class="nav-item">
+                        <a class="nav-link" rel="tooltip" title="à propos de l'équipe" data-placement="bottom" onclick="$('html, body').delay(100).animate({scrollTop: $('#team').offset().top }, 2000);">Team&nbsp;&nbsp;<i class="fa fa-themeisle"></i></a>
                     </li>
                 </ul>
+                <!--<ul class="nav navbar-nav navbar-right">
+                    <a class="nav-link" href="en.html" id="language" title="EN" data-placement="bottom"><img src="assets/img/enfr.jpg" alt="EN" /></a>
+                </ul>-->
             </div>
         </div>
     </nav>
+    
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="modal-title text-center" id="exampleModalLabel">RENSEIGNEMENTS AUX PARTICIPANTS</span>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" style="font-size:11px">Avant de répondre au questionnaire, veuillez prendre connaissance des informations suivantes:
+                    En participant à ce projet, vous ne courez pas de risques ou d’inconvénients particuliers et votre participation nous permettra de caractériser votre niveau d’intégration de la pensée en cycle de vie et de positionner votre activité d’éco-conception par rapport aux autres entreprises.<br><b>Nature de la participation</b> Votre participation consiste à répondre au questionnaire en ligne qui porte sur votre expérience en écoconception. Cette participation devrait prendre environ 10 minutes de votre temps.<br><b>Diffusion des résultats</b> Les résultats pourront être utilisés pour des publications à caractère scientifique, mais de manière anonymisée.<br><b>Droit de retrait</b> Votre participation est entièrement volontaire. Vous êtes libres de vous retirer en tout temps sur simple avis verbal, sans préjudice et sans devoir justifier votre décision. Si vous décidez de vous retirer de l’étude, vous pouvez communiquer avec les coordinateurs du projet aux adresses mail ci-dessous. En vous retirant de l’étude, les renseignements qui auront été recueillis au moment de votre retrait seront détruits.<br><b>Confidentialité</b> Les renseignements que vous nous transmettrez demeureront confidentiels. Aucune information permettant d’identifier une entreprise ne sera publiée. Les données compilées seront traitées de manière anonyme. À la fin de l’étude, les données à des fins statistiques seront conservées pour une période de 3 années Après cette période, les données seront détruites.<span style="float:right"><a href="mailto:contact@eco-conception.fr">Contact Pôle</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:contact@shaping-ea.com">Contact EA</a></span><br><br><b>Par les présentes, l’entreprise</b> accepte de répondre aux questions dans le but de mesurer l’impact économique de l'intégration de l'écoconception dans l’entreprise.
+                </div>
+                <div class="modal-footer">
+                    <div class="left-side">
+                        <button type="button" class="btn btn-default btn-link" data-dismiss="modal">Reject</button>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="right-side">
+                        <button type="button" class="btn btn-danger btn-link" onClick="location.href='game.html'">Accept</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+						
     <div class="wrapper" id="home">
-        <div class="page-header section-dark" style="background-image: url('assets/img/industrial-metal.jpg')"><!--antoine-barres.jpg-->
+        <div class="page-header section-dark" style="background-image: url('assets/img/industrial-metal.jpg')">
             <div class="filter"></div>
     		<div class="content-center">
     			<div class="container">
     				<div class="title-brand">
     					<h1>Measure Your<br>Ecodesign Maturity</h1><br><br><br>
-						<h2>Get a free report and benefit from the experience of <span class="Single">12</span> companies</b><br>with an average maturity of&nbsp;<b>2,2&nbsp;<i class="fa fa-thermometer-half"></i></b><br><br><br></h2>
-						<!--<h3><i class="fa fa-arrow-down"></i></h3>-->
+						<h2>Get a free report and benefit from the experience of <span id="gcnt"></span> companies</b><br>with an average maturity of&nbsp;<b><span id="gavg"></span>&nbsp;<i class="fa fa-thermometer-half"></i></b><br><br><br></h2>
     				</div>
     			</div>
     		</div>
-	        <!--<div class="navigation-example content-center"><h2><a href="#why"><i class="fa fa-play"></i></a></h2></div>-->
     	</div>
 		
         <div id="why" class="navigation-example">
@@ -99,24 +132,52 @@
                         <br><br><br><br><br><h2>This tool is a gamified platform to measure the maturity of your company regarding eco-design.<br><br>
 						It will provide you with instant insight and benchmarks in order to guide your progress.
 						<!--You will get a free report and benefit from the experience of <span class="Single">12</span> companies</b><br><br>
-						with an average maturity of&nbsp;<b>2,2&nbsp;<i class="fa fa-thermometer-half"></i></b>--><br><br><br></h2>
+						with an average maturity of&nbsp;<b>2,2&nbsp;<i class="fa fa-thermometer-half"></i></b>--></h2>
 						<!--<div class="fog-low"><img src="assets/img/fog-low.png" alt=""></div>
 						<div class="fog-low right"><img src="assets/img/fog-low.png" alt=""></div>-->
-						<br><br>
-			            <div class="moving-clouds" style="bottom:15em;background-image: url('assets/img/clouds.png');"></div>
-						<br><br>
-						<a href="game.html" class="btn btn-danger btn-round">Enter the Game&nbsp;<i class="fa fa-gamepad"></i></a>
+
+						<a href="#about" class="btn btn-link whiten"><br><br><h3>Learn more...&nbsp;</h3><br></a>
+
+			            <!--<div class="moving-clouds" style="bottom:15em;background-image: url('assets/img/clouds.png');"></div>-->
+						<br>
+                        <br>
+						<button type="button" class="btn btn-danger btn-round" data-toggle="modal" data-target="#myModal">Enter the Game&nbsp;<i class="fa fa-gamepad"></i></button>
+                        <!--<a href="game.html" class="btn btn-danger btn-round">Enter the Game&nbsp;<i class="fa fa-gamepad"></i></a>-->
 						<br><br><br><br>	
 					</div>
                 </div>
             </nav>
 		</div>
-		
+		<br><br>
+        <div id="about" class="arrows">
+		<br><br><br><br>	
+            <div class="container">
+                <div class="thetitle">
+                    <br><h2 class="center">La Méthode</h2>
+                </div>
+                <h3>La méthode d’analyse de la maturité a été développée en collaboration entre différents partenaires et s’appuie sur les publications suivantes:<br><br>
+                <a class="btn-link" href="https://www.eco-conception.fr/library/h/profitability-of-ecodesign.html" target="_blank">Profitability of Ecodesign, 2014, Pôle Eco-conception</a><br><a class="btn-link" href="https://www.mdpi.com/2071-1050/10/7/2538/pdf" target="_blank">How to avoid pigeonholing the environmental manager</a><br><br><br>Quatre niveaux de maturité ont été définis:<br><br>
+			</h3>
+				<div class="right-arrow"><br><b>Niveau  de capacité 1 – initial</b><br><br>la pratique de gestion<br>n'est pas<br>appliquée<br>ou est<br>appliquée de façon<br> incomplète <br>par l'entreprise;</div>
+				
+			    <div class="right-arrow arrow2"><br><b>Niveau  de capacité 2 – ad hoc</b><br><br>
+la pratique de gestion est appliquée de <br>manière opportune, c'est-à-dire pour<br> corriger un problème ou accomplir<br>une tâche spécifique<br> par certains individus<br> dans l'entreprise, mais pas encore<br> de manière formalisée et systématique;</div>
+
+				<div class="right-arrow arrow3"><br><b>Niveau  de capacité 3 – formalisé</b><br><br>l'application de la pratique <br>de gestion est formalisée<br> dans des processus documentés <br>et l'infrastructure,<br> les responsabilités<br> et les ressources pour soutenir<br> la pratique sont allouées;</div>
+				
+				<div class="right-arrow arrow4"><br><b>Niveau  de capacité 4 – contrôlé et amélioré</b><br><br>l'application de la pratique de gestion est formalisée<br>et contrôlée, c'est-à-dire que sa performance <br>est mesurée et surveillée dans le temps<br>en utilisant des indicateurs de performance.<br> Et la performance de l'application de la pratique<br>de gestion est continuellement améliorée sur la base <br>de la mesure et du suivi.</div>
+
+				<br><br><h3>Ces niveaux sont évalués sur la base d’une série de 12 questions, et les réponses sont ensuite anonymisées et comparées avec les moyennes par secteur et par pays afin de permettre à chaque participant de se positionner et d’identifier des axes de progrès.</h3>
+	        </div>
+			<br><br><br><br>
+        </div>
+
+<!--    
 		<div class="container">
 				<script type="text/javascript">var submitted=false;</script>
 				<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='https://docs.google.com/spreadsheets/d/e/2PACX-1vQVMUJdvaMJpDslFF1LT2IX77A9fILAvJ0KdmYzjGXbaqTunbXurA2ACeeZpjJ_sUAbNpM1V0KYNTEd/pubchart?oid=1377281540&amp;format=interactive';}"></iframe>
 				<form action="https://docs.google.com/forms/d/e/1FAIpQLSfd2hOsNqU0GBmDukAjWFV4bG1Xts8HTG8G0UbVCW7eL38SKQ/formResponse?hl=fr" method="POST" id="mG61Hd" target="hidden_iframe" onsubmit="submitted=true;">
-<!--		
+		
         <div id="you" class="section section-buttons">
             <div class="container">
 				<div class="thetitle">
@@ -352,14 +413,32 @@
                     <div id="team">
                     	<div class="container">
                             <div class="thetitle">
-                                <br><h2 class="center">Team</h3><br><br><br>
+                                <br><h2 class="center">Team</h2><br><br><br>
                             </div>
                             <div class="row">
                                 <!-- <div class="col-8 col-sm-6 col-md-3"> -->
-								<div class="col-6 col-sm-3 col-md-2 mr-auto ml-auto">	
-                                    <h4 class="images-title">Project Coordination</h4>
-                                    <img src="assets/img/faces/clem-onojeghuo-3.jpg" class="img-circle img-no-padding img-responsive" alt="">
-                                    <p class="text-center">George</p>
+                                <div class="col-6 col-sm-3 col-md-2 mr-auto ml-auto">
+                                    <!--<h4 class="images-title">ENEC</h4>-->
+                                    <a href="http://www.ecodesign-centres.org/" target="_blank"><img src="assets/img/p3.jpg" class="img-no-padding img-thumbnail img-responsive" title="ENEC est le réseau européen des centres d’éco-conception : European Network of Ecodesign Centres. Sa mission consiste à échanger connaissances, expérience et meilleures pratiques sur tous les aspects de l'éco-conception afin que les entreprises s’engagent dans l'éco-conception." alt="ENEC"></a>
+                                    <p class="text-center">ENEC</p>
+                                </div>
+                                
+                                <div class="col-6 col-sm-3 col-md-2 mr-auto ml-auto">
+                                    <!--<h4 class="images-title">Pôle Eco-conception</h4>-->
+                                    <a href="https://www.eco-conception.fr/" target="_blank"><img src="assets/img/p2.jpg" class="img-no-padding img-thumbnail img-responsive" title="Centre ressource national sur l’éco-conception et la performance par le cycle de vie, le Pôle Eco-conception accompagne depuis 10 ans les organisations afin d’augmenter leur performance et de créer de la valeur par la pensée en cycle de vie tout en diminuant les impacts environnementaux." alt="Pôle Eco-conception"></a>
+                                    <p class="text-center">Pôle Eco-conception</p>
+                                </div>
+                                
+                                <div class="col-6 col-sm-3 col-md-2 mr-auto ml-auto">
+                                    <!--<h4 class="images-title">EA</h4>-->
+                                    <a href="http://www.shaping-ea.com/" target="_blank"><img src="assets/img/p4.jpg" class="img-circle img-thumbnail img-responsive" title="EA est le centre ressource sur l’éco-conception en Suisse. Il est actif depuis 5 ans et vise à une plus large diffusion des pratiques d’éco-conception dans les entreprises locales. EA est également un acteur impliqué dans la recherche et le développement de nouveaux outils de mesure et de mise en œuvre de la pensée cycle de vie." alt="EA"></a>
+                                    <p class="text-center">EA</p>
+                                </div>
+                                
+                                <div class="col-6 col-sm-3 col-md-2 mr-auto ml-auto">	
+                                    <!--<h4 class="images-title">HEIG-VD</h4>-->
+                                    <a href="https://heig-vd.ch/" target="_blank"><img src="assets/img/p1.jpg" class="img-thumbnail img-no-padding img-responsive" title="La Haute École d'Ingénierie et de Gestion du Canton de Vaud (HEIG-VD) permet la transformation des savoirs en produits et services à haute valeur ajoutée, en articulant les connaissances théoriques de pointe avec les exigences de la pratique professionnelle." alt="HEIG-VD"></a>
+                                    <p class="text-center">HEIG-VD</p>
 									
                                     <!-- <img src="assets/img/uriel-soberanes.jpg" class="img-rounded img-responsive" alt="Rounded Image">
                                     <div class="img-details">
@@ -369,28 +448,14 @@
                                         <p>George</p>
                                     </div> -->
                                 </div>
-                                <div class="col-6 col-sm-3 col-md-2 mr-auto ml-auto">
-                                    <h4 class="images-title">Environmental Consulting</h4>
-                                    <img src="assets/img/faces/kaci-baum-2.jpg" class="img-circle img-no-padding img-responsive" alt="">
-                                    <p class="text-center">Carol</p>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-2 mr-auto  ml-auto">
-                                    <h4 class="images-title">Concept Design</h4>
-                                    <img src="assets/img/faces/joe-gardner-2.jpg" class="img-circle img-no-padding img-responsive" alt="">
-                                    <p class="text-center">Rachel</p>
-                                </div>
-                                <div class="col-6 col-sm-3 col-md-2 mr-auto">
-                                    <h4 class="images-title">Data Analytics</h4>
-                                    <img src="assets/img/faces/clem-onojeghuo-2.jpg" class="img-thumbnail img-responsive" alt="">
-                                    <p class="text-center">Erik</p>
-                                </div>
                             </div>
 							<br><br><br><br>
                         </div>
                     </div>
                 </div>
             </div>
-            <!--<div class="section javascript-components">
+            <!--
+            <div class="section javascript-components">
 				<div class="container">
 					<div class="thetitle">
 						<h2>Javascript Components</h2>
@@ -409,20 +474,21 @@
                                 <div class="modal-dialog" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title text-center" id="exampleModalLabel">Modal title</h5>
+                                            <span class="modal-title text-center" id="exampleModalLabel">RENSEIGNEMENTS AUX PARTICIPANTS</span>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
-                                        <div class="modal-body"> Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
+                                        <div class="modal-body" style="font-size:11px">Avant de répondre au questionnaire, veuillez prendre connaissance des informations suivantes:
+                                            En participant à ce projet, vous ne courez pas de risques ou d’inconvénients particuliers et votre participation nous permettra de caractériser votre niveau d’intégration de la pensée en cycle de vie et de positionner votre activité d’éco-conception par rapport aux autres entreprises.<br><b>Nature de la participation</b> Votre participation consiste à répondre au questionnaire en ligne qui porte sur votre expérience en écoconception. Cette participation devrait prendre environ 10 minutes de votre temps.<br><b>Diffusion des résultats</b>Les résultats pourront être utilisés pour des publications à caractère scientifique, mais de manière anonymisée.<br><b>Droit de retrait</b>Votre participation est entièrement volontaire. Vous êtes libres de vous retirer en tout temps sur simple avis verbal, sans préjudice et sans devoir justifier votre décision. Si vous décidez de vous retirer de l’étude, vous pouvez communiquer avec les coordinateurs du projet aux adresses mail ci-dessous. En vous retirant de l’étude, les renseignements qui auront été recueillis au moment de votre retrait seront détruits.<br><b>Confidentialité</b>Les renseignements que vous nous transmettrez demeureront confidentiels. Aucune information permettant d’identifier une entreprise ne sera publiée. Les données compilées seront traitées de manière anonyme. À la fin de l’étude, les données à des fins statistiques seront conservées pour une période de 3 années Après cette période, les données seront détruites.<br>Contact Pôle: contact@eco-conception.fr<br>Contact EA: contact@shaping-ea.com<br><b>Par les présentes, l’entreprise</b> accepte de répondre aux questions dans le but de mesurer l’impact économique de l'intégration de l'écoconception dans l’entreprise.
                                         </div>
                                         <div class="modal-footer">
                                             <div class="left-side">
-                                                <button type="button" class="btn btn-default btn-link" data-dismiss="modal">Never mind</button>
+                                                <button type="button" class="btn btn-default btn-link" data-dismiss="modal">Reject</button>
                                             </div>
                                             <div class="divider"></div>
                                             <div class="right-side">
-                                                <button type="button" class="btn btn-danger btn-link">Delete</button>
+                                                <button type="button" class="btn btn-danger btn-link" onClick="location.href='game.html'">Accept</button>
                                             </div>
                                         </div>
                                     </div>
@@ -587,9 +653,10 @@
             <div class="row">
                 <nav class="footer-nav">
                     <ul>
-                        <li><a href="">Privacy</a></li>
-                        <li><a href="">Terms</a></li>
-                        <li><a href="mailto:demoaccount@null.net">Contact</a></li>
+                        <!--<li><a href="">Privacy</a></li>
+                        <li><a href="">Terms</a></li>-->
+                        <li><a href="mailto:contact@eco-conception.fr">Contact Pôle</a></li>
+						<li><a href="mailto:contact@shaping-ea.com">Contact EA</a></li>
                     </ul>
                 </nav>
                 <div class="credits ml-auto">
@@ -602,8 +669,26 @@
     </footer>
 </body>
 
+<script type="text/javascript"> 
+	$(document).ready(function(){ /* Populate data cells */
+		var mySpreadsheet = 'https://docs.google.com/spreadsheets/d/1KcqLsE8S6b4ni67ZxbSQv8lj3sgeQUoVO3UhSLQZ6RQ/edit#gid=0'; 
+		$('#gavg').sheetrock({
+			url: mySpreadsheet,
+			query: "select A limit 1"
+		});
+		$('#gcnt').sheetrock({
+			url: mySpreadsheet,
+			query: "select B limit 1"
+		});
+		$('h1').fadeOut(10).delay( 200 ).fadeIn( 400 ); /* title appearance effect */
+		$('h2').fadeOut(10).delay( 200 ).fadeIn( 1000 );
+	});	
+</script>
+
+<!--	$(window).scroll(function () if ($('#why').css('opacity') == 0.1) {var y_scroll_pos = window.pageYOffset; var offsetSection = $('#why').offset().top; if (y_scroll_pos >= offsetSection) {document.getElementById('why').style='opacity:1'; $('h2').fadeOut(10).delay(10).fadeIn(1000); } }	}); -->	
+
 <!-- Core JS Files -->
-<script src="assets/js/jquery-3.2.1.js" type="text/javascript"></script>
+<!---<script src="assets/js/jquery-3.2.1.js" type="text/javascript"></script>-->
 <script src="assets/js/jquery-ui-1.12.1.custom.min.js" type="text/javascript"></script>
 <script src="assets/js/popper.js" type="text/javascript"></script>
 <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
@@ -611,12 +696,11 @@
 <!-- Switches -->
 <script src="assets/js/bootstrap-switch.min.js"></script>
 
-<!--  Plugins for Slider -->
-<script src="assets/js/nouislider.js"></script>
-
-<!--  Plugins for DateTimePicker -->
+<!--  Plugins for Slider
+<script src="assets/js/nouislider.js"></script> -->
+<!--  Plugins for DateTimePicker 
 <script src="assets/js/moment.min.js"></script>
-<script src="assets/js/bootstrap-datetimepicker.min.js"></script>
+<script src="assets/js/bootstrap-datetimepicker.min.js"></script> -->
 
 <!--  Paper Kit Initialization and functons -->
 <script src="assets/js/paper-kit.js?v=2.1.0"></script> 
