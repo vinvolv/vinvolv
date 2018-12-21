@@ -8,6 +8,17 @@ $({ Counter: 0 }).animate({
   }
 });
 
+function categoryScore(c,d,n){
+	var category = 'cat' + c.toString();
+	var score = parseFloat(document.getElementById(category).innerHTML); 
+	score *= (d-1);
+	score += n;
+	score /= d;
+	document.getElementById(category).innerHTML = (d==3 ? score.toFixed(2) : score);
+	return score;
+}
+
+/*
 function appendChart() {
 	setTimeout(function (){
 		var diva = document.createElement("div");   
@@ -16,3 +27,4 @@ function appendChart() {
 	}, 3000); //delay 3 sec until sheet is updated
 	return true; 
 };
+*/
