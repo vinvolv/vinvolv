@@ -1,3 +1,5 @@
+.teamtable td {text-align:center;}
+
 .turq2 {
 	font-size: 2em;
 	color: #00988f;	
@@ -28,6 +30,11 @@
 	body {
 		background: linear-gradient(to bottom right, #7ebec0, #f1eae0);
 	}
+	
+	.w1 { width:10%; }
+	.w2 { width:20%; }
+	.w3 { width:30%; }
+	
 	td1 {width:50%;}
 	.chart {
 	    position: relative;
@@ -59,6 +66,10 @@
 	.blackmobile {
 		color:black!important;
 	}
+	.teamtable {display:block;}
+	.w1 { width:90%; }
+	.w2 { width:90%; }
+	.w3 { width:90%; }
 	.gametable table,tbody,tr,td {
 		display: block;
 	}

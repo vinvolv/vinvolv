@@ -57,7 +57,7 @@
 							</span>
 							<span>
 								<h2>Plan d'action</h2><br>
-							   		<h3>Connaissances des enjeux</h3>
+							   		<h3 id="cat1" class="hid">Connaissances des enjeux</h3>
 										<h4 id="p7b" class="hid">Certains enjeux environnementaux importants sont connus mais pas forcément rattachés au cycle de vie</h4>
 										<h4 id="p7c" class="hid">Les principaux enjeux environnementaux sont connus tout au long du cycle de vie</h4>
 										<h4 id="p7d" class="hid">Les principaux enjeux environnementaux sont connus tout au long du cycle de vie et validés par la direction</h4>
@@ -70,7 +70,7 @@
 										<h4 class="hid" id="p9c">L'analyse des risques et opportunités est réalisée en lien avec les enjeux environnementaux tout au long du cycle de vie, les attentes ou exigences des parties intéressées et la sphère d'influence de l'entreprise mais elle n'est pas validée par la direction et partagée aux équipes projet.</h4>
 										<h4 class="hid" id="p9d">L'analyse des risques et opportunités est réalisée et validée, à la fois au niveau des projets que de l'entreprise (domaine d'activités ou business unit).</h4>			
 
-									<h3>Leadership et intégration stratégique</h3>
+									<h3 id="cat2" class="hid">Leadership et intégration stratégique</h3>
 											<h4 class="hid" id="p10b">La performance environnementale est intégrée dans la stratégie d'entreprise</h4>
 											<h4 class="hid" id="p10c">La performance environnementale et la pensée en cycle de vie sont intégrées dans la stratégie d'entreprise</h4>
 											<h4 class="hid" id="p10d">La performance environnementale et l'éco-conception sont intégrées dans la stratégie d'entreprise et font l'objet d'un plan d'action.</h4>
@@ -81,7 +81,7 @@
 											<h4 class="hid" id="p12c">Les revues de direction abordent les enjeux environnementaux dans une perspective de cycle de vie et la direction prend des décisions pour mettre en oeuvre l'éco-conception.</h4>
 											<h4 class="hid" id="p12d">Les revues de direction abordent la performance environnementale obtenue et mesurée lors de démarches d'éco-conception, la direction peut donc prendre les décisions appropriées afin d'améliorer la performance de l'entreprise.</h4>			
 						        
-									<h3>Mise en œuvre et organisation opérationnelle</h3>
+									<h3 id="cat3" class="hid">Mise en œuvre et organisation opérationnelle</h3>
 											<h4 class="hid" id="p13b">L'équipe de conception et/ou R&D consulte le responsable environnement pour prendre en compte certains enjeux environnementaux, souvent sous contrainte réglementaire.</h4>
 											<h4 class="hid" id="p13c">Une équipe projet est formée ponctuellement pour répondre aux enjeux environnementaux tout au long du cycle de vie des produits/services et ainsi mener une démarche d'éco-conception.</h4>
 											<h4 class="hid" id="p13d">L'organisation en équipe projet est systématique et inscrite dans les procédures et méthodes de conception, intégrant ainsi le management du cycle de vie et des enjeux environnementaux.</h4>
@@ -91,7 +91,7 @@
 											<h4 class="hid" id="p15b">Des indicateurs sont identifiés mais restent assez vagues, les degrés de performance atteints sont souvent chiffrés en pourcentage ou en quantité de flux (ex : un moteur utilisant x litres en moins) sans comparaison validée.</h4>
 											<h4 class="hid" id="p15c">Des indicateurs appropriés sont identifiés et comparent les résultats obtenus dans une démarche d'éco-conception avec une situation de référence. Ils sont basés sur une vision globale des flux, parfois convertis en indicateurs d'impacts issu de logiciel d'ACV, simplifié ou non.</h4>
 											<h4 class="hid" id="p15d">Les indicateurs identifiés sont similaires au niveau précédent mais la performance est évaluée de manière plus approfondie avec des indicateurs détaillés, précis, nombreux. D'autres indicateurs montrent la capitalisation sur la démarche d'éco-conception afin de la démultiplier sur d'autres produits/services.</h4>
-									<h3>Performance atteinte ou attendue</h3>
+									<h3 id="cat4" class="hid">Performance atteinte ou attendue</h3>
 											<h4 class="hid" id="p16b">L'entreprise fait appel ponctuellement à des ressources exterieures de type conseil et/ou une personne ressource a reçu une sensibilisation ou une courte formation.</h4>
 											<h4 class="hid" id="p16c">Une personne ressource dans l'entreprise a les connaissances et est en capacité d'animer les projets d'éco-conception.</h4>
 											<h4 class="hid" id="p16d">L'ensemble de l'équipe projet en lien avec le développement de produit ou service sont fomés et outillés et mettent en oeuvre l'éco-conception.</h4>
@@ -151,18 +151,22 @@
 		setTimeout(
 		  function() 
 		  {
-	   		if ( $('#a1').text()==1 ) { $('#p7b').removeClass("hid"); } else if ( $('#a1').text()==2 ) {$('#p7c').removeClass("hid");} else if ( $('#a1').text()==3 ) { $('#p7d').removeClass("hid");}
-	   		if ( $('#a2').text()==1 ) { $('#p8b').removeClass("hid"); } else if ( $('#a2').text()==2 ) { $('#p8c').removeClass("hid"); } else if ( $('#a2').text()==3 ) { $('#p8d').removeClass("hid");}
-	   		if ( $('#a3').text()==1 ) { $('#p9b').removeClass("hid"); } else if ( $('#a3').text()==2 ) { $('#p9c').removeClass("hid"); } else if ( $('#a3').text()==3 ) { $('#p9d').removeClass("hid");}
-	   		if ( $('#a4').text()==1 ) { $('#p10b').removeClass("hid"); } else if ( $('#a4').text()==2 ) { $('#p10c').removeClass("hid"); } else if ( $('#a4').text()==3 ) { $('#p10d').removeClass("hid");}
-	   		if ( $('#a5').text()==1 ) { $('#p11b').removeClass("hid"); } else if ( $('#a5').text()==2 ) { $('#p11c').removeClass("hid"); } else if ( $('#a5').text()==3 ) { $('#p11d').removeClass("hid");}
-	   		if ( $('#a6').text()==1 ) { $('#p12b').removeClass("hid"); } else if ( $('#a6').text()==2 ) { $('#p12c').removeClass("hid"); } else if ( $('#a6').text()==3 ) { $('#p12d').removeClass("hid");}
-	   		if ( $('#a7').text()==1 ) { $('#p13b').removeClass("hid"); } else if ( $('#a7').text()==2 ) { $('#p13c').removeClass("hid"); } else if ( $('#a7').text()==3 ) { $('#p13d').removeClass("hid");}
-	   		if ( $('#a8').text()==1 ) { $('#p14b').removeClass("hid"); } else if ( $('#a8').text()==2 ) { $('#p14c').removeClass("hid"); } else if ( $('#a8').text()==3 ) { $('#p14d').removeClass("hid");}
-	   		if ( $('#a9').text()==1 ) { $('#p15b').removeClass("hid"); } else if ( $('#a9').text()==2 ) { $('#p15c').removeClass("hid"); } else if ( $('#a9').text()==3 ) { $('#p15d').removeClass("hid");}
-	   		if ( $('#a10').text()==1 ) { $('#p16b').removeClass("hid"); } else if ( $('#a10').text()==2 ) { $('#p16c').removeClass("hid"); } else if ( $('#a10').text()==3 ) { $('#p16d').removeClass("hid");}
-	   		if ( $('#a11').text()==1 ) { $('#p17b').removeClass("hid"); } else if ( $('#a11').text()==2 ) { $('#p17c').removeClass("hid"); } else if ( $('#a11').text()==3 ) { $('#p17d').removeClass("hid");}
-	   		if ( $('#a12').text()==1 ) { $('#p18b').removeClass("hid"); } else if ( $('#a12').text()==2 ) { $('#p18c').removeClass("hid"); } else if ( $('#a12').text()==3 ) { $('#p18d').removeClass("hid");}	
+
+			if ( $('#a1').text()==1 ) { $('#p7b').removeClass("hid"); $('#cat1').removeClass("hid"); } else if ( $('#a1').text()==2 ) {$('#p7c').removeClass("hid"); $('#cat1').removeClass("hid"); } else if ( $('#a1').text()==3 ) { $('#p7d').removeClass("hid"); $('#cat1').removeClass("hid"); }
+	   		if ( $('#a2').text()==1 ) { $('#p8b').removeClass("hid"); $('#cat1').removeClass("hid"); } else if ( $('#a2').text()==2 ) { $('#p8c').removeClass("hid"); $('#cat1').removeClass("hid"); } else if ( $('#a2').text()==3 ) { $('#p8d').removeClass("hid"); $('#cat1').removeClass("hid"); }
+	   		if ( $('#a3').text()==1 ) { $('#p9b').removeClass("hid"); $('#cat1').removeClass("hid"); } else if ( $('#a3').text()==2 ) { $('#p9c').removeClass("hid"); $('#cat1').removeClass("hid"); } else if ( $('#a3').text()==3 ) { $('#p9d').removeClass("hid"); $('#cat1').removeClass("hid"); }
+			
+	   		if ( $('#a4').text()==1 ) { $('#p10b').removeClass("hid"); $('#cat2').removeClass("hid"); } else if ( $('#a4').text()==2 ) { $('#p10c').removeClass("hid"); $('#cat2').removeClass("hid"); } else if ( $('#a4').text()==3 ) { $('#p10d').removeClass("hid"); $('#cat2').removeClass("hid"); }
+	   		if ( $('#a5').text()==1 ) { $('#p11b').removeClass("hid"); $('#cat2').removeClass("hid"); } else if ( $('#a5').text()==2 ) { $('#p11c').removeClass("hid"); $('#cat2').removeClass("hid"); } else if ( $('#a5').text()==3 ) { $('#p11d').removeClass("hid"); $('#cat2').removeClass("hid"); }
+	   		if ( $('#a6').text()==1 ) { $('#p12b').removeClass("hid"); $('#cat2').removeClass("hid"); } else if ( $('#a6').text()==2 ) { $('#p12c').removeClass("hid"); $('#cat2').removeClass("hid"); } else if ( $('#a6').text()==3 ) { $('#p12d').removeClass("hid"); $('#cat2').removeClass("hid"); }
+
+	   		if ( $('#a7').text()==1 ) { $('#p13b').removeClass("hid"); $('#cat3').removeClass("hid"); } else if ( $('#a7').text()==2 ) { $('#p13c').removeClass("hid"); $('#cat3').removeClass("hid"); } else if ( $('#a7').text()==3 ) { $('#p13d').removeClass("hid"); $('#cat3').removeClass("hid"); }
+	   		if ( $('#a8').text()==1 ) { $('#p14b').removeClass("hid");  $('#cat3').removeClass("hid"); } else if ( $('#a8').text()==2 ) { $('#p14c').removeClass("hid");  $('#cat3').removeClass("hid"); } else if ( $('#a8').text()==3 ) { $('#p14d').removeClass("hid"); $('#cat3').removeClass("hid"); }
+	   		if ( $('#a9').text()==1 ) { $('#p15b').removeClass("hid");  $('#cat3').removeClass("hid"); } else if ( $('#a9').text()==2 ) { $('#p15c').removeClass("hid"); $('#cat3').removeClass("hid"); } else if ( $('#a9').text()==3 ) { $('#p15d').removeClass("hid"); $('#cat3').removeClass("hid"); }
+
+	   		if ( $('#a10').text()==1 ) { $('#p16b').removeClass("hid"); $('#cat4').removeClass("hid"); } else if ( $('#a10').text()==2 ) { $('#p16c').removeClass("hid"); $('#cat4').removeClass("hid"); } else if ( $('#a10').text()==3 ) { $('#p16d').removeClass("hid"); $('#cat4').removeClass("hid"); }
+	   		if ( $('#a11').text()==1 ) { $('#p17b').removeClass("hid"); $('#cat4').removeClass("hid"); } else if ( $('#a11').text()==2 ) { $('#p17c').removeClass("hid"); $('#cat4').removeClass("hid"); } else if ( $('#a11').text()==3 ) { $('#p17d').removeClass("hid"); $('#cat4').removeClass("hid"); }
+	   		if ( $('#a12').text()==1 ) { $('#p18b').removeClass("hid"); $('#cat4').removeClass("hid"); } else if ( $('#a12').text()==2 ) { $('#p18c').removeClass("hid"); $('#cat4').removeClass("hid"); } else if ( $('#a12').text()==3 ) { $('#p18d').removeClass("hid"); $('#cat4').removeClass("hid"); }	
 		    
 		  }, 2500);
 		
