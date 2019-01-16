@@ -119,7 +119,9 @@
     			<div class="container">
     				<div class="title-brand">
     					<h1>Measure Your<br>Ecodesign Maturity</h1><br><br><br>
-						<h2>Get a free report and benefit from the experience of <span id="gcnt"></span> companies</b><br>with an average maturity of&nbsp;<b><span id="gavg"></span>&nbsp;<i class="fa fa-thermometer-half"></i></b><br><br><br></h2>
+						<h2>Get a free report and benefit from the experience of <span id="gcnt"></span> companies</b><br>
+							<!-- with an average maturity of&nbsp;<b><span id="gavg"></span>&nbsp;<i class="fa fa-thermometer-half"></i></b> -->
+							<br><br><br></h2>
     				</div>
     			</div>
     		</div>
@@ -156,7 +158,7 @@
                     <br><h2 class="center">La Méthode</h2>
                 </div>
                 <h3>La méthode d’analyse de la maturité a été développée en collaboration entre différents partenaires et s’appuie sur les publications suivantes:<br><br>
-                <a class="btn-link" href="https://www.eco-conception.fr/library/h/profitability-of-ecodesign.html" target="_blank">Profitability of Ecodesign, 2014, Pôle Eco-conception</a><br><a class="btn-link" href="https://www.mdpi.com/2071-1050/10/7/2538/pdf" target="_blank">How to avoid pigeonholing the environmental manager</a><br><br><br>Quatre niveaux de maturité ont été définis:<br><br>
+                <a class="btn-link" href="https://www.eco-conception.fr/library/h/profitability-of-ecodesign.html" target="_blank">Profitability of Ecodesign, 2014, Pôle Eco-conception</a><br><a class="btn-link" href="https://www.mdpi.com/2071-1050/10/7/2538/pdf" target="_blank">How to avoid pigeonholing the environmental manager, 2017, HEIG-VD&EA</a><br><br><br>Quatre niveaux de maturité ont été définis:<br><br>
 			</h3>
 				<div class="right-arrow"><br><b>Niveau  de capacité 1 – initial</b><br><br>la pratique de gestion<br>n'est pas<br>appliquée<br>ou est<br>appliquée de façon<br> incomplète <br>par l'entreprise;</div>
 				
@@ -666,10 +668,10 @@ la pratique de gestion est appliquée de <br>manière opportune, c'est-à-dire p
 <script type="text/javascript"> 
 	$(document).ready(function(){ /* Populate data cells */
 		var mySpreadsheet = 'https://docs.google.com/spreadsheets/d/1KcqLsE8S6b4ni67ZxbSQv8lj3sgeQUoVO3UhSLQZ6RQ/edit#gid=0'; 
-		$('#gavg').sheetrock({
+		/*$('#gavg').sheetrock({
 			url: mySpreadsheet,
 			query: "select A limit 1"
-		});
+		});*/
 		$('#gcnt').sheetrock({
 			url: mySpreadsheet,
 			query: "select B limit 1"
