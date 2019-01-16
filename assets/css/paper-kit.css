@@ -1948,7 +1948,7 @@ textarea.form-control {
   text-transform: uppercase;
 }
 .navbar .nav-link i {
-  font-size: 16px;
+  font-size: 24px;
   position: relative;
   top: 4px;
   right: 3px;
@@ -2006,12 +2006,13 @@ textarea.form-control {
   top: 15px;
 }
 .navbar .btn {
-  margin: 15px 3px;
+  margin: 20px 3px;
   font-size: 12px;
 }
 .navbar .btn i {
-  font-size: 14px;
+  font-size: 24px;
   line-height: 13px;
+  vertical-align:text-top;
 }
 .navbar .btn-simple {
   font-size: 16px;
@@ -4783,7 +4784,7 @@ textarea.form-control {
     z-index: 1032;
     visibility: visible;
     background-color: #999;
-    overflow-y: visible;
+    overflow-y: scroll; /*visible;*/
     border-top: none;
     text-align: left;
     border-left: 1px solid #CCC5B9;
@@ -5930,4 +5931,14 @@ textarea.form-control {
 }
 .following img {
   max-width: 70px;
+}
+
+
+/* fix conflict between bottstrap and paper-kit.css */
+@media screen and (min-width: 768px) and (max-width: 991px){
+	.navbar-toggler {display: block!important;}
+	.navbar-expand-md .navbar-nav {
+	    -ms-flex-direction: column;
+	    flex-direction: column;
+	}
 }
