@@ -54,7 +54,9 @@
 								</label>
 						  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></li>
 							<li id="q3" class="question hid">
-								<h2 class="shadow framed fromleft">Quelle est la localisation du siège social de l’entreprise?</h2>
+							 <h2 class="shadow framed fromleft">Quelle est la localisation du siège social de l’entreprise?</h2>
+							  <div class="select_categories">
+							   <div class="select">
 								<select required class="turq2 marg2" name="entry.1484011513"  onchange="document.getElementById('q4').classList.remove('hid');document.getElementById('q3').classList.add('hid');">
 							    	<option value="" disabled="disabled" selected="selected">localisation</option>
 							    	<option value="France">France</option>
@@ -64,10 +66,14 @@
 									<option value="Germany">Allemagne</option>
 									<option value="United Kingdom">Royaume-Uni</option>
 								</select>
+							   </div>
+							  </div>								
 						  <br><br><br><br><br><br><br><br><br><br><br><br><br></li>
 							
   							<li id="q4" class="question hid">
-  						    	<h2 class="shadow framed fromleft">Quel est le secteur d’activité de votre établissement?</h2>
+  						     <h2 class="shadow framed fromleft">Quel est le secteur d’activité de votre établissement?</h2>
+							  <div class="select_categories">
+							   <div class="select">	
   								<select required class="turq2 marg2" name="entry.292800088" onchange="document.getElementById('q5').classList.remove('hid');document.getElementById('q4').classList.add('hid');">
 							    	<option value="" disabled="disabled" selected="selected">Secteur</option>
 									<option value="Secteur agricole">Secteur agricole</option>
@@ -92,6 +98,8 @@
 									<option value="Secteur textile">Secteur textile</option>
 									<option value="Autre">Autre</option>
 								</select>
+							   </div>
+							  </div>
   						  <br><br><br><br><br><br><br><br><br><br><br><br><br></li>
 							<li id="q5" class="question hid">
 						    <h2 class="shadow framed fromleft">Quel est le nombre d'employés dans l’entreprise?</h2>
@@ -117,25 +125,27 @@
 						</ul>
 						&nbsp;&nbsp;<button id="but0" class="btn btn-outline-danger em5"><i class="fa fa-check"></i></button>
 				</div>
+
+		<div class="hid"><span id="gavg1"></span><span id="gavg2"></span><span id="gavg3"></span><span id="gavg4"></span></div>
 				
 		<table id="game" class="gametable hid" align="center">
 			<tr>
 				<td id="td1" class="rcorners1 unlock">
-						<h1 style="text-align:center;color:#2e9f64"><i class="fabig fa-book"></i></h1><h2>Connaissances des enjeux</h2><span id="point1" style="visibility:hidden;"><h1 class="glow" id="cat1"> 0</h1></span>
+						<h1 style="text-align:center;color:white"><!--<i class="fabig fa-book"></i>-->📖</h1><h2>Connaissances des enjeux</h2><span id="point1" style="visibility:hidden;"><h1 class="glow" id="cat1"> 0</h1></span>
 						<button id="but1" style="visibility:hidden;" onclick="document.getElementById('tab-1').checked=true;window.location='#content1'" class="btn btn-game btn-round btn-lg">Play this Level <i class="fa fa-gamepad"></i></button>
 				</td>
 				<td id="td2" class="rcorners2 lock" >
-						<h1 style="text-align:center;color:white"><i class="fabig fa-road"></i></h1><h2>Leadership et intégration stratégique</h2><span id="point2" style="visibility:hidden;"><h1 class="glow" id="cat2"> 0</h1></span>
+						<h1 style="text-align:center;color:white"><!--<i class="fabig fa-road"></i>-->🌐</h1><h2>Leadership et intégration stratégique</h2><span id="point2" style="visibility:hidden;"><h1 class="glow" id="cat2"> 0</h1></span>
 						<button id="but2" style="visibility:hidden;" onclick="document.getElementById('tab-2').checked=true;window.location='#content2'" class="btn btn-game btn-round btn-lg">Play this Level <i class="fa fa-gamepad"></i></button>
 				</td>
 			</tr>
 			<tr>
 				<td id="td3" class="rcorners3 lock" >
-					<h1 style="text-align:center;color:navajowhite"><i class="fabig fa-cogs"></i></h1><h2>Mise en œuvre et organisation opérationnelle</h2><span id="point3" style="visibility:hidden;"><h1 class="glow" id="cat3"> 0</h1></span>
+					<h1 style="text-align:center;color:white"><!--<i class="fabig fa-cogs"></i>-->⚙</h1><h2>Mise en œuvre et organisation opérationnelle</h2><span id="point3" style="visibility:hidden;"><h1 class="glow" id="cat3"> 0</h1></span>
 					<button id="but3" style="visibility:hidden;" onclick="document.getElementById('tab-3').checked=true;window.location='#content3'" class="btn btn-game btn-round btn-lg">Play this Level <i class="fa fa-gamepad"></i></button>
 				</td>
 				<td id="td4" class="rcorners4 lock" >
-					<h1 style="text-align:center;color:green"><i class="fabig fa-signal"></i></h1><h2>Performance atteinte ou attendue&nbsp;</h2><span id="point4" style="visibility:hidden;"><h1 class="glow" id="cat4"> 0</h1></span>
+					<h1 style="text-align:center;color:white"><!--<i class="fabig fa-signal"></i>-->📈</h1><h2>Performance atteinte ou attendue&nbsp;</h2><span id="point4" style="visibility:hidden;"><h1 class="glow" id="cat4"> 0</h1></span>
 					<button id="but4" style="visibility:hidden;" onclick="document.getElementById('tab-4').checked=true;window.location='#content4'" class="btn btn-game btn-round btn-lg">Play this Level <i class="fa fa-gamepad"></i></button>					
 				</td>
 			</tr>
@@ -149,46 +159,47 @@
 			<input id="tab-3" type="radio" name="radio-set" class="tab-selector-3" />
 			<input id="tab-4" type="radio" name="radio-set" class="tab-selector-4" />
 			<div class="clear-shadow"></div>
-  			<div class="page-header section-dark content" style="background: transparent">				
+  			<div class="section-dark content" style="background: transparent">
         <div id="content1" class="content-1">
 	   		<!--<h1>Connaissances des enjeux</h1>-->
           <fieldset class="odd" id="q7">
-		  	<h2 class="fromleft">Connaissance des enjeux environnementaux sur le cycle de vie</h2>
+		  	<h2 class="fromleft"><!--<i class="fa fa-book"></i>-->📖&nbsp;&nbsp;&nbsp;&nbsp;Connaissance des enjeux environnementaux sur le cycle de vie</h2>
 				<input required type="radio" id="q7a" class="form-check-input radioin" name="entry.830120896" value="1" onchange="categoryScore(1,1,1);document.getElementById('q7').style='display:none';document.getElementById('q8').style='display:block';document.getElementById('td1').classList.remove('unlock');document.getElementById('td1').classList.add('star1');">
-				<label for="q7a"><h3 class="framedtight bg1">1. Les enjeux environnementaux tout au long du cycle de vie des produits/services ne sont pas connus</h3></label>
+				<label for="q7a"><h3 class="framedtight bg1 bgcat1c">1. Les enjeux environnementaux tout au long du cycle de vie des produits/services ne sont pas connus</h3></label>
 				<input required type="radio" id="q7b" class="form-check-input radioin" name="entry.830120896" value="2" onchange="categoryScore(1,1,2);document.getElementById('q7').style='display:none';document.getElementById('q8').style='display:block';document.getElementById('td1').classList.remove('unlock');document.getElementById('td1').classList.add('star1');">
-				<label for="q7b"><h3 class="framedtight bg2">2. Certains enjeux environnementaux importants sont connus mais pas forcément rattachés au cycle de vie</h3></label>
+				<label for="q7b"><h3 class="framedtight bg2 bgcat1d">2. Certains enjeux environnementaux importants sont connus mais pas forcément rattachés au cycle de vie</h3></label>
 				<input required type="radio" id="q7c" class="form-check-input radioin" name="entry.830120896" value="3" onchange="categoryScore(1,1,3);document.getElementById('q7').style='display:none';document.getElementById('q8').style='display:block';document.getElementById('td1').classList.remove('unlock');document.getElementById('td1').classList.add('star1');">
-				<label for="q7c"><h3 class="framedtight bg3">3. Les principaux enjeux environnementaux sont connus tout au long du cycle de vie</h3></label>
+				<label for="q7c"><h3 class="framedtight bg3 bgcat1e">3. Les principaux enjeux environnementaux sont connus tout au long du cycle de vie</h3></label>
 				<input required type="radio" id="q7d" class="form-check-input radioin" name="entry.830120896" value="4" onchange="categoryScore(1,1,4);document.getElementById('q7').style='display:none';document.getElementById('q8').style='display:block';document.getElementById('td1').classList.remove('unlock');document.getElementById('td1').classList.add('star1');">
-				<label for="q7d"><h3 class="framedtight bg4">4. Les principaux enjeux environnementaux sont connus tout au long du cycle de vie et validés par la direction</h3></label>
+				<label for="q7d"><h3 class="framedtight bg4 bgcat1">4. Les principaux enjeux environnementaux sont connus tout au long du cycle de vie et validés par la direction</h3></label>
 	  			<button id="but5" class="btn btn-outline-danger em2"><i class="fa fa-check"></i></button>
 		  </fieldset>		
 		  <fieldset class="even hid" id="q8">
-			<h2 class="fromleft">Connaissance des parties intéressées (clients, concurrents, fournisseurs, Etat etc.) et de leurs attentes ou exigences tout au long du cycle de vie</h2> 
+			<h2 class="fromleft"><!--<i class="fa fa-book"></i>-->📖&nbsp;&nbsp;&nbsp;&nbsp;Connaissance des parties intéressées (clients, concurrents, fournisseurs, Etat etc.) et de leurs attentes ou exigences tout au long du cycle de vie</h2> 
 		  		<input required type="radio" id="q8a" class="form-check-input radioin" name="entry.575472594" value="1" onchange="categoryScore(1,2,1);document.getElementById('q8').style='display:none';document.getElementById('q9').style='display:block';document.getElementById('td1').classList.remove('unlock');document.getElementById('td1').classList.add('star2');">
-				<label for="q8a"><h3 class="framedtight bg1">1. Les parties intéressées sont partiellement identifiées, sur quelques étapes du cycle de vie, mais leurs attentes ou exigences ne sont pas (ou presque pas) collectées.</h3></label>
+				<label for="q8a"><h3 class="framedtight bg1 bgcat1c">1. Les parties intéressées sont partiellement identifiées, sur quelques étapes du cycle de vie, mais leurs attentes ou exigences ne sont pas (ou presque pas) collectées.</h3></label>
 				<input required type="radio" id="q8b" class="form-check-input radioin" name="entry.575472594" value="2" onchange="categoryScore(1,2,2);document.getElementById('q8').style='display:none';document.getElementById('q9').style='display:block';document.getElementById('td1').classList.remove('unlock');document.getElementById('td1').classList.add('star2');">
-				<label for="q8b"><h3 class="framedtight bg2">2. Les parties intéressées sont identifiées tout au long du cycle de vie, leurs attentes ou exigences sont connues uniquement lorsque les PI les portent à connaissance directement.</h3></label>
+				<label for="q8b"><h3 class="framedtight bg2 bgcat1d">2. Les parties intéressées sont identifiées tout au long du cycle de vie, leurs attentes ou exigences sont connues uniquement lorsque les PI les portent à connaissance directement.</h3></label>
 				<input required type="radio" id="q8c" class="form-check-input radioin" name="entry.575472594" value="3" onchange="categoryScore(1,2,3);document.getElementById('q8').style='display:none';document.getElementById('q9').style='display:block';document.getElementById('td1').classList.remove('unlock');document.getElementById('td1').classList.add('star2');">
-				<label for="q8c"><h3 class="framedtight bg3">3. Les parties intéressées et leurs attentes ou exigences sont identifiées tout au long du cycle de vie, particulièrement leur positionnement au regard de l'éco-conception.</h3></label>
+				<label for="q8c"><h3 class="framedtight bg3 bgcat1e">3. Les parties intéressées et leurs attentes ou exigences sont identifiées tout au long du cycle de vie, particulièrement leur positionnement au regard de l'éco-conception.</h3></label>
 				<input required type="radio" id="q8d" class="form-check-input radioin" name="entry.575472594" value="4" onchange="categoryScore(1,2,4);document.getElementById('q8').style='display:none';document.getElementById('q9').style='display:block';document.getElementById('td1').classList.remove('unlock');document.getElementById('td1').classList.add('star2');">
-				<label for="q8d"><h3 class="framedtight bg4">4. Les parties intéressées et leurs attentes ou exigences sont identifiées tout au long du cycle de vie, les PI sont associées aux projets d'éco-conception.</h3></label>
+				<label for="q8d"><h3 class="framedtight bg4 bgcat1">4. Les parties intéressées et leurs attentes ou exigences sont identifiées tout au long du cycle de vie, les PI sont associées aux projets d'éco-conception.</h3></label>
 	  			<button id="but6" class="btn btn-outline-danger em2"><i class="fa fa-check"></i></button>
 		  </fieldset>
 		  <fieldset class="three hid" id="q9">
-			<h2 class="fromleft">Analyse dynamique des risques et opportunités liés au cycle de vie des produits et services de l’entreprise</h2> 
-		  		<input required type="radio" id="q9a" class="form-check-input radioin" name="entry.1235505382" value="1" onchange="categoryScore(1,3,1);document.getElementById('q9').style='display:none';document.getElementById('r1').style='display:block';document.getElementById('td1').classList.remove('unlock');document.getElementById('td1').classList.add('star3');">
-				<label for="q9a"><h3 class="framedtight bg1">1. Aucune analyse risques et opportunités n'est pas réalisées.</h3></label>
-				<input required type="radio" id="q9b" class="form-check-input radioin" name="entry.1235505382" value="2" onchange="categoryScore(1,3,2);document.getElementById('q9').style='display:none';document.getElementById('r1').style='display:block';document.getElementById('td1').classList.remove('unlock');document.getElementById('td1').classList.add('star3');">
-				<label for="q9b"><h3 class="framedtight bg2">2. Une analyse risques et opportunités est partiellement réalisée, sans lien avec le cycle de vie.</h3></label>
-				<input required type="radio" id="q9c" class="form-check-input radioin" name="entry.1235505382" value="3" onchange="categoryScore(1,3,3);document.getElementById('q9').style='display:none';document.getElementById('r1').style='display:block';document.getElementById('td1').classList.remove('unlock');document.getElementById('td1').classList.add('star3');">
-				<label for="q9c"><h3 class="framedtight bg3">3. L'analyse des risques et opportunités est réalisée en lien avec les enjeux environnementaux tout au long du cycle de vie, les attentes ou exigences des parties intéressées et la sphère d'influence de l'entreprise mais elle n'est pas validée par la direction et partagée aux équipes projet.</h3></label>
-				<input required type="radio" id="q9d" class="form-check-input radioin" name="entry.1235505382" value="4" onchange="categoryScore(1,3,4);document.getElementById('q9').style='display:none';document.getElementById('r1').style='display:block';document.getElementById('td1').classList.remove('unlock');document.getElementById('td1').classList.add('star3');">
-				<label for="q9d"><h3 class="framedtight bg4">4. L'analyse des risques et opportunités est réalisée et validée, à la fois au niveau des projets que de l'entreprise (domaine d'activités ou business unit).</h3></label>			
+			<h2 class="fromleft"><!--<i class="fa fa-book"></i>-->📖&nbsp;&nbsp;&nbsp;&nbsp;Analyse dynamique des risques et opportunités liés au cycle de vie des produits et services de l’entreprise</h2> 
+		  		<input required type="radio" id="q9a" class="form-check-input radioin" name="entry.1235505382" value="1" onchange="categoryScore(1,3,1);document.getElementById('q9').style='display:none';document.getElementById('r1').style='display:block';document.getElementById('td1').classList.remove('unlock');document.getElementById('td1').classList.add('star3'); parseFloat(document.getElementById('cat1').innerHTML) > parseFloat(document.getElementById('gavg1').innerText) ? document.getElementById('compare1').innerText = 'above' : document.getElementById('compare1').innerText='below';">
+				<label for="q9a"><h3 class="framedtight bg1 bgcat1c">1. Aucune analyse risques et opportunités n'est pas réalisées.</h3></label>
+				<input required type="radio" id="q9b" class="form-check-input radioin" name="entry.1235505382" value="2" onchange="categoryScore(1,3,2);document.getElementById('q9').style='display:none';document.getElementById('r1').style='display:block';document.getElementById('td1').classList.remove('unlock');document.getElementById('td1').classList.add('star3'); parseFloat(document.getElementById('cat1').innerHTML) > parseFloat(document.getElementById('gavg1').innerText) ? document.getElementById('compare1').innerText = 'above' : document.getElementById('compare1').innerText='below';">
+				<label for="q9b"><h3 class="framedtight bg2 bgcat1d">2. Une analyse risques et opportunités est partiellement réalisée, sans lien avec le cycle de vie.</h3></label>
+				<input required type="radio" id="q9c" class="form-check-input radioin" name="entry.1235505382" value="3" onchange="categoryScore(1,3,3);document.getElementById('q9').style='display:none';document.getElementById('r1').style='display:block';document.getElementById('td1').classList.remove('unlock');document.getElementById('td1').classList.add('star3'); parseFloat(document.getElementById('cat1').innerHTML) > parseFloat(document.getElementById('gavg1').innerText) ? document.getElementById('compare1').innerText = 'above' : document.getElementById('compare1').innerText='below';">
+				<label for="q9c"><h3 class="framedtight bg3 bgcat1e">3. L'analyse des risques et opportunités est réalisée en lien avec les enjeux environnementaux tout au long du cycle de vie, les attentes ou exigences des parties intéressées et la sphère d'influence de l'entreprise mais elle n'est pas validée par la direction et partagée aux équipes projet.</h3></label>
+				<input required type="radio" id="q9d" class="form-check-input radioin" name="entry.1235505382" value="4" onchange="categoryScore(1,3,4);document.getElementById('q9').style='display:none';document.getElementById('r1').style='display:block';document.getElementById('td1').classList.remove('unlock');document.getElementById('td1').classList.add('star3'); parseFloat(document.getElementById('cat1').innerHTML) > parseFloat(document.getElementById('gavg1').innerText) ? document.getElementById('compare1').innerText = 'above' : document.getElementById('compare1').innerText='below';">
+				<label for="q9d"><h3 class="framedtight bg4 bgcat1">4. L'analyse des risques et opportunités est réalisée et validée, à la fois au niveau des projets que de l'entreprise (domaine d'activités ou business unit).</h3></label>			
 	  			<button id="but7" class="btn btn-outline-danger em2"><i class="fa fa-check"></i></button>
 		  </fieldset>		  
-		  <span id="r1" style="visibility:hidden"><br><h1 style="text-align:center;color:#2e9f64"><i class="fabig fa-book"></i><br><br><br>Niveau complété!<br><br><br><img src="assets/img/thumbup.png">
+		  <span id="r1" style="visibility:hidden"><br><h1 style="text-align:center;color:#2e9f64"><!--<i class="fabig fa-book"></i>-->📖<br><br><br>Niveau complété!<br><br><br><img src="assets/img/thumbup.png">
+			    <h4 class="center-align">You scored <span id="compare1"> </span> average maturity for this category.</h4><br>
 				<button type="button" class="center btn btn-danger btn-lg btn-round hid" onclick="document.getElementById('td2').classList.remove('lock');document.getElementById('td2').classList.add('unlock');document.getElementById('but1').style='visibility:hidden';document.getElementById('but2').style='visibility:true';document.getElementById('point1').style='visibility:true';document.getElementById('r1').style='display:none';window.location='#game'">See your score <i class="fa fa-play"></i></button></h1>
 		  </span>
         </div>
@@ -196,42 +207,43 @@
         <div id="content2" class="content-2">
 			<!--<h1>Leadership et intégration stratégique</h1>-->
             <fieldset class="odd" id="q10">				
-  		  		<h2 class="fromleft">Intégration de la pensée en cycle de vie dans la stratégie d'entreprise avec un plan d'action</h2>
+  		  		<h2 class="fromleft"><!--<i class="fa fa-road"></i>-->🌐&nbsp;&nbsp;&nbsp;&nbsp;Intégration de la pensée en cycle de vie dans la stratégie d'entreprise avec un plan d'action</h2>
 			  		<input required type="radio" id="q10a" class="form-check-input radioin" name="entry.599628510" value="1" onchange="categoryScore(2,1,1);document.getElementById('q10').style='display:none';document.getElementById('q11').style='display:block';document.getElementById('td2').classList.remove('unlock');document.getElementById('td2').classList.add('star1');">
-					<label for="q10a"><h3 class="framedtight bg1">1. La performance environnementale n'est pas ou peu intégrée dans la stratégie d'entreprise</h3></label>
+					<label for="q10a"><h3 class="framedtight bg1 bgcat28">1. La performance environnementale n'est pas ou peu intégrée dans la stratégie d'entreprise</h3></label>
 					<input required type="radio" id="q10b" class="form-check-input radioin" name="entry.599628510" value="2" onchange="categoryScore(2,1,2);document.getElementById('q10').style='display:none';document.getElementById('q11').style='display:block';document.getElementById('td2').classList.remove('unlock');document.getElementById('td2').classList.add('star1');">
-					<label for="q10b"><h3 class="framedtight bg2">2. La performance environnementale est intégrée dans la stratégie d'entreprise</h3></label>
+					<label for="q10b"><h3 class="framedtight bg2 bgcat29">2. La performance environnementale est intégrée dans la stratégie d'entreprise</h3></label>
 					<input required type="radio" id="q10c" class="form-check-input radioin" name="entry.599628510" value="3" onchange="categoryScore(2,1,3);document.getElementById('q10').style='display:none';document.getElementById('q11').style='display:block';document.getElementById('td2').classList.remove('unlock');document.getElementById('td2').classList.add('star1');">
-					<label for="q10c"><h3 class="framedtight bg3">3. La performance environnementale et la pensée en cycle de vie sont intégrées dans la stratégie d'entreprise</h3></label>
+					<label for="q10c"><h3 class="framedtight bg3 bgcat2a">3. La performance environnementale et la pensée en cycle de vie sont intégrées dans la stratégie d'entreprise</h3></label>
 					<input required type="radio" id="q10d" class="form-check-input radioin" name="entry.599628510" value="4" onchange="categoryScore(2,1,4);document.getElementById('q10').style='display:none';document.getElementById('q11').style='display:block';document.getElementById('td2').classList.remove('unlock');document.getElementById('td2').classList.add('star1');">
-					<label for="q10d"><h3 class="framedtight bg4">4. La performance environnementale et l'éco-conception sont intégrées dans la stratégie d'entreprise et font l'objet d'un plan d'action.</h3></label>
+					<label for="q10d"><h3 class="framedtight bg4 bgcat2">4. La performance environnementale et l'éco-conception sont intégrées dans la stratégie d'entreprise et font l'objet d'un plan d'action.</h3></label>
 	  				<button id="but8" class="btn btn-outline-danger em2"><i class="fa fa-check"></i></button>
 		  	</fieldset>		
 		  	<fieldset class="even hid" id="q11">
-				<h2 class="fromleft">Mise à disposition par la direction de moyens pour des projets d'éco-conception et de management du cycle de vie</h3> 
+				<h2 class="fromleft"><!--<i class="fa fa-road"></i>-->🌐&nbsp;&nbsp;&nbsp;&nbsp;Mise à disposition par la direction de moyens pour des projets d'éco-conception et de management du cycle de vie</h3> 
 			  		<input required type="radio" id="q11a" class="form-check-input radioin" name="entry.2021404149" value="1" onchange="categoryScore(2,2,1);document.getElementById('q11').style='display:none';document.getElementById('q12').style='display:block';document.getElementById('td2').classList.remove('star1');document.getElementById('td2').classList.add('star2');">
-					<label for="q11a"><h3 class="framedtight bg1">1. Aucun moyen spécifique (budget, personnel dédié, formation...) n'est alloué pour intégrer la pensée en cycle de vie et mener des projets d'éco-conception.</h3></label>
+					<label for="q11a"><h3 class="framedtight bg1 bgcat28">1. Aucun moyen spécifique (budget, personnel dédié, formation...) n'est alloué pour intégrer la pensée en cycle de vie et mener des projets d'éco-conception.</h3></label>
 					<input required type="radio" id="q11b" class="form-check-input radioin" name="entry.2021404149" value="2" onchange="categoryScore(2,2,2);document.getElementById('q11').style='display:none';document.getElementById('q12').style='display:block';document.getElementById('td2').classList.remove('star1');document.getElementById('td2').classList.add('star2');">
-					<label for="q11b"><h3 class="framedtight bg2">2. Des moyens sont alloués ponctuellement pour un projet.</h3></label>
+					<label for="q11b"><h3 class="framedtight bg2 bgcat29">2. Des moyens sont alloués ponctuellement pour un projet.</h3></label>
 					<input required type="radio" id="q11c" class="form-check-input radioin" name="entry.2021404149" value="3" onchange="categoryScore(2,2,3);document.getElementById('q11').style='display:none';document.getElementById('q12').style='display:block';document.getElementById('td2').classList.remove('star1');document.getElementById('td2').classList.add('star2');">
-					<label for="q11c"><h3 class="framedtight bg3">3. Des moyens sont alloués mais restent insuffisants pour répondre aux enjeux environnementaux et à la stratégie d'entreprise sur le long terme.</h3></label>
+					<label for="q11c"><h3 class="framedtight bg3 bgcat2a">3. Des moyens sont alloués mais restent insuffisants pour répondre aux enjeux environnementaux et à la stratégie d'entreprise sur le long terme.</h3></label>
 					<input required type="radio" id="q11d" class="form-check-input radioin" name="entry.2021404149" value="4" onchange="categoryScore(2,2,4);document.getElementById('q11').style='display:none';document.getElementById('q12').style='display:block';document.getElementById('td2').classList.remove('star1');document.getElementById('td2').classList.add('star2');">
-					<label for="q11d"><h3 class="framedtight bg4">4. Des moyens sont alloués, ils sont appropriés à la stratégie et à l'engagement de l'entreprise dans le management du cycle de vie et la mise en oeuvre de l'éco-conception</h3></label>
+					<label for="q11d"><h3 class="framedtight bg4 bgcat2">4. Des moyens sont alloués, ils sont appropriés à la stratégie et à l'engagement de l'entreprise dans le management du cycle de vie et la mise en oeuvre de l'éco-conception</h3></label>
 	  				<button id="but9" class="btn btn-outline-danger em2"><i class="fa fa-check"></i></button>
 		  	</fieldset>		
 		  	<fieldset class="three hid" id="q12">
-				<h2 class="fromleft">Intégration de la pensée en cycle de vie et de l'éco-conception dans les revues de direction et processus de décision</h3> 
-			  		<input required type="radio" id="q12a" class="form-check-input radioin" name="entry.1315185936" value="1" onchange="categoryScore(2,3,1);document.getElementById('q12').style='display:none';document.getElementById('r2').style='display:block';document.getElementById('td2').classList.remove('star2');document.getElementById('td2').classList.add('star3');">
-					<label for="q12a"><h3 class="framedtight bg1">1. Les revues de direction n'abordent pas les enjeux environnementaux ni les moyens pour les traiter, aucun processus de décision ne prend en compte la performance environnementale.</h3></label>
-					<input required type="radio" id="q12b" class="form-check-input radioin" name="entry.1315185936" value="2" onchange="categoryScore(2,3,2);document.getElementById('q12').style='display:none';document.getElementById('r2').style='display:block';document.getElementById('td2').classList.remove('star2');document.getElementById('td2').classList.add('star3');">
-					<label for="q12b"><h3 class="framedtight bg2">2. Les revues de direction abordent les enjeux environnementaux, sans les situer dans le cycle de vie de ses produits / services ni les élargir à la sphère d'influence de l'entreprise.</h3></label>
-					<input required type="radio" id="q12c" class="form-check-input radioin" name="entry.1315185936" value="3" onchange="categoryScore(2,3,3);document.getElementById('q12').style='display:none';document.getElementById('r2').style='display:block';document.getElementById('td2').classList.remove('star2');document.getElementById('td2').classList.add('star3');">
-					<label for="q12c"><h3 class="framedtight bg3">3. Les revues de direction abordent les enjeux environnementaux dans une perspective de cycle de vie et la direction prend des décisions pour mettre en oeuvre l'éco-conception.</h3></label>
-					<input required type="radio" id="q12d" class="form-check-input radioin" name="entry.1315185936" value="4" onchange="categoryScore(2,3,4);document.getElementById('q12').style='display:none';document.getElementById('r2').style='display:block';document.getElementById('td2').classList.remove('star2');document.getElementById('td2').classList.add('star3');">
-					<label for="q12d"><h3 class="framedtight bg4">4. Les revues de direction abordent la performance environnementale obtenue et mesurée lors de démarches d'éco-conception, la direction peut donc prendre les décisions appropriées afin d'améliorer la performance de l'entreprise.</h3></label>			
+				<h2 class="fromleft"><!--<i class="fa fa-road"></i>-->🌐&nbsp;&nbsp;&nbsp;&nbsp;Intégration de la pensée en cycle de vie et de l'éco-conception dans les revues de direction et processus de décision</h3> 
+			  		<input required type="radio" id="q12a" class="form-check-input radioin" name="entry.1315185936" value="1" onchange="categoryScore(2,3,1);document.getElementById('q12').style='display:none';document.getElementById('r2').style='display:block';document.getElementById('td2').classList.remove('star2');document.getElementById('td2').classList.add('star3'); parseFloat(document.getElementById('cat2').innerHTML) > parseFloat(document.getElementById('gavg2').innerText) ? document.getElementById('compare2').innerText = 'above' : document.getElementById('compare2').innerText='below';">
+					<label for="q12a"><h3 class="framedtight bg1 bgcat28">1. Les revues de direction n'abordent pas les enjeux environnementaux ni les moyens pour les traiter, aucun processus de décision ne prend en compte la performance environnementale.</h3></label>
+					<input required type="radio" id="q12b" class="form-check-input radioin" name="entry.1315185936" value="2" onchange="categoryScore(2,3,2);document.getElementById('q12').style='display:none';document.getElementById('r2').style='display:block';document.getElementById('td2').classList.remove('star2');document.getElementById('td2').classList.add('star3'); parseFloat(document.getElementById('cat2').innerHTML) > parseFloat(document.getElementById('gavg2').innerText) ? document.getElementById('compare2').innerText = 'above' : document.getElementById('compare2').innerText='below';">
+					<label for="q12b"><h3 class="framedtight bg2 bgcat29">2. Les revues de direction abordent les enjeux environnementaux, sans les situer dans le cycle de vie de ses produits / services ni les élargir à la sphère d'influence de l'entreprise.</h3></label>
+					<input required type="radio" id="q12c" class="form-check-input radioin" name="entry.1315185936" value="3" onchange="categoryScore(2,3,3);document.getElementById('q12').style='display:none';document.getElementById('r2').style='display:block';document.getElementById('td2').classList.remove('star2');document.getElementById('td2').classList.add('star3'); parseFloat(document.getElementById('cat2').innerHTML) > parseFloat(document.getElementById('gavg2').innerText) ? document.getElementById('compare2').innerText = 'above' : document.getElementById('compare2').innerText='below';">
+					<label for="q12c"><h3 class="framedtight bg3 bgcat2a">3. Les revues de direction abordent les enjeux environnementaux dans une perspective de cycle de vie et la direction prend des décisions pour mettre en oeuvre l'éco-conception.</h3></label>
+					<input required type="radio" id="q12d" class="form-check-input radioin" name="entry.1315185936" value="4" onchange="categoryScore(2,3,4);document.getElementById('q12').style='display:none';document.getElementById('r2').style='display:block';document.getElementById('td2').classList.remove('star2');document.getElementById('td2').classList.add('star3'); parseFloat(document.getElementById('cat2').innerHTML) > parseFloat(document.getElementById('gavg2').innerText) ? document.getElementById('compare2').innerText = 'above' : document.getElementById('compare2').innerText='below';">
+					<label for="q12d"><h3 class="framedtight bg4 bgcat2">4. Les revues de direction abordent la performance environnementale obtenue et mesurée lors de démarches d'éco-conception, la direction peut donc prendre les décisions appropriées afin d'améliorer la performance de l'entreprise.</h3></label>			
 	  				<button id="but10" class="btn btn-outline-danger em2"><i class="fa fa-check"></i></button>
 		  	</fieldset>		
-		    <span id="r2" style="visibility:hidden"><br><h1 style="text-align:center;color:#2e9f64"><i class="fabig fa-book"></i><br><br><br>Niveau complété!<br><br><br><img src="assets/img/thumbup.png">
+		    <span id="r2" style="visibility:hidden"><br><h1 style="text-align:center;color:#2e9f64"><!--<i class="fabig fa-road"></i>-->🌐<br><br><br>Niveau complété!<br><br><br><img src="assets/img/thumbup.png">
+			    <h4 class="center-align">You scored <span id="compare2"> </span> average maturity for this category.</h4><br>				
 				<button type="button" class="center btn btn-danger btn-lg btn-round hid" onclick="document.getElementById('td3').classList.remove('lock');document.getElementById('td3').classList.add('unlock');document.getElementById('but2').style='visibility:hidden';document.getElementById('but3').style='visibility:true';document.getElementById('point2').style='visibility:true';document.getElementById('r2').style='display:none';window.location='#game'">See your score <i class="fa fa-play"></i></button></h1>
 		    </span>
         </div>
@@ -239,40 +251,41 @@
         <div id="content3" class="content-3">
         <!--<h1>Mise en œuvre et organisation opérationnelle</h1>-->
       		<fieldset class="odd" id="q13">
-				<h2 class="fromleft">Constitution d'une équipe pluridisciplinaire pour mener des projets d'éco-conception  (marketing, design, bureau d'étude, production, vente etc.)</h2>
+				<h2 class="fromleft"><!--<i class="fa fa-cogs"></i>-->⚙&nbsp;&nbsp;&nbsp;&nbsp;Constitution d'une équipe pluridisciplinaire pour mener des projets d'éco-conception  (marketing, design, bureau d'étude, production, vente etc.)</h2>
 		  <input required type="radio" id="q13a" class="form-check-input radioin" name="entry.1655300764" value="1" onchange="categoryScore(3,1,1);document.getElementById('q13').style='display:none';document.getElementById('q14').style='display:block';document.getElementById('td3').classList.remove('unlock');document.getElementById('td3').classList.add('star1');">
-					<label for="q13a"><h3 class="framedtight bg1">Aucune équipe pluridisciplinaire n'est constituée.</h3></label>
+					<label for="q13a"><h3 class="framedtight bg1 bgcat38">Aucune équipe pluridisciplinaire n'est constituée.</h3></label>
 		  <input required type="radio" id="q13b" class="form-check-input radioin" name="entry.1655300764" value="2" onchange="categoryScore(3,1,2);document.getElementById('q13').style='display:none';document.getElementById('q14').style='display:block';document.getElementById('td3').classList.remove('unlock');document.getElementById('td3').classList.add('star1');">
-					<label for="q13b"><h3 class="framedtight bg2">L'équipe de conception et/ou R&D consulte le responsable environnement pour prendre en compte certains enjeux environnementaux, souvent sous contrainte réglementaire.</h3></label>
+					<label for="q13b"><h3 class="framedtight bg2 bgcat39">L'équipe de conception et/ou R&D consulte le responsable environnement pour prendre en compte certains enjeux environnementaux, souvent sous contrainte réglementaire.</h3></label>
 		  <input required type="radio" id="q13c" class="form-check-input radioin" name="entry.1655300764" value="3" onchange="categoryScore(3,1,3);document.getElementById('q13').style='display:none';document.getElementById('q14').style='display:block';document.getElementById('td3').classList.remove('unlock');document.getElementById('td3').classList.add('star1');">
-					<label for="q13c"><h3 class="framedtight bg3">Une équipe projet est formée ponctuellement pour répondre aux enjeux environnementaux tout au long du cycle de vie des produits/services et ainsi mener une démarche d'éco-conception.</h3></label>
+					<label for="q13c"><h3 class="framedtight bg3 bgcat3a">Une équipe projet est formée ponctuellement pour répondre aux enjeux environnementaux tout au long du cycle de vie des produits/services et ainsi mener une démarche d'éco-conception.</h3></label>
 		  <input required type="radio" id="q13d" class="form-check-input radioin" name="entry.1655300764" value="4" onchange="categoryScore(3,1,4);document.getElementById('q13').style='display:none';document.getElementById('q14').style='display:block';document.getElementById('td3').classList.remove('unlock');document.getElementById('td3').classList.add('star1');">
-					<label for="q13d"><h3 class="framedtight bg4">L'organisation en équipe projet est systématique et inscrite dans les procédures et méthodes de conception, intégrant ainsi le management du cycle de vie et des enjeux environnementaux.</h3></label>
+					<label for="q13d"><h3 class="framedtight bg4 bgcat3">L'organisation en équipe projet est systématique et inscrite dans les procédures et méthodes de conception, intégrant ainsi le management du cycle de vie et des enjeux environnementaux.</h3></label>
       		 </fieldset>
 			 <fieldset class="even hid" id="q14">
-				<h2 class="fromleft">Intégration des pratiques et méthodes d'éco-conception en vue de l'économie circulaire dans le développement des produits et services</h2>
+				<h2 class="fromleft"><!--<i class="fa fa-cogs"></i>-->⚙&nbsp;&nbsp;&nbsp;&nbsp;Intégration des pratiques et méthodes d'éco-conception en vue de l'économie circulaire dans le développement des produits et services</h2>
 		  <input required type="radio" id="q14a" class="form-check-input radioin" name="entry.279307128" value="1"  onchange="categoryScore(3,2,1);document.getElementById('q14').style='display:none';document.getElementById('q15').style='display:block';document.getElementById('td3').classList.remove('star1');document.getElementById('td3').classList.add('star2');">
-					<label for="q14a"><h3 class="framedtight bg1">Aucune méthode ni pratique d'éco-conception n'est intégrée dans le développement des produits OU L'éco-conception peut être mise en oeuvre occasionnellement, sans méthode construite et reproductible".</h3></label>
+					<label for="q14a"><h3 class="framedtight bg1 bgcat38">Aucune méthode ni pratique d'éco-conception n'est intégrée dans le développement des produits OU L'éco-conception peut être mise en oeuvre occasionnellement, sans méthode construite et reproductible".</h3></label>
 		  <input required type="radio" id="q14b" class="form-check-input radioin" name="entry.279307128" value="2" onchange="categoryScore(3,2,2);document.getElementById('q14').style='display:none';document.getElementById('q15').style='display:block';document.getElementById('td3').classList.remove('star1');document.getElementById('td3').classList.add('star2');">
-					<label for="q14b"><h3 class="framedtight bg2">Une démarche d'éco-conception est mise en oeuvre pour répondre à une demande (client, médiatique...) avec des outils type approche matricielle, sans nécessairement d'indicateurs de mesure.</h3></label>
+					<label for="q14b"><h3 class="framedtight bg2 bgcat39">Une démarche d'éco-conception est mise en oeuvre pour répondre à une demande (client, médiatique...) avec des outils type approche matricielle, sans nécessairement d'indicateurs de mesure.</h3></label>
 		  <input required type="radio" id="q14c" class="form-check-input radioin" name="entry.279307128" value="3" onchange="categoryScore(3,2,3);document.getElementById('q14').style='display:none';document.getElementById('q15').style='display:block';document.getElementById('td3').classList.remove('star1');document.getElementById('td3').classList.add('star2');">
-					<label for="q14c"><h3 class="framedtight bg3">Les méthodes d'éco-conception utilisées privilégient des approches simplifiées et quantifiées, dans une prise en compte complète du cycle de vie.</h3></label>
+					<label for="q14c"><h3 class="framedtight bg3 bgcat3a">Les méthodes d'éco-conception utilisées privilégient des approches simplifiées et quantifiées, dans une prise en compte complète du cycle de vie.</h3></label>
 		  <input required type="radio" id="q14d" class="form-check-input radioin" name="entry.279307128" value="4" onchange="categoryScore(3,2,4);document.getElementById('q14').style='display:none';document.getElementById('q15').style='display:block';document.getElementById('td3').classList.remove('star1');document.getElementById('td3').classList.add('star2');">
-					<label for="q14d"><h3 class="framedtight bg4">Les méthodes et outils d'éco-conception sont intégrés dans les processus de développement sous diverses formes telles que règles métier, check-list ou guide de bonnes pratiques. Des bases de données permettent de capitaliser sur les connaissances acquises et de démultiplier les démarches pour une mise en oeuvre plus efficace.</h3></label>
+					<label for="q14d"><h3 class="framedtight bg4 bgcat3">Les méthodes et outils d'éco-conception sont intégrés dans les processus de développement sous diverses formes telles que règles métier, check-list ou guide de bonnes pratiques. Des bases de données permettent de capitaliser sur les connaissances acquises et de démultiplier les démarches pour une mise en oeuvre plus efficace.</h3></label>
       		 </fieldset>
   		  	 <fieldset class="three hid" id="q15">
-  				<h2 class="fromleft">Définition et suivi des indicateurs de performance en éco-conception</h2>
-		  	  	<input required type="radio" id="q15a" class="form-check-input radioin" name="entry.1449748254" value="1" onchange="categoryScore(3,3,1);document.getElementById('q15').style='display:none';document.getElementById('r3').style='display:block';document.getElementById('td3').classList.remove('star2');document.getElementById('td3').classList.add('star3');">
-					<label for="q15a"><h3 class="framedtight bg1">Des indicateurs mesurant la performance environnementale de démarches d'éco-conception n'ont pas été identifiés précisément. D'éventuels indicateurs génériques peuvent exister,  s'apparentant à des stratégies/objectifs évasifs (ex : j'utilise du bois).</h3></label>
-		  		<input required type="radio" id="q15b" class="form-check-input radioin" name="entry.1449748254" value="2" onchange="categoryScore(3,3,2);document.getElementById('q15').style='display:none';document.getElementById('r3').style='display:block';document.getElementById('td3').classList.remove('star2');document.getElementById('td3').classList.add('star3');">
-					<label for="q15b"><h3 class="framedtight bg2">Des indicateurs sont identifiés mais restent assez vagues, les degrés de performance atteints sont souvent chiffrés en pourcentage ou en quantité de flux (ex : un moteur utilisant x litres en moins) sans comparaison validée.</h3></label>
-		  		<input required type="radio" id="q15c" class="form-check-input radioin" name="entry.1449748254" value="3" onchange="categoryScore(3,3,3);document.getElementById('q15').style='display:none';document.getElementById('r3').style='display:block';document.getElementById('td3').classList.remove('star2');document.getElementById('td3').classList.add('star3');">
-					<label for="q15c"><h3 class="framedtight bg3">Des indicateurs appropriés sont identifiés et comparent les résultats obtenus dans une démarche d'éco-conception avec une situation de référence. Ils sont basés sur une vision globale des flux, parfois convertis en indicateurs d'impacts issu de logiciel d'ACV, simplifié ou non.</h3></label>
-		  		<input required type="radio" id="q15d" class="form-check-input radioin" name="entry.1449748254" value="4" onchange="categoryScore(3,3,4);document.getElementById('q15').style='display:none';document.getElementById('r3').style='display:block';document.getElementById('td3').classList.remove('star2');document.getElementById('td3').classList.add('star3');">
-					<label for="q15d"><h3 class="framedtight bg4">Les indicateurs identifiés sont similaires au niveau précédent mais la performance est évaluée de manière plus approfondie avec des indicateurs détaillés, précis, nombreux. D'autres indicateurs montrent la capitalisation sur la démarche d'éco-conception afin de la démultiplier sur d'autres produits/services.</h3></label>
+  				<h2 class="fromleft"><!--<i class="fa fa-cogs"></i>-->⚙&nbsp;&nbsp;&nbsp;&nbsp;Définition et suivi des indicateurs de performance en éco-conception</h2>
+		  	  	<input required type="radio" id="q15a" class="form-check-input radioin" name="entry.1449748254" value="1" onchange="categoryScore(3,3,1);document.getElementById('q15').style='display:none';document.getElementById('r3').style='display:block';document.getElementById('td3').classList.remove('star2');document.getElementById('td3').classList.add('star3'); parseFloat(document.getElementById('cat3').innerHTML) > parseFloat(document.getElementById('gavg3').innerText) ? document.getElementById('compare3').innerText = 'above' : document.getElementById('compare3').innerText='below';">
+					<label for="q15a"><h3 class="framedtight bg1 bgcat38">Des indicateurs mesurant la performance environnementale de démarches d'éco-conception n'ont pas été identifiés précisément. D'éventuels indicateurs génériques peuvent exister,  s'apparentant à des stratégies/objectifs évasifs (ex : j'utilise du bois).</h3></label>
+		  		<input required type="radio" id="q15b" class="form-check-input radioin" name="entry.1449748254" value="2" onchange="categoryScore(3,3,2);document.getElementById('q15').style='display:none';document.getElementById('r3').style='display:block';document.getElementById('td3').classList.remove('star2');document.getElementById('td3').classList.add('star3'); parseFloat(document.getElementById('cat3').innerHTML) > parseFloat(document.getElementById('gavg3').innerText) ? document.getElementById('compare3').innerText = 'above' : document.getElementById('compare3').innerText='below';"">
+					<label for="q15b"><h3 class="framedtight bg2 bgcat39">Des indicateurs sont identifiés mais restent assez vagues, les degrés de performance atteints sont souvent chiffrés en pourcentage ou en quantité de flux (ex : un moteur utilisant x litres en moins) sans comparaison validée.</h3></label>
+		  		<input required type="radio" id="q15c" class="form-check-input radioin" name="entry.1449748254" value="3" onchange="categoryScore(3,3,3);document.getElementById('q15').style='display:none';document.getElementById('r3').style='display:block';document.getElementById('td3').classList.remove('star2');document.getElementById('td3').classList.add('star3'); parseFloat(document.getElementById('cat3').innerHTML) > parseFloat(document.getElementById('gavg3').innerText) ? document.getElementById('compare3').innerText = 'above' : document.getElementById('compare3').innerText='below';"">
+					<label for="q15c"><h3 class="framedtight bg3 bgcat3a">Des indicateurs appropriés sont identifiés et comparent les résultats obtenus dans une démarche d'éco-conception avec une situation de référence. Ils sont basés sur une vision globale des flux, parfois convertis en indicateurs d'impacts issu de logiciel d'ACV, simplifié ou non.</h3></label>
+		  		<input required type="radio" id="q15d" class="form-check-input radioin" name="entry.1449748254" value="4" onchange="categoryScore(3,3,4);document.getElementById('q15').style='display:none';document.getElementById('r3').style='display:block';document.getElementById('td3').classList.remove('star2');document.getElementById('td3').classList.add('star3'); parseFloat(document.getElementById('cat3').innerHTML) > parseFloat(document.getElementById('gavg3').innerText) ? document.getElementById('compare3').innerText = 'above' : document.getElementById('compare3').innerText='below';"">
+					<label for="q15d"><h3 class="framedtight bg4 bgcat3">Les indicateurs identifiés sont similaires au niveau précédent mais la performance est évaluée de manière plus approfondie avec des indicateurs détaillés, précis, nombreux. D'autres indicateurs montrent la capitalisation sur la démarche d'éco-conception afin de la démultiplier sur d'autres produits/services.</h3></label>
 	  				<button id="but11" class="btn btn-outline-danger em2"><i class="fa fa-check"></i></button>
 		  	</fieldset>		
-		    <span id="r3" style="visibility:hidden"><br><h1 style="text-align:center;color:#2e9f64"><i class="fabig fa-book"></i><br><br><br>Niveau complété!<br><br><br><img src="assets/img/thumbup.png">
+		    <span id="r3" style="visibility:hidden"><br><h1 style="text-align:center;color:#2e9f64"><!--<i class="fabig fa-cogs"></i>-->⚙<br><br><br>Niveau complété!<br><br><br><img src="assets/img/thumbup.png">
+			    <h4 class="center-align">You scored <span id="compare3"> </span> average maturity for this category.</h4><br>
 				<button type="button" class="center btn btn-danger btn-lg btn-round hid" onclick="document.getElementById('td4').classList.remove('lock');document.getElementById('td4').classList.add('unlock');document.getElementById('but3').style='visibility:hidden';document.getElementById('but4').style='visibility:true';document.getElementById('point3').style='visibility:true';document.getElementById('r3').style='display:none';window.location='#game'">See your score <i class="fa fa-play"></i></button></h1>
 		    </span>
         </div>
@@ -280,40 +293,41 @@
         <div id="content4" class="content-4">
 			<!--<h1>Performance atteinte ou attendue</h1>-->
       		<fieldset class="odd" id="q16">
-				<h2 class="fromleft">Sensibilisation et formation à l'éco-conception et l'économie circulaire pour des équipes compétentes</h2>
+				<h2 class="fromleft"><!--<i class="fa fa-signal"></i>-->📈&nbsp;&nbsp;&nbsp;&nbsp;Sensibilisation et formation à l'éco-conception et l'économie circulaire pour des équipes compétentes</h2>
 		  		<input required type="radio" id="q16a" class="form-check-input radioin" name="entry.2075187997" value="1" onchange="categoryScore(4,1,1);document.getElementById('q16').style='display:none';document.getElementById('q17').style='display:block';document.getElementById('td4').classList.remove('unlock');document.getElementById('td4').classList.add('star1');">
-					<label for="q16a"><h3 class="framedtight bg1">1. Pas de compétences internes.</h3></label>
+					<label for="q16a"><h3 class="framedtight bg1 bgcat48">1. Pas de compétences internes.</h3></label>
 		  		<input required type="radio" id="q16b" class="form-check-input radioin" name="entry.2075187997" value="2"onchange="categoryScore(4,1,2);document.getElementById('q16').style='display:none';document.getElementById('q17').style='display:block';document.getElementById('td4').classList.remove('unlock');document.getElementById('td4').classList.add('star1');">
-					<label for="q16b"><h3 class="framedtight bg2">2. L'entreprise fait appel ponctuellement à des ressources exterieures de type conseil et/ou une personne ressource a reçu une sensibilisation ou une courte formation.</h3></label>
+					<label for="q16b"><h3 class="framedtight bg2 bgcat49">2. L'entreprise fait appel ponctuellement à des ressources exterieures de type conseil et/ou une personne ressource a reçu une sensibilisation ou une courte formation.</h3></label>
 		  		<input required type="radio" id="q16c" class="form-check-input radioin" name="entry.2075187997" value="3"onchange="categoryScore(4,1,3);document.getElementById('q16').style='display:none';document.getElementById('q17').style='display:block';document.getElementById('td4').classList.remove('unlock');document.getElementById('td4').classList.add('star1');">
-					<label for="q16c"><h3 class="framedtight bg3">3. Une personne ressource dans l'entreprise a les connaissances et est en capacité d'animer les projets d'éco-conception.</h3></label>
+					<label for="q16c"><h3 class="framedtight bg3 bgcat4a">3. Une personne ressource dans l'entreprise a les connaissances et est en capacité d'animer les projets d'éco-conception.</h3></label>
 		  		<input required type="radio" id="q16d" class="form-check-input radioin" name="entry.2075187997" value="4"onchange="categoryScore(4,1,4);document.getElementById('q16').style='display:none';document.getElementById('q17').style='display:block';document.getElementById('td4').classList.remove('unlock');document.getElementById('td4').classList.add('star1');">
-					<label for="q16d"><h3 class="framedtight bg4">4. L'ensemble de l'équipe projet en lien avec le développement de produit ou service sont fomés et outillés et mettent en oeuvre l'éco-conception.</h3></label>
+					<label for="q16d"><h3 class="framedtight bg4 bgcat4">4. L'ensemble de l'équipe projet en lien avec le développement de produit ou service sont fomés et outillés et mettent en oeuvre l'éco-conception.</h3></label>
       		 </fieldset>
 			 <fieldset class="even hid" id="q17">
-				<h2 class="fromleft">Developpement de produits ou services éco-conçus</h2>
+				<h2 class="fromleft"><!--<i class="fa fa-signal"></i>-->📈&nbsp;&nbsp;&nbsp;&nbsp;Developpement de produits ou services éco-conçus</h2>
 		  	  	<input required type="radio" id="q17a" class="form-check-input radioin" name="entry.275599064" value="1"  onchange="categoryScore(4,2,1);document.getElementById('q17').style='display:none';document.getElementById('q18').style='display:block';document.getElementById('td4').classList.remove('star1');document.getElementById('td4').classList.add('star2');">
-					<label for="q17a"><h3 class="framedtight bg1">1. Aucun produit n'a fait l'objet d'une démarche d'éco-conception.</h3></label>
+					<label for="q17a"><h3 class="framedtight bg1 bgcat48">1. Aucun produit n'a fait l'objet d'une démarche d'éco-conception.</h3></label>
 		  		<input required type="radio" id="q17b" class="form-check-input radioin" name="entry.275599064" value="2" onchange="categoryScore(4,2,2);document.getElementById('q17').style='display:none';document.getElementById('q18').style='display:block';document.getElementById('td4').classList.remove('star1');document.getElementById('td4').classList.add('star2');">
-					<label for="q17b"><h3 class="framedtight bg2">2. Un ou plusieurs produits ont été éco-conçus, en réaction à des demandes ou des enjeux subis par l'entreprise, sans capitalisation pour d'autres projets.</h3></label>
+					<label for="q17b"><h3 class="framedtight bg2 bgcat49">2. Un ou plusieurs produits ont été éco-conçus, en réaction à des demandes ou des enjeux subis par l'entreprise, sans capitalisation pour d'autres projets.</h3></label>
 		  		<input required type="radio" id="q17c" class="form-check-input radioin" name="entry.275599064" value="3" onchange="categoryScore(4,2,3);document.getElementById('q17').style='display:none';document.getElementById('q18').style='display:block';document.getElementById('td4').classList.remove('star1');document.getElementById('td4').classList.add('star2');">
-					<label for="q17c"><h3 class="framedtight bg3">3. Les outils et méthodes d'éco-conception sont intégrés dans le processus de développement de produit ou service de l'entreprise.</h3></label>
+					<label for="q17c"><h3 class="framedtight bg3 bgcat4a">3. Les outils et méthodes d'éco-conception sont intégrés dans le processus de développement de produit ou service de l'entreprise.</h3></label>
 		  		<input required type="radio" id="q17d" class="form-check-input radioin" name="entry.275599064" value="4" onchange="categoryScore(4,2,4);document.getElementById('q17').style='display:none';document.getElementById('q18').style='display:block';document.getElementById('td4').classList.remove('star1');document.getElementById('td4').classList.add('star2');">
-					<label for="q17d"><h3 class="framedtight bg4">4. Tous les produits et services sont éco-conçus selon la vision et la stratégie choisie et portée par l'entreprise.</h3></label>
+					<label for="q17d"><h3 class="framedtight bg4 bgcat4">4. Tous les produits et services sont éco-conçus selon la vision et la stratégie choisie et portée par l'entreprise.</h3></label>
       		 </fieldset>
   		  	 <fieldset class="three hid" id="q18">
-  				<h2 class="fromleft">Communication externe sur la performance environnementale de ses produits ou services</h2>
-		  	  	<input required type="radio" id="q18a" class="form-check-input radioin" name="entry.1580074078" value="1" onchange="categoryScore(4,3,1);document.getElementById('q18').style='display:none';document.getElementById('r4').style='display:block';document.getElementById('td4').classList.remove('star2');document.getElementById('td4').classList.add('star3');">
-					<label for="q18a"><h3 class="framedtight bg1">1. La performance environnementale des produits ou services ne fait l'objet d'aucune communication externe par l'entreprise.</h3></label>
-		  		<input required type="radio" id="q18b" class="form-check-input radioin" name="entry.1580074078" value="2" onchange="categoryScore(4,3,2);document.getElementById('q18').style='display:none';document.getElementById('r4').style='display:block';document.getElementById('td4').classList.remove('star2');document.getElementById('td4').classList.add('star3');">
-					<label for="q18b"><h3 class="framedtight bg2">2. Quelques allégations sur la performance environnementale des produits ou services sont diffusées, sans formalisation ni méthode.</h3></label>
-		 		<input required type="radio" id="q18c" class="form-check-input radioin" name="entry.1580074078" value="3" onchange="categoryScore(4,3,3);document.getElementById('q18').style='display:none';document.getElementById('r4').style='display:block';document.getElementById('td4').classList.remove('star2');document.getElementById('td4').classList.add('star3');">
-					<label for="q18c"><h3 class="framedtight bg3">3. L'entreprise a établi un processus / une méthode de communication environnementale sur ces produits et services à destination essentiellement des clients et des fournisseurs.</h3></label>
-				<input required type="radio" id="q18d" class="form-check-input radioin" name="entry.1580074078" value="4" onchange="categoryScore(4,3,4);document.getElementById('q18').style='display:none';document.getElementById('r4').style='display:block';document.getElementById('td4').classList.remove('star2');document.getElementById('td4').classList.add('star3');">
-					<label for="q18d"><h3 class="framedtight bg4">4. La communication externe sur la performance environnementale des produits et services de l'entreprise est établie, ciblant de toutes les parties prenantes au regard du cycle de vie (cllients/utilisateurs, fournisseurs, ONG, acteurs de la fin de vie, etc.).</h3></label>
+  				<h2 class="fromleft"><!--<i class="fa fa-signal"></i>-->📈&nbsp;&nbsp;&nbsp;&nbsp;Communication externe sur la performance environnementale de ses produits ou services</h2>
+		  	  	<input required type="radio" id="q18a" class="form-check-input radioin" name="entry.1580074078" value="1" onchange="categoryScore(4,3,1);document.getElementById('q18').style='display:none';document.getElementById('r4').style='display:block';document.getElementById('td4').classList.remove('star2');document.getElementById('td4').classList.add('star3'); parseFloat(document.getElementById('cat4').innerHTML) > parseFloat(document.getElementById('gavg4').innerText) ? document.getElementById('compare4').innerText = 'above' : document.getElementById('compare4').innerText='below';">
+					<label for="q18a"><h3 class="framedtight bg1 bgcat48">1. La performance environnementale des produits ou services ne fait l'objet d'aucune communication externe par l'entreprise.</h3></label>
+		  		<input required type="radio" id="q18b" class="form-check-input radioin" name="entry.1580074078" value="2" onchange="categoryScore(4,3,2);document.getElementById('q18').style='display:none';document.getElementById('r4').style='display:block';document.getElementById('td4').classList.remove('star2');document.getElementById('td4').classList.add('star3'); parseFloat(document.getElementById('cat4').innerHTML) > parseFloat(document.getElementById('gavg4').innerText) ? document.getElementById('compare4').innerText = 'above' : document.getElementById('compare4').innerText='below';">
+					<label for="q18b"><h3 class="framedtight bg2 bgcat49">2. Quelques allégations sur la performance environnementale des produits ou services sont diffusées, sans formalisation ni méthode.</h3></label>
+		 		<input required type="radio" id="q18c" class="form-check-input radioin" name="entry.1580074078" value="3" onchange="categoryScore(4,3,3);document.getElementById('q18').style='display:none';document.getElementById('r4').style='display:block';document.getElementById('td4').classList.remove('star2');document.getElementById('td4').classList.add('star3'); parseFloat(document.getElementById('cat4').innerHTML) > parseFloat(document.getElementById('gavg4').innerText) ? document.getElementById('compare4').innerText = 'above' : document.getElementById('compare4').innerText='below';">
+					<label for="q18c"><h3 class="framedtight bg3 bgcat4a">3. L'entreprise a établi un processus / une méthode de communication environnementale sur ces produits et services à destination essentiellement des clients et des fournisseurs.</h3></label>
+				<input required type="radio" id="q18d" class="form-check-input radioin" name="entry.1580074078" value="4" onchange="categoryScore(4,3,4);document.getElementById('q18').style='display:none';document.getElementById('r4').style='display:block';document.getElementById('td4').classList.remove('star2');document.getElementById('td4').classList.add('star3'); parseFloat(document.getElementById('cat4').innerHTML) > parseFloat(document.getElementById('gavg4').innerText) ? document.getElementById('compare4').innerText = 'above' : document.getElementById('compare4').innerText='below';">
+					<label for="q18d"><h3 class="framedtight bg4 bgcat4">4. La communication externe sur la performance environnementale des produits et services de l'entreprise est établie, ciblant de toutes les parties prenantes au regard du cycle de vie (cllients/utilisateurs, fournisseurs, ONG, acteurs de la fin de vie, etc.).</h3></label>
 	  				<button id="but12" class="btn btn-outline-danger em2"><i class="fa fa-check"></i></button>
 		  	</fieldset>		
-		    <span id="r4" style="visibility:hidden"><br><h1 style="text-align:center;color:#2e9f64"><i class="fabig fa-book"></i><br><br><br>Niveau complété!<br><br><br><img src="assets/img/thumbup.png">
+		    <span id="r4" style="visibility:hidden"><br><h1 style="text-align:center;color:#2e9f64"><!--<i class="fabig fa-signal"></i>-->📈<br><br><br>Niveau complété!<br><br><br><img src="assets/img/thumbup.png">
+			    <h4 class="center-align">You scored <span id="compare4"> </span> average maturity for this category.</h4><br>
 				<button type="button" class="center btn btn-danger btn-lg btn-round hid" onclick="document.getElementById('but4').style='visibility:hidden';document.getElementById('point4').style='visibility:true';document.getElementById('envoyer').style='visibility:true';document.getElementById('r4').style='display:none';document.getElementById('questions').style='display:none';window.location='#game'">See your score <i class="fa fa-play"></i></button></h1>
 		    </span>
 		</div>
@@ -342,6 +356,28 @@
 				</section> -->				
 
 </body>
+
+<script type="text/javascript"> 
+	$(document).ready(function(){ /* Populate data cells */
+		var mySpreadsheet = 'https://docs.google.com/spreadsheets/d/1KcqLsE8S6b4ni67ZxbSQv8lj3sgeQUoVO3UhSLQZ6RQ/edit#gid=0'; 
+		$('#gavg1').sheetrock({
+			url: mySpreadsheet,
+			query: "select T limit 1"
+		});
+		$('#gavg2').sheetrock({
+			url: mySpreadsheet,
+			query: "select U limit 1"
+		});
+		$('#gavg3').sheetrock({
+			url: mySpreadsheet,
+			query: "select V limit 1"
+		});
+		$('#gavg4').sheetrock({
+			url: mySpreadsheet,
+			query: "select W limit 1"
+		});
+	});	
+</script>
 
 <script src="assets/js/jquery-ui-1.12.1.custom.min.js" type="text/javascript"></script>
 <script src="assets/js/popper.js" type="text/javascript"></script>
