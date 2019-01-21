@@ -1,3 +1,19 @@
+function movebar(n,percent) {
+  var bar = 'bar' + n.toString();	
+  var elem = document.getElementById(bar);   
+  var width = 1;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width >= percent) {
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+    }
+  }
+}
+
+
 $({ Counter: 0 }).animate({
   Counter: $('.Single').text()
 }, {
