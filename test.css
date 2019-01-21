@@ -63,9 +63,8 @@
 	.gametable td { width:40%; }
 	.gametable table { border: 5em;}
 	
-	.maturityicons {display:none!important;}
-	/* .maturityicons { position: relative; bottom: 2rem; }
-	.maturityicons td { width:25%!important; } */
+	.maturityicons { position: relative; bottom: 2rem; }
+	.maturityicons td { width:25%!important; padding: 0 1.2em 0 0;}
 		
 	.chart {
 	    position: relative;
