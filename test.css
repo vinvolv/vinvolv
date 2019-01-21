@@ -64,7 +64,8 @@
 	.gametable table { border: 5em;}
 	
 	.maturityicons { position: relative; bottom: 2rem; }
-	
+	.maturityicons td {width:25%!important;}
+		
 	.chart {
 	    position: relative;
 	    padding-bottom:85%; /*56.25%;  16:9 */
