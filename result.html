@@ -38,17 +38,21 @@
 			
 				<span class="resultitle"><h1>BENCHMARK</h1></span>
 				<br><br>
-<!-- <div class="chart" id="benchmark-all">	<iframe width="1007" height="926" seamless frameborder="0" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQVMUJdvaMJpDslFF1LT2IX77A9fILAvJ0KdmYzjGXbaqTunbXurA2ACeeZpjJ_sUAbNpM1V0KYNTEd/pubchart?oid=1006635721&amp;format=interactive"></iframe> </div> -->
 				
-				<button type="button" id="show-industry" class="leftcenter btn btn-danger btn-lg btn-round hid" onclick="document.getElementById('benchmark-industry').classList.remove('hid');">Compare to Your Industry's Average<i class="fa fa-play"></i></button>
+				<button type="button" id="show-all" class="onlymoz leftcenter btn btn-danger btn-lg btn-round" onclick="document.getElementById('benchmark-all').classList.remove('hid');">Show benchmarks<i class="fa fa-play"></i></button>
+				
+<div class="chart hid" id="benchmark-all">	<iframe width="1007" height="926" seamless frameborder="0" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQVMUJdvaMJpDslFF1LT2IX77A9fILAvJ0KdmYzjGXbaqTunbXurA2ACeeZpjJ_sUAbNpM1V0KYNTEd/pubchart?oid=1006635721&amp;format=interactive"></iframe> <br><br> </div> 
+				
+				
+				<button type="button" id="show-industry" class="mozhide leftcenter btn btn-danger btn-lg btn-round" onclick="document.getElementById('benchmark-industry').classList.remove('hid');">Compare to Your Industry's Average<i class="fa fa-play"></i></button>
 				
 				<div class="chart hid" id="benchmark-industry">	<iframe width="1007" height="926" seamless frameborder="0" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQVMUJdvaMJpDslFF1LT2IX77A9fILAvJ0KdmYzjGXbaqTunbXurA2ACeeZpjJ_sUAbNpM1V0KYNTEd/pubchart?oid=879974614&amp;format=interactive"></iframe> </div>
 				<br><br>
-				<button type="button" id="show-country" class="leftcenter btn btn-danger btn-lg btn-round hid" onclick="document.getElementById('benchmark-country').classList.remove('hid');">Compare to Your Country's Average<i class="fa fa-play"></i></button>
+				<button type="button" id="show-country" class="mozhide leftcenter btn btn-danger btn-lg btn-round" onclick="document.getElementById('benchmark-country').classList.remove('hid');">Compare to Your Country's Average<i class="fa fa-play"></i></button>
 				
 				<div class="chart hid" id="benchmark-country"><iframe width="1007" height="926" seamless frameborder="0" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQVMUJdvaMJpDslFF1LT2IX77A9fILAvJ0KdmYzjGXbaqTunbXurA2ACeeZpjJ_sUAbNpM1V0KYNTEd/pubchart?oid=2069911735&amp;format=interactive"></iframe> </div>
 				<br><br>
-				<button type="button" id="show-global" class="leftcenter btn btn-danger btn-lg btn-round hid" onclick="document.getElementById('benchmark-global').classList.remove('hid');">Compare to Global Average<i class="fa fa-play"></i></button>
+				<button type="button" id="show-global" class="mozhide leftcenter btn btn-danger btn-lg btn-round" onclick="document.getElementById('benchmark-global').classList.remove('hid');">Compare to Global Average<i class="fa fa-play"></i></button>
 				
 				<div class="chart hid" id="benchmark-global"> <iframe width="1007" height="926" seamless frameborder="0" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQVMUJdvaMJpDslFF1LT2IX77A9fILAvJ0KdmYzjGXbaqTunbXurA2ACeeZpjJ_sUAbNpM1V0KYNTEd/pubchart?oid=1893647412&amp;format=interactive"></iframe> </div>
 				
@@ -56,7 +60,7 @@
 					<iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQVMUJdvaMJpDslFF1LT2IX77A9fILAvJ0KdmYzjGXbaqTunbXurA2ACeeZpjJ_sUAbNpM1V0KYNTEd/pubchart?oid=1811611573&amp;format=interactive"></iframe>
 				</div>-->
 						
-						<div style="margin:10%">
+						<div style="margin:5%">
 							<span class="label label-danger" style="margin:10%">
 								<h1 style="text-align:center">Ecodesign Maturity Level: <b><span id="avgall"></span></b></h1>
 								<div style="visibility:hidden;"><span id="a1"></span><span id="a2"></span><span id="a3"></span><span id="a4"></span><span id="a5"></span><span id="a6"></span><span id="a7"></span><span id="a8"></span><span id="a9"></span><span id="a10"></span><span id="a11"></span><span id="a12"></span></div>
@@ -66,6 +70,11 @@
 								<h3 id="mat3" class="hid">La démarche d'éco-conception est intégrée dans les processus de l'entreprise, dans une vision à court terme de l'amélioration de la performance environnementale.<br><br><hr>Votre prochain niveau de maturité va être:<br><br>L'éco-conception est mise en œuvre afin d'améliorer la performance environnementale sur le long terme, et démultipliée globalement sur tous les secteurs d'activités.<br></h3>
 								<h3 id="mat4" class="hid">L'éco-conception est mise en œuvre afin d'améliorer la performance environnementale sur le long terme, et démultipliée globalement sur tous les secteurs d'activités.<br></h3>
 							</span>
+							
+							<div id="showfeedbackdiv">
+								<button id="showfeedback" type="button" class="btn btn-round center" onclick="$('#feedback').removeClass('hid');$('html, body').delay(50).animate({scrollTop: $('#feedback').offset().top }, 2000);$('#showfeedbackdiv').addClass('hid');">Next Steps<i class="fa fa-play"></i></button>
+								<br><br>
+							</div>
 							
 							<span class="hid">
 								<h2>Plan d'action</h2><br>
@@ -115,31 +124,39 @@
 											<h4 class="hid" id="p18d">La communication externe sur la performance environnementale des produits et services de l'entreprise est établie, ciblant de toutes les parties prenantes au regard du cycle de vie (cllients/utilisateurs, fournisseurs, ONG, acteurs de la fin de vie, etc.).</h4>
 							  </span>
 							</div>
-                                <button id="print" type="button" class="btn btn-round center" onclick="document.getElementById('show-industry').style='display:none';document.getElementById('show-country').style='display:none';document.getElementById('show-global').style='display:none';document.getElementById('print').style='display:none';window.print();$('#feedback').removeClass('hid');$('html, body').delay(50).animate({scrollTop: $('#feedback').offset().top }, 2000);"><i class="fa fa-print"></i>Print This Report</button>
+							
+							
+							<div id="feedback" class="hid">	
+								 <script type="text/javascript">var submitted=false;</script>
+								 <!--<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){window.location='thanks.html';}"></iframe>-->
+								 <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+								 <form action="https://docs.google.com/forms/d/e/1FAIpQLSeJcCeazZ3yA4TfJpIUolhKwSRMXJIlydS5HQSdvKz7iS78qw/formResponse?hl=fr" method="POST" id="mG61Hd" target="hidden_iframe" onsubmit="submitted=true;">
+								     <div class="row">
+										<ul>
+											<li id="f1" class="question">
+												<h2 class="shadow framed fromleft">How do you plan to get to the next level?</h2><br><input required type="textarea" class="form-control form-control-success inshadow fromright" placeholder="" name="entry.1989750116"  onchange="document.getElementById('but13').classList.remove('hid');">
+											</li>
+											<li id="f2" class="question">
+												<h2 class="shadow framed fromleft">Getting to the next level, what key challenges do you foresee?</h2><br><input required type="textarea" class="form-control form-control-success inshadow fromright" placeholder="" name="entry.679648668"  onchange="document.getElementById('envoyer2').classList.remove('hid');">
+											</li>	
+										</ul>
+										<div id="senddiv">
+											<button onclick="$('#printdiv').removeClass('hid');$('#senddiv').addClass('hid')" id="envoyer2" class="center btn btn-success btn-round button-submit glow"><h2>Send Answers</h2></button>
+										</div>
+									</div>
+								</form>
+							</div>
+							
+							<div class="hid" id="printdiv">
+                            	<button id="print" type="button" class="btn btn-round center" onclick="document.getElementById('show-industry').style='display:none';document.getElementById('show-country').style='display:none';document.getElementById('show-global').style='display:none';document.getElementById('print').style='display:none';window.print();"><i class="fa fa-print"></i>Print This Report</button>
 								<br><br>
 								<p></p>
+							</div>
 				</div>
 				
 		</div>
 	</div>	
 	
-<div id="feedback" class="hid">	
-	 <script type="text/javascript">var submitted=false;</script>
-	 <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){window.location='thanks.html';}"></iframe>
-	 <form action="https://docs.google.com/forms/d/e/1FAIpQLSeJcCeazZ3yA4TfJpIUolhKwSRMXJIlydS5HQSdvKz7iS78qw/formResponse?hl=fr" method="POST" id="mG61Hd" target="hidden_iframe" onsubmit="submitted=true;">
-	     <div class="row">
-			<ul>
-				<li id="f1" class="question">
-					<h2 class="shadow framed fromleft">How do you plan to get to the next level?</h2><br><input required type="textarea" class="form-control form-control-success inshadow fromright" placeholder="" name="entry.1989750116"  onchange="document.getElementById('but13').classList.remove('hid');">
-				</li>
-				<li id="f2" class="question">
-					<h2 class="shadow framed fromleft">Getting to the next level, what key challenges do you foresee?</h2><br><input required type="textarea" class="form-control form-control-success inshadow fromright" placeholder="" name="entry.679648668"  onchange="document.getElementById('envoyer2').classList.remove('hid');">
-				</li>	
-			</ul>
-			<button onclick="" id="envoyer2" class="center btn btn-success btn-round button-submit glow hid"><h2>Send Answers</h2></button>
-		</div>
-	</form>
-</div>
 			
     <footer class="footer">
         <div class="container">
@@ -147,8 +164,9 @@
                 <nav class="footer-nav">
                     <ul>
 						<li>Contact us for support with your action plan:</li>
-                        <li><a href="mailto:contact@eco-conception.fr">Contact Pôle</a></li>
-						<li><a href="mailto:contact@shaping-ea.com">Contact EA</a></li>
+						<li><a href="mailto:contact@myecodesignmaturity.eu">Contact us</a></li>
+                        <!--<li><a href="mailto:contact@eco-conception.fr">Contact Pôle</a></li>
+						<li><a href="mailto:contact@shaping-ea.com">Contact EA</a></li>-->
                     </ul>
                 </nav>
                 <div class="credits ml-auto">
