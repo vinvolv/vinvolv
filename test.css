@@ -50,7 +50,7 @@
 
 .resultitle h1 {
 	text-align:center;
-	color:black;
+	color:#545454a3;
 }
 
 @media screen and (min-width: 768px) {
@@ -62,6 +62,9 @@
 	
 	.gametable td {width:40%;}
 	.gametable table { border: 5em;}
+	
+	.maturityicons { position: relative; bottom: 2rem; }
+	
 	.chart {
 	    position: relative;
 	    padding-bottom:85%; /*56.25%;  16:9 */
@@ -117,12 +120,13 @@
 		height: 50%;
 		width:90%;
 	}
+	.maturityicons {display:none!important;}
 	/* .fromleft {font-size:1.5em;}
 	.framedtight {font-size:1em;} */
 	.turq2 {display:table-caption;}
 	.em2 { position:fixed!important; top:50%; right:0px!important;}
 	.em5 { position:fixed!important; top:50%!important; right:60px!important;}
-	.resultitle h1 { color:black;}
+	.resultitle h1 { color:#545454a3;}
 	.chart {
 	    position: relative;
 	    padding-bottom:250%;
@@ -538,6 +542,13 @@ table, th, td {
     /*width: 20rem;*/
     height: 10rem;    
 }
+
+.icons {
+	font: 100px / 110px Helvetica, Arial, Sans-serif;
+	text-align: center;
+	color: white;
+}
+
 /*
 .star1 {
     background-image: url("assets/img/star1.png");
@@ -603,6 +614,34 @@ table, th, td {
     background-position-y: top;
 }
 */
+
+.book {
+    background-image: url("assets/img/book.png");	
+	background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 10%;
+}
+
+.goal {
+    background-image: url("assets/img/goal.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 10%;
+}
+
+.wheel {
+    background-image: url("assets/img/wheel.png");	
+	background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 10%;
+}
+
+.dial {
+    background-image: url("assets/img/dial.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 10%;
+}
 
 /* -- Tabs --- */
 
@@ -751,3 +790,45 @@ table, th, td {
 table {
 	border-collapse: unset!important;
 }
+
+.onlymoz {display:none!important;}
+
+@-moz-document url-prefix() {
+
+	.onlymoz {display:block!important;}
+	.mozhide {display:none!important;}
+}
+
+#progress {
+  width: 100%;
+  background-color: #ddd;
+  background-image: linear-gradient(to right, #666, #999, #bbb, #eee);
+}
+
+#bar1, #bar2, #bar3, #bar4 {
+  width: 0%;
+  height: 30px;
+  background-color: #ffc107; /* #4CAF50 */
+}
+
+/*
+#point1, #point2, #point3, #point4 {
+	position: relative;
+	bottom: -2rem;
+}
+*/
+
+/*
+div#progress ul {
+    list-style-type:none;
+    height:30px;
+    text-align:center;
+    width: 100%;
+    display: table;   
+}
+
+div#progress ul li {        
+    margin-left:50px;
+    display: table-cell;  
+}
+*/
