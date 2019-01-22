@@ -6,29 +6,17 @@
     <link rel="icon" type="image/png" href="assets/img/favicon.ico">
     <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-
     <title>Ecodesign Maturity Meter</title>
-
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
-
-    <!-- CSS -->
 	<link href="test.css" rel="stylesheet" />
 	<link href="assets/css/demo.css" rel="stylesheet" />
-
-    <!-- Bootstrap core CSS     -->
 	<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
 	<link href="assets/css/paper-kit.css?v=2.1.0" rel="stylesheet"/>
-
-    <!--     Fonts and icons     -->
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,300,700' rel='stylesheet' type='text/css'>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
-    <!--<link href="assets/css/nucleo-icons.css" rel="stylesheet" />-->
-
-	<!--  Plugin to read sheet data -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sheetrock/1.1.4/dist/sheetrock.min.js"></script>
-	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sheetrock/1.1.4/dist/sheetrock.min.js"></script>	
 </head>
 
 <body>
@@ -44,45 +32,22 @@
             </div>
             <div class="collapse navbar-collapse" id="navbarToggler">
                 <ul class="navbar-nav ml-auto">
-                    <!--<li class="nav-item">
-                        <a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://twitter.com/" target="_blank">
-                            <i class="fa fa-twitter"></i>
-                            <p class="d-lg-none">Twitter</p>
-                        </a>
+                    <li class="nav-item">
+						<a class="nav-link" rel="tooltip" title="le mètre de maturité" data-placement="bottom" onclick="$('html, body').delay(100).animate({scrollTop: $('#why').offset().top }, 2000);">Pourquoi&nbsp;&nbsp;<i class="fa fa-question-circle"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/" target="_blank">
-                            <i class="fa fa-facebook-square"></i>
-                            <p class="d-lg-none">Facebook</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="https://www.instagram.com/" target="_blank">
-                            <i class="fa fa-instagram"></i>
-                            <p class="d-lg-none">Instagram</p>
-                        </a>
-                    </li>-->
-                    <li class="nav-item">
-						<a class="nav-link" rel="tooltip" title="le mètre de maturité" data-placement="bottom" onclick="$('html, body').delay(100).animate({scrollTop: $('#why').offset().top }, 2000);">Why&nbsp;<i class="fa fa-question-circle"></i></a>
-                    </li>
-                    <!--<li class="nav-item">
-						<a href="#you" class="nav-link">Your Compnany&nbsp;&nbsp;<i class="fa fa-users"></i></a>
-					</li>-->
-                    <li class="nav-item">
-						<!--<a href="#game" class="btn btn-danger btn-round">Enter the Game&nbsp;<i class="fa fa-gamepad"></i></a>-->
-						<button type="button" class="btn btn-danger btn-round" data-toggle="modal" data-target="#myModal">Enter the Game&nbsp;<i class="fa fa-gamepad"></i></button>
-                        <!--<a href="game.html" class="btn btn-danger btn-round">Enter the Game&nbsp;<i class="fa fa-gamepad"></i></a>-->
+						<button type="button" class="btn btn-danger btn-round" data-toggle="modal" data-target="#myModal">Entrez dans le jeu&nbsp;<i class="fa fa-gamepad"></i></button>
 					</li>
                     <li class="nav-item">
-                        <a class="nav-link" rel="tooltip" title="la méthode" data-placement="bottom" onclick="$('html, body').delay(100).animate({scrollTop: $('#about').offset().top }, 2000);">About&nbsp;&nbsp;<i class="fa fa-file-text-o"></i></a>
+                        <a class="nav-link" rel="tooltip" title="la méthode" data-placement="bottom" onclick="$('html, body').delay(100).animate({scrollTop: $('#about').offset().top }, 2000);">Sur&nbsp;&nbsp;<i class="fa fa-file-text-o"></i></a>
                     </li>					
                     <li class="nav-item">
-                        <a class="nav-link" rel="tooltip" title="à propos de l'équipe" data-placement="bottom" onclick="$('html, body').delay(100).animate({scrollTop: $('#team').offset().top }, 2000);">Team&nbsp;&nbsp;<i class="fa fa-themeisle"></i></a>
+                        <a class="nav-link" rel="tooltip" title="à propos de l'équipe" data-placement="bottom" onclick="$('html, body').delay(100).animate({scrollTop: $('#team').offset().top }, 2000);">Équipe&nbsp;&nbsp;<i class="fa fa-themeisle"></i></a>
                     </li>
                 </ul>
-                <!--<ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav navbar-right">
                     <a class="nav-link" href="en.html" id="language" title="EN" data-placement="bottom"><img src="assets/img/enfr.jpg" alt="EN" /></a>
-                </ul>-->
+                </ul>
             </div>
         </div>
     </nav>
@@ -97,15 +62,15 @@
                     </button>
                 </div>
                 <div class="modal-body" style="font-size:11px">Avant de répondre au questionnaire, veuillez prendre connaissance des informations suivantes:
-                    En participant à ce projet, vous ne courez pas de risques ou d’inconvénients particuliers et votre participation nous permettra de caractériser votre niveau d’intégration de la pensée en cycle de vie et de positionner votre activité d’éco-conception par rapport aux autres entreprises.<br><b>Nature de la participation</b> Votre participation consiste à répondre au questionnaire en ligne qui porte sur votre expérience en écoconception. Cette participation devrait prendre environ 10 minutes de votre temps.<br><b>Diffusion des résultats</b> Les résultats pourront être utilisés pour des publications à caractère scientifique, mais de manière anonymisée.<br><b>Droit de retrait</b> Votre participation est entièrement volontaire. Vous êtes libres de vous retirer en tout temps sur simple avis verbal, sans préjudice et sans devoir justifier votre décision. Si vous décidez de vous retirer de l’étude, vous pouvez communiquer avec les coordinateurs du projet aux adresses mail ci-dessous. En vous retirant de l’étude, les renseignements qui auront été recueillis au moment de votre retrait seront détruits.<br><b>Confidentialité</b> Les renseignements que vous nous transmettrez demeureront confidentiels. Aucune information permettant d’identifier une entreprise ne sera publiée. Les données compilées seront traitées de manière anonyme. À la fin de l’étude, les données à des fins statistiques seront conservées pour une période de 3 années Après cette période, les données seront détruites.<span style="float:right"><a href="mailto:contact@myecodesignmaturity.eu">Contact us</a><!--<a href="mailto:contact@eco-conception.fr">Contact Pôle</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:contact@shaping-ea.com">Contact EA</a>--></span><br><br><b>Par les présentes, l’entreprise</b> accepte de répondre aux questions dans le but de mesurer l’impact économique de l'intégration de l'écoconception dans l’entreprise.
+                    En participant à ce projet, vous ne courez pas de risques ou d’inconvénients particuliers et votre participation nous permettra de caractériser votre niveau d’intégration de la pensée en cycle de vie et de positionner votre activité d’éco-conception par rapport aux autres entreprises.<br><b>Nature de la participation</b> Votre participation consiste à répondre au questionnaire en ligne qui porte sur votre expérience en écoconception. Cette participation devrait prendre environ 10 minutes de votre temps.<br><b>Diffusion des résultats</b> Les résultats pourront être utilisés pour des publications à caractère scientifique, mais de manière anonymisée.<br><b>Droit de retrait</b> Votre participation est entièrement volontaire. Vous êtes libres de vous retirer en tout temps sur simple avis verbal, sans préjudice et sans devoir justifier votre décision. Si vous décidez de vous retirer de l’étude, vous pouvez communiquer avec les coordinateurs du projet aux adresses mail ci-dessous. En vous retirant de l’étude, les renseignements qui auront été recueillis au moment de votre retrait seront détruits.<br><b>Confidentialité</b> Les renseignements que vous nous transmettrez demeureront confidentiels. Aucune information permettant d’identifier une entreprise ne sera publiée. Les données compilées seront traitées de manière anonyme. À la fin de l’étude, les données à des fins statistiques seront conservées pour une période de 3 années Après cette période, les données seront détruites.<span style="float:right"><a href="mailto:contact@myecodesignmaturity.eu">Contactez-nous</a></span><br><br><b>Par les présentes, l’entreprise</b> accepte de répondre aux questions dans le but de mesurer l’impact économique de l'intégration de l'écoconception dans l’entreprise.
                 </div>
                 <div class="modal-footer">
                     <div class="left-side">
-                        <button type="button" class="btn btn-default btn-link" data-dismiss="modal">Reject</button>
+                        <button type="button" class="btn btn-default btn-link" data-dismiss="modal">Refusé</button>
                     </div>
                     <div class="divider"></div>
                     <div class="right-side">
-                        <button type="button" class="btn btn-danger btn-link" onClick="location.href='game.html'">Accept</button>
+                        <button type="button" class="btn btn-danger btn-link" onClick="location.href='game.html'">Accepté</button>
                     </div>
                 </div>
             </div>
@@ -118,9 +83,8 @@
     		<div class="content-center">
     			<div class="container">
     				<div class="title-brand">
-    					<h1>Measure Your<br>Ecodesign Maturity</h1><br><br><br>
-						<h2>Get a free report and benefit from the experience of <span id="gcnt"></span> companies</b><br>
-							<!-- with an average maturity of&nbsp;<b><span id="gavg"></span>&nbsp;<i class="fa fa-thermometer-half"></i></b> -->
+    					<h1>Evaluez votre<br>maturité en éco-conception</h1><br><br><br>
+						<h2>Obtenez un bilan gratuit et comparez-vous à <span id="gcnt"></span> entreprises</b><br>
 							<br><br><br></h2>
     				</div>
     			</div>
@@ -131,20 +95,12 @@
             <nav class="navbar navbar-expand-md navbar-transparent nav-no-padding">
                 <div class="container">
                     <div class="title-brand">						
-                        <br><br><br><br><br><h2>This tool is a gamified platform to measure the maturity of your company regarding eco-design.<br><br>
-						It will provide you with instant insight and benchmarks in order to guide your progress.
-						<!--You will get a free report and benefit from the experience of <span class="Single">12</span> companies</b><br><br>
-						with an average maturity of&nbsp;<b>2,2&nbsp;<i class="fa fa-thermometer-half"></i></b>--></h2>
-						<!--<div class="fog-low"><img src="assets/img/fog-low.png" alt=""></div>
-						<div class="fog-low right"><img src="assets/img/fog-low.png" alt=""></div>-->
+                        <br><br><br><br><br><h2>Cet outil ludique vous permet d'évaluer le niveau de maturité de votre entreprise concernant l'intégration de l'éco-conception et la pensée en cycle de vie dans votre offre produit/service.<br>Il vous fournira immédiatement un aperçu et une référence pour guider votre progression.</h2>
 
-						<a href="#about" class="btn btn-link whiten"><br><br><h3>Learn more...&nbsp;</h3><br></a>
-
-			            <!--<div class="moving-clouds" style="bottom:15em;background-image: url('assets/img/clouds.png');"></div>-->
+						<a href="#about" class="btn btn-link whiten"><br><br><h3>Plus d'infos...&nbsp;</h3><br></a>
 						<br>
                         <br>
-						<button type="button" class="btn btn-danger btn-round" data-toggle="modal" data-target="#myModal">Enter the Game&nbsp;<i class="fa fa-gamepad"></i></button>
-                        <!--<a href="game.html" class="btn btn-danger btn-round">Enter the Game&nbsp;<i class="fa fa-gamepad"></i></a>-->
+						<button type="button" class="btn btn-danger btn-round" data-toggle="modal" data-target="#myModal">Entrez dans le jeu&nbsp;<i class="fa fa-gamepad"></i></button>
 						<br><br><br><br>	
 					</div>
                 </div>
@@ -158,291 +114,58 @@
                     <br><h2 class="center">La Méthode</h2>
                 </div>
                 <h3>La méthode d’analyse de la maturité a été développée en collaboration entre différents partenaires et s’appuie sur les publications suivantes:<br><br>
-                <a class="btn-link" href="https://www.eco-conception.fr/library/h/profitability-of-ecodesign.html" target="_blank">Profitability of Ecodesign, 2014, Pôle Eco-conception</a><br><a class="btn-link" href="https://www.mdpi.com/2071-1050/10/7/2538/pdf" target="_blank">How to avoid pigeonholing the environmental manager, 2017, HEIG-VD&EA</a><br><br><br>Quatre niveaux de maturité ont été définis:<br><br>
-			</h3>
-				<div class="right-arrow"><br><b>Niveau  de capacité 1 – initial</b><br><br>la pratique de gestion<br>n'est pas<br>appliquée<br>ou est<br>appliquée de façon<br> incomplète <br>par l'entreprise;</div>
+                <a class="btn-link" href="https://www.eco-conception.fr/library/h/profitability-of-ecodesign.html" target="_blank">Profitability of Ecodesign, 2014, Pôle Eco-conception</a><br><a class="btn-link" href="https://www.mdpi.com/2071-1050/10/7/2538/pdf" target="_blank">How to avoid pigeonholing the environmental manager, 2017, HEIG-VD&EA</a><br><br>
+				Définition:<br>
+				<b>Cycle de vie:</b> Phases consécutives et liées d'un système de produits ou service, de l'acquisition des matières premières ou de la génération des ressources naturelles à l'élimination, incluant la conception, la production/fabrication, le transport / la livraison, l'utilisation, le traitement de fin de vie et l'élimination finale. (ISO 14040)<br>
+				<b>Eco-conception:</b> Intégration systématique des aspects environnementaux dès la conception et le développement de produits, services, systèmes, avec pour objectif la réduction des impacts environnementaux négatifs tout au long de leur cycle de vie, à service rendu équivalent ou supérieur (ISO 14006)<br><br><br>
+				Quatre niveaux de maturité ont été définis:<br><br>
+				</h3>
 				
-			    <div class="right-arrow arrow2"><br><b>Niveau  de capacité 2 – ad hoc</b><br><br>
+				<div class="right-arrow big1"><br><b>Niveau  de capacité 1 – initial</b><br><br>la pratique de gestion<br>n'est pas<br>appliquée<br>ou est<br>appliquée de façon<br> incomplète <br>par l'entreprise;</div>
+				
+			    <div class="right-arrow arrow2 big2"><br><b>Niveau  de capacité 2 – ad hoc</b><br><br>
 la pratique de gestion est appliquée de <br>manière opportune, c'est-à-dire pour<br> corriger un problème ou accomplir<br>une tâche spécifique<br> par certains individus<br> dans l'entreprise, mais pas encore<br> de manière formalisée et systématique;</div>
 
-				<div class="right-arrow arrow3"><br><b>Niveau  de capacité 3 – formalisé</b><br><br>l'application de la pratique <br>de gestion est formalisée<br> dans des processus documentés <br>et l'infrastructure,<br> les responsabilités<br> et les ressources pour soutenir<br> la pratique sont allouées;</div>
+				<div class="right-arrow arrow3 big3"><br><b>Niveau  de capacité 3 – formalisé</b><br><br>l'application de la pratique <br>de gestion est formalisée<br> dans des processus documentés <br>et l'infrastructure,<br> les responsabilités<br> et les ressources pour soutenir<br> la pratique sont allouées;</div>
 				
-				<div class="right-arrow arrow4"><br><b>Niveau  de capacité 4 – contrôlé et amélioré</b><br><br>l'application de la pratique de gestion est formalisée<br>et contrôlée, c'est-à-dire que sa performance <br>est mesurée et surveillée dans le temps<br>en utilisant des indicateurs de performance.<br> Et la performance de l'application de la pratique<br>de gestion est continuellement améliorée sur la base <br>de la mesure et du suivi.</div>
+				<div class="right-arrow arrow4 big4"><br><b>Niveau  de capacité 4 – contrôlé et amélioré</b><br><br>l'application de la pratique de gestion est formalisée<br>et contrôlée, c'est-à-dire que sa performance <br>est mesurée et surveillée dans le temps<br>en utilisant des indicateurs de performance.<br> Et la performance de l'application de la pratique<br>de gestion est continuellement améliorée sur la base <br>de la mesure et du suivi.</div>
 
 				<br><br><h3>Ces niveaux sont évalués sur la base d’une série de 12 questions, et les réponses sont ensuite anonymisées et comparées avec les moyennes par secteur et par pays afin de permettre à chaque participant de se positionner et d’identifier des axes de progrès.</h3>
 	        </div>
 			<br><br><br><br>
-        </div>
-
-<!--    
-		<div class="container">
-				<script type="text/javascript">var submitted=false;</script>
-				<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='https://docs.google.com/spreadsheets/d/e/2PACX-1vQVMUJdvaMJpDslFF1LT2IX77A9fILAvJ0KdmYzjGXbaqTunbXurA2ACeeZpjJ_sUAbNpM1V0KYNTEd/pubchart?oid=1377281540&amp;format=interactive';}"></iframe>
-				<form action="https://docs.google.com/forms/d/e/1FAIpQLSfd2hOsNqU0GBmDukAjWFV4bG1Xts8HTG8G0UbVCW7eL38SKQ/formResponse?hl=fr" method="POST" id="mG61Hd" target="hidden_iframe" onsubmit="submitted=true;">
-		
-        <div id="you" class="section section-buttons">
-            <div class="container">
-				<div class="thetitle">
-		   		<h2>Votre entreprise</h2>
-                </div>
-                <div class="row">
-						<ul>
-						  <li class="question">
-							  <h3>Quelle est la raison sociale de l'établissement et de l’entreprise? Appartenez-vous un groupe multi établissement?</h3><input required type="text" class="form-control form-control-success" placeholder="" name="entry.1877736458">
-						  </li>	
-						  <li class="question">
-						    <h3>Appartenez-vous un groupe multi établissement?</h3>
-		                        <label class="form-check-label">	
-								    <input class="form-check-input" type="radio" name="entry.267617191" value="Oui" />
-									<span>Oui</span>
-									<span class="form-check-sign"></span>
-		                        </label>
-								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-								<label class="form-check-label">
-								  <input required class="form-check-input" type="radio" name="entry.267617191" value="Non" />
-									<span>Non</span>
-									<span class="form-check-sign"></span>
-								</label>
-				  
-						  </li>
-							<li class="question">
-								<h3>Quelle est la localisation du siège social de l’entreprise?</h3>
-								<select required name="entry.1484011513">
-							    	<option value="" disabled="disabled" selected="selected">localisation</option>
-							    	<option value="France">France</option>
-									<option value="Switzerland">Suisse</option>
-									<option value="Spain">Espagne</option>
-									<option value="Belgium">Belgique</option>
-									<option value="Germany">Allemagne</option>
-									<option value="United Kingdom">Royaume-Uni</option>
-								</select>
-						  </li>
-							<li class="question">
-						    <h3>Quel est le secteur d’activité de votre établissement?</h3>
-								<label class="form-check-label">
-								  <input required class="form-check-input" type="radio" name="entry.292800088" value="Secteur agricole" />
-									<span>Secteur agricole</span>
-									<span class="form-check-sign"></span> 
-								</label>
-								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-								<label class="form-check-label">
-								  <input required class="form-check-input" type="radio" name="entry.292800088" value="Secteur des services" />
-									<span>Secteur des services</span>
-									<span class="form-check-sign"></span>
-                        
-								</label>
-						  </li>
-							<li class="question">
-						    <h3>Quel est le nombre d'employés dans l’entreprise?</h3>
-								<label>
-								  <input required type="number" name="entry.748385404" min="0" max="1000000">
-								</label>
-						  </li>
-							<li class="question">
-						    <h3>Qui sont les principaux utilisateurs de vos produits?</h3>
-								<label class="form-check-label">
-								  <input required class="form-check-input" type="radio" name="entry.539557091" value="Grand public (B2C)" />
-									<span>Grand public (B2C)</span>
-									<span class="form-check-sign"></span>                        
-								</label>
-								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-								<label class="form-check-label">
-								  <input required class="form-check-input" type="radio" name="entry.539557091" value="D’autres entreprises (B2B)" />
-									<span>D’autres entreprises (B2B)</span>
-									<span class="form-check-sign"></span>
-								</label>
-						  </li>
-						</ul>
-						<button id="mycompany" class="center btn btn-outline-danger btn-lg" onclick="document.getElementById('but1').style='visibility:true';window.location='#game'"><i class="fa fa-check-square"></i>Done</button>
-					</div>
-
-					<table id="game" width="90%" align="center">
-						<tr>
-							<td id="td1" class="rcorners1 unlock" width="50%">
-								<h1 style="text-align:center;color:#2e9f64"><i class="fabig fa-book"></i></h1><h2>Connaissances des enjeux</h2><span id="point1" style="visibility:hidden;"><h1> 2,2</h1></span>
-								<button id="but1" style="visibility:hidden;" onclick="document.getElementById('tab-1').checked=true;document.getElementById('mycompany').style='visibility:hidden';window.location='#content1'" class="btn btn-danger btn-lg btn-just-icon"><i class="fa fa-gamepad"></i></button>
-							</td>
-							<td id="td2" class="rcorners2 lock" >
-								<h1 style="text-align:center;color:white"><i class="fabig fa-road"></i></h1><h2>Leadership et intégration stratégique</h2><span id="point2" style="visibility:hidden;"><h1> 2,0</h1></span>
-								<button id="but2" style="visibility:hidden;" onclick="document.getElementById('tab-2').checked=true;window.location='#content2'" class="btn btn-danger btn-just-icon btn-lg"><i class="fa fa-gamepad"></i></button>
-							</td>
-						</tr>
-						<tr>
-					<td id="td3" class="rcorners3 lock" >
-						<h1 style="text-align:center;color:navajowhite"><i class="fabig fa-cogs"></i></h1><h2>Mise en œuvre et organisation opérationnelle</h2><span id="point3" style="visibility:hidden;"><h1> 2,1</h1></span>
-						<button id="but3" style="visibility:hidden;" onclick="document.getElementById('tab-3').checked=true;window.location='#content3'" class="btn btn-danger btn-just-icon btn-lg"><i class="fa fa-gamepad"></i></button>
-					</td>
-					<td id="td4" class="rcorners4 lock" >
-						<h1 style="text-align:center;color:green"><i class="fabig fa-signal"></i></h1><h2>Performance atteinte ou attendue&nbsp;</h2><span id="point4" style="visibility:hidden;"><h1> 1,9</h1></span>
-						<button id="but4" style="visibility:hidden;" onclick="document.getElementById('tab-4').checked=true;window.location='#content4'" class="btn btn-danger btn-just-icon btn-lg"><i class="fa fa-gamepad"></i></button>					
-					</td>
-				</tr>
-					</table>
-					<button type="button" id="envoyer" style="visibility:hidden;" class="center btn btn-success btn-round button-submit" onclick="document.getElementById('result').style='visibility:true';window.location='#result'">Show Benchmark</button>
-					<section class="tabs">
-			    		<input id="tab-1" type="radio" name="radio-set" class="tab-selector-1" />
-			    		<input id="tab-2" type="radio" name="radio-set" class="tab-selector-2" />
-						<input id="tab-3" type="radio" name="radio-set" class="tab-selector-3" />
-						<input id="tab-4" type="radio" name="radio-set" class="tab-selector-4" />
-						<div class="clear-shadow"></div>
-  <div class="page-header section-dark content" style="background: transparent">				
-      
-        <div id="content1" class="content-1">
-	   		<fieldset class="odd">
-		 	<h3>Connaissance des enjeux environnementaux sur le cycle de vie</h3>
-		  		<input required type="radio" name="entry.830120896" value="1" /><h5>1. Les enjeux environnementaux tout au long du cycle de vie des produits/services ne sont pas connus</h5>
-				<input required type="radio"name="entry.830120896" value="2" /><h5>2. Certains enjeux environnementaux importants sont connus mais pas forcément rattachés au cycle de vie</h5>
-				<input required type="radio"name="entry.830120896" value="3" /><h5>3. Les principaux enjeux environnementaux sont connus tout au long du cycle de vie</h5>
-				<input required type="radio"name="entry.830120896" value="4" /><h5>4. Les principaux enjeux environnementaux sont connus tout au long du cycle de vie et validés par la direction</h5>
-		  </fieldset>		
-		  <fieldset class="even">
-			<h3>Connaissance des parties intéressées (clients, concurrents, fournisseurs, Etat etc.) et de leurs attentes ou exigences tout au long du cycle de vie</h3> 
-		  		<input required type="radio"name="entry.575472594" value="1" /><h5>1. Les parties intéressées sont partiellement identifiées, sur quelques étapes du cycle de vie, mais leurs attentes ou exigences ne sont pas (ou presque pas) collectées.</h5>
-				<input required type="radio"name="entry.575472594" value="2" /><h5>2. Les parties intéressées sont identifiées tout au long du cycle de vie, leurs attentes ou exigences sont connues uniquement lorsque les PI les portent à connaissance directement.</h5>
-				<input required type="radio"name="entry.575472594" value="3" /><h5>3. Les parties intéressées et leurs attentes ou exigences sont identifiées tout au long du cycle de vie, particulièrement leur positionnement au regard de l'éco-conception.</h5>
-				<input required type="radio"name="entry.575472594" value="4" /><h5>4. Les parties intéressées et leurs attentes ou exigences sont identifiées tout au long du cycle de vie, les PI sont associées aux projets d'éco-conception.</h5>
-		  </fieldset>
-		  <fieldset class="three">
-			<h3>Analyse dynamique des risques et opportunités liés au cycle de vie des produits et services de l’entreprise</h3> 
-		  		<input required type="radio"name="entry.1235505382" value="1" /><h5>1. Aucune analyse risques et opportunités n'est pas réalisées.</h5>
-				<input required type="radio"name="entry.1235505382" value="2" /><h5>2. Une analyse risques et opportunités est partiellement réalisée, sans lien avec le cycle de vie.</h5>
-				<input required type="radio"name="entry.1235505382" value="3" /><h5>3. L'analyse des risques et opportunités est réalisée en lien avec les enjeux environnementaux tout au long du cycle de vie, les attentes ou exigences des parties intéressées et la sphère d'influence de l'entreprise mais elle n'est pas validée par la direction et partagée aux équipes projet.</h5>
-				<input required type="radio"name="entry.1235505382" value="4" /><h5>4. L'analyse des risques et opportunités est réalisée et validée, à la fois au niveau des projets que de l'entreprise (domaine d'activités ou business unit).</h5>			
-		  </fieldset>
-			<button type="button" class="center btn btn-outline-danger btn-lg" onclick="document.getElementById('td1').classList.remove('unlock');document.getElementById('td2').classList.remove('lock');document.getElementById('td2').classList.add('unlock');document.getElementById('but1').style='visibility:hidden';document.getElementById('but2').style='visibility:true';document.getElementById('point1').style='visibility:true';window.location='#game'"><i class="fa fa-check-square"></i>Done</button>
-        </div>
- 
-        <div id="content2" class="content-2">
-			 	<h3>Intégration de la pensée en cycle de vie dans la stratégie d'entreprise avec un plan d'action</h3>
-			  		<input type="radio" name="entry.599628510" value="1" /><h5>1. La performance environnementale n'est pas ou peu intégrée dans la stratégie d'entreprise</h5>
-					<input required type="radio" name="entry.599628510" value="2" /><h5>2. La performance environnementale est intégrée dans la stratégie d'entreprise</h5>
-					<input required type="radio" name="entry.599628510" value="3" /><h5>3. La performance environnementale et la pensée en cycle de vie sont intégrées dans la stratégie d'entreprise</h5>
-					<input required type="radio" name="entry.599628510" value="4" /><h5>4. La performance environnementale et l'éco-conception sont intégrées dans la stratégie d'entreprise et font l'objet d'un plan d'action.</h5>
-		
-				<h3>Mise à disposition par la direction de moyens pour des projets d'éco-conception et de management du cycle de vie</h3> 
-			  		<input required type="radio" name="entry.2021404149" value="1" /><h5>1. Aucun moyen spécifique (budget, personnel dédié, formation...) n'est alloué pour intégrer la pensée en cycle de vie et mener des projets d'éco-conception.</h5>
-					<input required type="radio" name="entry.2021404149" value="2" /><h5>2. Des moyens sont alloués ponctuellement pour un projet.</h5>
-					<input required type="radio" name="entry.2021404149" value="3" /><h5>3. Des moyens sont alloués mais restent insuffisants pour répondre aux enjeux environnementaux et à la stratégie d'entreprise sur le long terme.</h5>
-					<input required type="radio" name="entry.2021404149" value="4" /><h5>4. Des moyens sont alloués, ils sont appropriés à la stratégie et à l'engagement de l'entreprise dans le management du cycle de vie et la mise en oeuvre de l'éco-conception</h5>
-	
-				<h3>Intégration de la pensée en cycle de vie et de l'éco-conception dans les revues de direction et processus de décision</h3> 
-			  		<input required type="radio" name="entry.1315185936" value="1" /><h5>1. Les revues de direction n'abordent pas les enjeux environnementaux ni les moyens pour les traiter, aucun processus de décision ne prend en compte la performance environnementale.</h5>
-					<input required type="radio" name="entry.1315185936" value="2" /><h5>2. Les revues de direction abordent les enjeux environnementaux, sans les situer dans le cycle de vie de ses produits / services ni les élargir à la sphère d'influence de l'entreprise.</h5>
-					<input required type="radio" name="entry.1315185936" value="3" /><h5>3. Les revues de direction abordent les enjeux environnementaux dans une perspective de cycle de vie et la direction prend des décisions pour mettre en oeuvre l'éco-conception.</h5>
-					<input required type="radio" name="entry.1315185936" value="4" /><h5>4. Les revues de direction abordent la performance environnementale obtenue et mesurée lors de démarches d'éco-conception, la direction peut donc prendre les décisions appropriées afin d'améliorer la performance de l'entreprise.</h5>			
-			
-			<button type="button" class="center btn btn-outline-danger btn-lg" onclick="document.getElementById('td2').classList.remove('unlock');document.getElementById('td3').classList.remove('lock');document.getElementById('td3').classList.add('unlock');document.getElementById('but2').style='visibility:hidden';document.getElementById('but3').style='visibility:true';document.getElementById('point2').style='visibility:true';window.location='#game'"><i class="fa fa-check-square"></i>Done</button>			
-        </div>
-	
-        <div id="content3" class="content-3">
-        
-      <fieldset class="odd">
-		<h3>Constitution d'une équipe pluridisciplinaire pour mener des projets d'éco-conception  (marketing, design, bureau d'étude, production, vente etc.)</h3>
-		  <input required type="radio" name="entry.1655300764" value="1" /><h5>Aucune équipe pluridisciplinaire n'est constituée.</h5>
-		  <input required type="radio" name="entry.1655300764" value="2" /><h5>L'équipe de conception et/ou R&D consulte le responsable environnement pour prendre en compte certains enjeux environnementaux, souvent sous contrainte réglementaire.</h5>
-		  <input required type="radio" name="entry.1655300764" value="3" /><h5>Une équipe projet est formée ponctuellement pour répondre aux enjeux environnementaux tout au long du cycle de vie des produits/services et ainsi mener une démarche d'éco-conception.</h5>
-		  <input required type="radio" name="entry.1655300764" value="4" /><h5>L'organisation en équipe projet est systématique et inscrite dans les procédures et méthodes de conception, intégrant ainsi le management du cycle de vie et des enjeux environnementaux.</h5>
-      </fieldset>
-	  <fieldset class="even"> 
-		<h3>Intégration des pratiques et méthodes d'éco-conception en vue de l'économie circulaire dans le développement des produits et services</h3>
-		  <input required type="radio" name="entry.279307128" value="1" /><h5>Aucune méthode ni pratique d'éco-conception n'est intégrée dans le développement des produits OU L'éco-conception peut être mise en oeuvre occasionnellement, sans méthode construite et reproductible".</h5>
-		  <input required type="radio" name="entry.279307128" value="2" /><h5>Une démarche d'éco-conception est mise en oeuvre pour répondre à une demande (client, médiatique...) avec des outils type approche matricielle, sans nécessairement d'indicateurs de mesure.</h5>
-		  <input required type="radio" name="entry.279307128" value="3" /><h5>Les méthodes d'éco-conception utilisées privilégient des approches simplifiées et quantifiées, dans une prise en compte complète du cycle de vie.</h5>
-		  <input required type="radio" name="entry.279307128" value="4" /><h5>Les méthodes et outils d'éco-conception sont intégrés dans les processus de développement sous diverses formes telles que règles métier, check-list ou guide de bonnes pratiques. Des bases de données permettent de capitaliser sur les connaissances acquises et de démultiplier les démarches pour une mise en oeuvre plus efficace.</h5>
-      </fieldset>
-	  <fieldset class="three">
-		<h3>Définition et suivi des indicateurs de performance en éco-conception</h3>
-		  <input required type="radio" name="entry.1449748254" value="1" /><h5>Des indicateurs mesurant la performance environnementale de démarches d'éco-conception n'ont pas été identifiés précisément. D'éventuels indicateurs génériques peuvent exister,  s'apparentant à des stratégies/objectifs évasifs (ex : j'utilise du bois).</h5>
-		  <input required type="radio" name="entry.1449748254" value="2" /><h5>Des indicateurs sont identifiés mais restent assez vagues, les degrés de performance atteints sont souvent chiffrés en pourcentage ou en quantité de flux (ex : un moteur utilisant x litres en moins) sans comparaison validée.</h5>
-		  <input required type="radio" name="entry.1449748254" value="3" /><h5>Des indicateurs appropriés sont identifiés et comparent les résultats obtenus dans une démarche d'éco-conception avec une situation de référence. Ils sont basés sur une vision globale des flux, parfois convertis en indicateurs d'impacts issu de logiciel d'ACV, simplifié ou non.</h5>
-		  <input required type="radio" name="entry.1449748254" value="4" /><h5>Les indicateurs identifiés sont similaires au niveau précédent mais la performance est évaluée de manière plus approfondie avec des indicateurs détaillés, précis, nombreux. D'autres indicateurs montrent la capitalisation sur la démarche d'éco-conception afin de la démultiplier sur d'autres produits/services.</h5>
-      </fieldset>  	
-			<button type="button" class="center btn btn-outline-danger btn-lg" onclick="document.getElementById('td3').classList.remove('unlock');document.getElementById('td4').classList.remove('lock');document.getElementById('td4').classList.add('unlock');document.getElementById('but3').style='visibility:hidden';document.getElementById('but4').style='visibility:true';document.getElementById('point3').style='visibility:true';window.location='#game'"><i class="fa fa-check-square"></i>Done</button>
-        </div>
-	
-        <div id="content4" class="content-4">
-			
-        	<h3>Sensibilisation et formation à l'éco-conception et l'économie circulaire pour des équipes compétentes</h3>
-		  		<input required type="radio" name="entry.2075187997" value="1" /><h5>1. Pas de compétences internes.</h5>
-		  		<input required type="radio" name="entry.2075187997" value="2" /><h5>2. L'entreprise fait appel ponctuellement à des ressources exterieures de type conseil et/ou une personne ressource a reçu une sensibilisation ou une courte formation.</h5>
-		  		<input required type="radio" name="entry.2075187997" value="3" /><h5>3. Une personne ressource dans l'entreprise a les connaissances et est en capacité d'animer les projets d'éco-conception.</h5>
-		  		<input required type="radio" name="entry.2075187997" value="4" /><h5>4. L'ensemble de l'équipe projet en lien avec le développement de produit ou service sont fomés et outillés et mettent en oeuvre l'éco-conception.</h5>
-     
-		<h3>Developpement de produits ou services éco-conçus</h3>
-		  <input required type="radio" name="entry.275599064" value="1" /><h5>1. Aucun produit n'a fait l'objet d'une démarche d'éco-conception.</h5>
-		  <input required type="radio" name="entry.275599064" value="2" /><h5>2. Un ou plusieurs produits ont été éco-conçus, en réaction à des demandes ou des enjeux subis par l'entreprise, sans capitalisation pour d'autres projets.</h5>
-		  <input required type="radio" name="entry.275599064" value="3" /><h5>3. Les outils et méthodes d'éco-conception sont intégrés dans le processus de développement de produit ou service de l'entreprise.</h5>
-		  <input required type="radio" name="entry.275599064" value="4" /><h5>4. Tous les produits et services sont éco-conçus selon la vision et la stratégie choisie et portée par l'entreprise.</h5>
-
-		<h3>Communication externe sur la performance environnementale de ses produits ou services</h3>
-		  <input required type="radio" name="entry.1580074078" value="1" /><h5>1. La performance environnementale des produits ou services ne fait l'objet d'aucune communication externe par l'entreprise.</h5>
-		  <input required type="radio" name="entry.1580074078" value="2" /><h5>2. Quelques allégations sur la performance environnementale des produits ou services sont diffusées, sans formalisation ni méthode.</h5>
-		  <input required type="radio" name="entry.1580074078" value="3" /><h5>3. L'entreprise a établi un processus / une méthode de communication environnementale sur ces produits et services à destination essentiellement des clients et des fournisseurs.</h5>
-		  <input required type="radio" name="entry.1580074078" value="4" /><h5>4. La communication externe sur la performance environnementale des produits et services de l'entreprise est établie, ciblant de toutes les parties prenantes au regard du cycle de vie (cllients/utilisateurs, fournisseurs, ONG, acteurs de la fin de vie, etc.).</h5>
-			
-			<button type="button" class="center btn btn-outline-danger btn-lg" onclick="document.getElementById('td4').classList.remove('unlock');document.getElementById('but4').style='visibility:hidden';document.getElementById('point4').style='visibility:true';document.getElementById('envoyer').style='visibility:true';window.location='#game'"><i class="fa fa-check-square"></i>Done</button>
-		</div>
-   	  </div>						
-  </div>
-       
-					</section>​			
-				</div>
-			</div>
-			
-		
-		</form>
-	    	
-        </div>
-            
-				<section class="results" id="result" style="visibility:hidden">
-					<div class="container">               
-						<div class="row">
-	                            <span class="label label-danger" style="margin:10%"><h2 style="text-align:center">Maturity:&nbsp;&nbsp;<b>2,1</b></h2><br>
-								<iframe width="854" height="812" seamless frameborder="0" scrolling="no" style="margin-left:2.5%" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQVMUJdvaMJpDslFF1LT2IX77A9fILAvJ0KdmYzjGXbaqTunbXurA2ACeeZpjJ_sUAbNpM1V0KYNTEd/pubchart?oid=1377281540&amp;format=interactive"></iframe>
-	                        	<h3>legend</h3><br>
-								<p>1. L'éco-conception n'est pas appliquée ou est appliquée de façon anecdotique par l'entreprise.</p>
-								<p>2. L'éco-conception est mise en oeuvre de manière opportune, pour corriger un problème ou répondre à une demande, sans méthode formalisée et systématique.</p>
-								<p>3. La démarche d'éco-conception est intégrée dans les processus de l'entreprise, dans une vision à court terme de l'amélioration de la performance environnementale.</p>
-								<p>4. L'éco-conception est mise en œuvre afin d'améliorer la performance environnementale sur le long terme, et démultipliée globalement sur tous les secteurs d'activités.</p>				
-                                <button type="button" class="btn btn-round center" onclick="window.print()"><i class="fa fa-print"></i>Print Results</button>
-								<p></p>
-								</span>
-
-						</div>
-					</div>
-				</section>
--->				
+        </div>			
                     <div id="team">
                     	<div class="container">
                             <div class="thetitle">
-                                <br><h2 class="center">Team</h2><br><br><br>
+                                <br><h2 class="center">Équipe</h2><br><br><br>
                             </div>
                             <table class="teamtable">
 							  <tr>
                                 <td class="mr-auto ml-auto w1">
-                                    <!--<h4 class="images-title">ENEC</h4>-->
                                     <a href="http://www.ecodesign-centres.org/" target="_blank"><img src="assets/img/p3.jpg" class="img-no-padding img-thumbnail img-responsive" title="ENEC est le réseau européen des centres d’éco-conception : European Network of Ecodesign Centres. Sa mission consiste à échanger connaissances, expérience et meilleures pratiques sur tous les aspects de l'éco-conception afin que les entreprises s’engagent dans l'éco-conception." alt="ENEC"></a>
                                     <p class="text-center">ENEC</p>
                                 </td>
                                 
                                 <td class="mr-auto ml-auto w1">
-                                    <!--<h4 class="images-title">Pôle Eco-conception</h4>-->
                                     <a href="https://www.eco-conception.fr/" target="_blank"><img src="assets/img/p2.jpg" class="img-no-padding img-thumbnail img-responsive" title="Centre ressource national sur l’éco-conception et la performance par le cycle de vie, le Pôle Eco-conception accompagne depuis 10 ans les organisations afin d’augmenter leur performance et de créer de la valeur par la pensée en cycle de vie tout en diminuant les impacts environnementaux." alt="Pôle Eco-conception"></a>
                                     <p class="text-center">Pôle Eco-conception</p>
                                 </td>
                                 
                                 <td class="mr-auto ml-auto w1">
-                                    <!--<h4 class="images-title">EA</h4>-->
                                     <a href="http://www.shaping-ea.com/" target="_blank"><img src="assets/img/p4.jpg" class="img-circle img-thumbnail img-responsive" title="EA est le centre ressource sur l’éco-conception en Suisse. Il est actif depuis 5 ans et vise à une plus large diffusion des pratiques d’éco-conception dans les entreprises locales. EA est également un acteur impliqué dans la recherche et le développement de nouveaux outils de mesure et de mise en œuvre de la pensée cycle de vie." alt="EA"></a>
                                     <p class="text-center">EA</p>
 								</td>
                                 
                                 <td class="mr-auto ml-auto w1">	
-                                    <!--<h4 class="images-title">HEIG-VD</h4>-->
                                     <a href="https://heig-vd.ch/" target="_blank"><img src="assets/img/p1.jpg" class="img-thumbnail  img-responsive" title="La Haute École d'Ingénierie et de Gestion du Canton de Vaud (HEIG-VD) permet la transformation des savoirs en produits et services à haute valeur ajoutée, en articulant les connaissances théoriques de pointe avec les exigences de la pratique professionnelle." alt="HEIG-VD"></a>
                                     <p class="text-center">HEIG-VD</p>
-									
                                 </td>
+                                
+                                <td class="mr-auto ml-auto w1">	
+                                    <a href="https://www.ademe.fr/" target="_blank"><img src="assets/img/ademe.jpg" class="img-thumbnail img-responsive" title="L’Agence de l’environnement et de la maîtrise de l’énergie (ADEME) participe à la mise en œuvre des politiques publiques dans les domaines de l’environnement, de l’énergie et du développement durable. Elle met ses capacités d’expertise et de conseil à disposition des entreprises, des collectivités locales, des pouvoirs publics et du grand public, afin de leur permettre de progresser dans leur démarche environnementale." alt="ADEME"></a>
+                                    <p class="text-center">ADEME</p>
+                                </td>
+								
 							  </tr>
                             </table>
 							<br><br><br><br>
@@ -450,198 +173,6 @@ la pratique de gestion est appliquée de <br>manière opportune, c'est-à-dire p
                     </div>
                 </div>
             </div>
-            <!--
-            <div class="section javascript-components">
-				<div class="container">
-					<div class="thetitle">
-						<h2>Javascript Components</h2>
-					</div>
-					<div class="row" id="modals">
-						<div class="col-md-6">
-							<div class="thetitle">
-								<h3>Modal</h3>
-							</div>
-
-							<button type="button" class="btn btn-outline-danger btn-round" data-toggle="modal" data-target="#myModal">
-							    Launch demo modal
-							</button>
-							 
-							<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <span class="modal-title text-center" id="exampleModalLabel">RENSEIGNEMENTS AUX PARTICIPANTS</span>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                            </button>
-                                        </div>
-                                        <div class="modal-body" style="font-size:11px">Avant de répondre au questionnaire, veuillez prendre connaissance des informations suivantes:
-                                            En participant à ce projet, vous ne courez pas de risques ou d’inconvénients particuliers et votre participation nous permettra de caractériser votre niveau d’intégration de la pensée en cycle de vie et de positionner votre activité d’éco-conception par rapport aux autres entreprises.<br><b>Nature de la participation</b> Votre participation consiste à répondre au questionnaire en ligne qui porte sur votre expérience en écoconception. Cette participation devrait prendre environ 10 minutes de votre temps.<br><b>Diffusion des résultats</b>Les résultats pourront être utilisés pour des publications à caractère scientifique, mais de manière anonymisée.<br><b>Droit de retrait</b>Votre participation est entièrement volontaire. Vous êtes libres de vous retirer en tout temps sur simple avis verbal, sans préjudice et sans devoir justifier votre décision. Si vous décidez de vous retirer de l’étude, vous pouvez communiquer avec les coordinateurs du projet aux adresses mail ci-dessous. En vous retirant de l’étude, les renseignements qui auront été recueillis au moment de votre retrait seront détruits.<br><b>Confidentialité</b>Les renseignements que vous nous transmettrez demeureront confidentiels. Aucune information permettant d’identifier une entreprise ne sera publiée. Les données compilées seront traitées de manière anonyme. À la fin de l’étude, les données à des fins statistiques seront conservées pour une période de 3 années Après cette période, les données seront détruites.<br>Contact Pôle: contact@eco-conception.fr<br>Contact EA: contact@shaping-ea.com<br><b>Par les présentes, l’entreprise</b> accepte de répondre aux questions dans le but de mesurer l’impact économique de l'intégration de l'écoconception dans l’entreprise.
-                                        </div>
-                                        <div class="modal-footer">
-                                            <div class="left-side">
-                                                <button type="button" class="btn btn-default btn-link" data-dismiss="modal">Reject</button>
-                                            </div>
-                                            <div class="divider"></div>
-                                            <div class="right-side">
-                                                <button type="button" class="btn btn-danger btn-link" onClick="location.href='game.html'">Accept</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="thetitle">
-								<h3>Popovers</h3>
-							</div>
-							<button type="button" class="btn btn-outline-danger btn-round" data-container="body" data-toggle="popover" data-placement="left" data-title="Popover on left" data-trigger="click"  data-content="Here will be some very useful information about this popover.">on left</button>
-                            <button type="button" class="btn btn-outline-danger btn-round" data-container="body" data-toggle="popover" data-placement="right" data-title="Popover on right" data-content="Here will be some very useful information about this popover.">on right</button>
-							<button type="button" class="btn btn-outline-danger btn-round" data-container="body" data-toggle="popover" data-placement="top" data-title="Popover on top" data-content="Here will be some very useful information about this popover.">on top</button>
-							<button type="button" class="btn btn-outline-danger btn-round" data-container="body" data-toggle="popover" data-placement="bottom" data-title="Popover on bottom" data-content="Here will be some very useful information about this popover.">on bottom</button>
-						</div>
-						<br/>
-						<div class="col-md-6">
-							<div class="thetitle">
-								<h3>Datepicker</h3>
-							</div>
-						    <div class="row">
-						        <div class='col-sm-6'>
-						            <div class="form-group">
-						                <div class='input-group date' id='datetimepicker'>
-						                    <input type='text' class="form-control datetimepicker" placeholder="05/08/2017" />
-						                    <span class="input-group-addon">
-						                        <span class="glyphicon glyphicon-calendar"><i class="fa fa-calendar" aria-hidden="true"></i></span>
-						                    </span>
-						                </div>
-						            </div>
-						        </div>
-						    </div>
-						</div>
-						<div class="col-md-6">
-							<div class="thetitle">
-								<h3>Tooltips</h3>
-							</div>
-							<button type="button" class="btn btn-outline-danger btn-round" data-toggle="tooltip" data-placement="left" title="Tooltip on left">On left</button>
-                            <button type="button" class="btn btn-outline-danger btn-round" data-toggle="tooltip" data-placement="right" title="Tooltip on right">On right</button>
-							<button type="button" class="btn btn-outline-danger btn-round" data-toggle="tooltip" data-placement="top" title="Tooltip on top">On top</button>
-							<button type="button" class="btn btn-outline-danger btn-round" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">On bottom</button>
-						</div>
-					</div>
-					<div class="thetitle">
-						<h3>Benchmark</h3>
-					</div>
-				</div>
-			</div>-->
-			
-			
-			<!--<div class="section section-image section-login" style="background-image: url('assets/img/login-image.jpg');">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-4 ml-auto mr-auto">
-                            <div class="card card-register">
-                                <h3 class="title">Welcome</h3>
-                                <div class="social-line text-center">
-                                    <a href="#pablo" class="btn btn-neutral btn-facebook btn-just-icon">
-                                        <i class="fa fa-facebook-square"></i>
-                                    </a>
-                                    <a href="#pablo" class="btn btn-neutral btn-google btn-just-icon">
-                                        <i class="fa fa-google-plus"></i>
-                                    </a>
-                                    <a href="#pablo" class="btn btn-neutral btn-twitter btn-just-icon">
-                                        <i class="fa fa-twitter"></i>
-                                    </a>
-                                </div>
-                                <form class="register-form">
-                                    <label>Email</label>
-                                    <div class="input-group form-group-no-border">
-                                        <span class="input-group-addon">
-                                            <i class="nc-icon nc-email-85"></i>
-                                        </span>
-                                        <input type="text" class="form-control" placeholder="Email">
-                                    </div>
-
-                                    <label>Password</label>
-                                    <div class="input-group form-group-no-border">
-                                        <span class="input-group-addon">
-                                            <i class="nc-icon nc-key-25"></i>
-                                        </span>
-                                        <input type="text" class="form-control" placeholder="Password">
-                                    </div>
-                                    <button class="btn btn-danger btn-block btn-round">Register</button>
-                                </form>
-                                <div class="forgot">
-                                    <a href="#" class="btn btn-link btn-danger">Forgot password?</a>
-                                </div>
-                            </div>
-                            <div class="col text-center">
-                                <a href="examples/register.html" class="btn btn-outline-neutral btn-round btn-lg" target="_blank">View Register Page</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>-->
-            <!--<div class="section section-dark">
-                <div class="container">
-                    <div class="row example-page">
-                        <div class="col-md-6 text-center">
-                            <a href="examples/landing.html" target="_blank">
-                                <img src="assets\img\examples\landing-page.jpg" alt="Rounded Image" class="img-rounded img-responsive" style="width: 100%">
-                                <a href="examples/landing.html" class="btn btn-outline-neutral btn-round" target="_blank">Landing Page</a>
-                            </a>
-                        </div>
-                        <div class="col-md-6 text-center">
-                            <a href="examples/profile.html" target="_blank">
-                                <img src="assets\img\examples\profile-page.jpg" alt="Rounded Image" class="img-rounded img-responsive" style="width: 100%">
-                                <a href="examples/profile.html" class="btn btn-outline-neutral btn-round" target="_blank">Profile Page</a>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-			<div class="section">
-				<div class="container text-center">
-					<div class="row">
-						<div class="col-md-8 ml-auto mr-auto text-center">
-							<h2 class="title">Do you like what you see?</h2>
-							<p class="description">Cause if you do, it can be yours for Free. Hit the button below and download it. Start a new project or give an old Bootstrap 4 project a new look.</p>
-						</div>
-						<div class="col-md-5 ml-auto mr-auto download-area">
-							<a href="" class="btn btn-danger btn-round">Download free HTML</a>
-						</div>
-					</div>
-                    <div class="row text-center upgrade-pro">
-    					<div class="col-md-8 ml-auto mr-auto">
-    	                    <h2 class="title">Want more?</h2>
-    	                    <p class="description">We've just launched <a href="" class="text-danger" target="_blank">Paper Kit 2 PRO</a>. It has a huge number of components, sections and example pages.</p>
-    	                </div>
-    					<div class="col-sm-5 ml-auto mr-auto">
-    						<a href="" class="btn btn-info btn-round" target="_blank">
-    							<i class="nc-icon nc-spaceship" aria-hidden="true"></i> Upgrade to PRO
-    						</a>
-    					</div>
-    	            </div>
-                    <div class="row justify-content-md-center sharing-area text-center">
-                        <div class="text-center col-md-12 col-lg-8">
-                            <h3>Thank you for supporting us!</h3>
-                        </div>
-                        <div class="text-center col-md-12 col-lg-8">
-                            <a href="#pablo" class="btn btn-twitter-bg twitter-sharrre btn-round" rel="tooltip" title="Tweet!">
-                                <i class="fa fa-twitter"></i> Twitter
-                            </a>
-                            <a href="#pablo" class="btn btn-google-bg linkedin-sharrre btn-round" rel="tooltip" title="Share!">
-                                <i class="fa fa-google-plus"></i> Google
-                            </a>
-                            <a href="#pablo" class="btn btn-facebook-bg facebook-sharrre btn-round" rel="tooltip" title="Share!">
-                                <i class="fa fa-facebook-square"></i> Facebook
-                            </a>
-                            <a href="" class="btn btn-github-bg btn-github sharrre btn-round" rel="tooltip" title="Star on Github">
-                                <i class="fa fa-github"></i> Star
-                            </a>
-                        </div>
-                    </div>
-				</div>
-			</div>-->
         </div>
 	</div>
     <footer class="footer">
@@ -649,11 +180,7 @@ la pratique de gestion est appliquée de <br>manière opportune, c'est-à-dire p
             <div class="row">
                 <nav class="footer-nav">
                     <ul>
-                        <!--<li><a href="">Privacy</a></li>
-                        <li><a href="">Terms</a></li>-->
-                        <li><a href="mailto:contact@myecodesignmaturity.eu">Contact us</a></li>
-						<!--<li><a href="mailto:contact@eco-conception.fr">Contact Pôle</a></li>
-						<li><a href="mailto:contact@shaping-ea.com">Contact EA</a></li>-->
+                        <li><a href="mailto:contact@myecodesignmaturity.eu">Contactez-nous</a></li>
                     </ul>
                 </nav>
                 <div class="credits ml-auto">
@@ -667,12 +194,8 @@ la pratique de gestion est appliquée de <br>manière opportune, c'est-à-dire p
 </body>
 
 <script type="text/javascript"> 
-	$(document).ready(function(){ /* Populate data cells */
+	$(document).ready(function(){
 		var mySpreadsheet = 'https://docs.google.com/spreadsheets/d/1KcqLsE8S6b4ni67ZxbSQv8lj3sgeQUoVO3UhSLQZ6RQ/edit#gid=0'; 
-		/*$('#gavg').sheetrock({
-			url: mySpreadsheet,
-			query: "select A limit 1"
-		});*/
 		$('#gcnt').sheetrock({
 			url: mySpreadsheet,
 			query: "select B limit 1"
@@ -682,27 +205,11 @@ la pratique de gestion est appliquée de <br>manière opportune, c'est-à-dire p
 	});	
 </script>
 
-<!--	$(window).scroll(function () if ($('#why').css('opacity') == 0.1) {var y_scroll_pos = window.pageYOffset; var offsetSection = $('#why').offset().top; if (y_scroll_pos >= offsetSection) {document.getElementById('why').style='opacity:1'; $('h2').fadeOut(10).delay(10).fadeIn(1000); } }	}); -->	
-
-<!-- Core JS Files -->
-<!---<script src="assets/js/jquery-3.2.1.js" type="text/javascript"></script>-->
 <script src="assets/js/jquery-ui-1.12.1.custom.min.js" type="text/javascript"></script>
 <script src="assets/js/popper.js" type="text/javascript"></script>
 <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
-
-<!-- Switches -->
 <script src="assets/js/bootstrap-switch.min.js"></script>
-
-<!--  Plugins for Slider
-<script src="assets/js/nouislider.js"></script> -->
-<!--  Plugins for DateTimePicker 
-<script src="assets/js/moment.min.js"></script>
-<script src="assets/js/bootstrap-datetimepicker.min.js"></script> -->
-
-<!--  Paper Kit Initialization and functons -->
 <script src="assets/js/paper-kit.js?v=2.1.0"></script> 
-
-<!-- JS Files -->
 <script src="test.js" type="text/javascript"></script>
 
 </html>
