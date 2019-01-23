@@ -25,14 +25,17 @@
 	  <div class="container">
 		<script type="text/javascript">var submitted=false;</script>
 		<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){window.location='enresult.html';}"></iframe>
-		<form action="https://docs.google.com/forms/d/e/1FAIpQLSfd2hOsNqU0GBmDukAjWFV4bG1Xts8HTG8G0UbVCW7eL38SKQ/formResponse?hl=fr" method="POST" id="mG61Hd" target="hidden_iframe" onsubmit="submitted=true;">
+		<form action="https://docs.google.com/forms/d/e/1FAIpQLSfd2hOsNqU0GBmDukAjWFV4bG1Xts8HTG8G0UbVCW7eL38SKQ/formResponse?hl=en" method="POST" id="mG61Hd" target="hidden_iframe" onsubmit="submitted=true;">
 		
 			    <div class="title-brand blackmobile resultitle" id="votrentreprise">	<h1>Your company<br><br></h1> </div>
                 <div class="row">
 						<ul>
 						  <li id="q1" class="question">
-							<h2 class="shadow framed fromleft">What is the business name of the company / facility / establishment?</h2><br><input required type="text" class="form-control form-control-success inshadow fromright" placeholder="" name="entry.774185163"  onchange="document.getElementById('q2').classList.remove('hid');document.getElementById('q1').classList.add('hid');">
-						  <br><br><br><br><br><br><br><br><br><br><br><br><br></li>	
+							<h2 class="shadow framed fromleft">What is the business name of the company / facility / establishment?</h2><br><input required type="text" class="form-control form-control-success inshadow fromright" placeholder="" name="entry.774185163"  onchange="document.getElementById('q1a').classList.remove('hid');document.getElementById('q1').classList.add('hid');">
+						  <br><br><br><br><br><br><br><br><br><br><br><br><br></li>
+						  <li id="q1a" class="question hid">
+							<h2 class="shadow framed fromleft">What is your function within the company?</h2><br><input required type="text" class="form-control form-control-success inshadow fromright" placeholder="" name="entry.873700546"  onchange="document.getElementById('q2').classList.remove('hid');document.getElementById('q1a').classList.add('hid');">
+						  <br><br><br><br><br><br><br><br><br><br><br><br><br></li>		
 						  <li id="q2" class="question hid">
 						    <h2 class="shadow framed fromleft">Do you belong to a multi site/facility group?</h2>
 		                        <br><br><br>
@@ -68,7 +71,7 @@
   						     <h2 class="shadow framed fromleft">What is the business sector of your company?</h2>
 							  <div class="select_categories">
 							   <div class="select">	
-  								<select required class="turq2 marg2" name="entry.292800088" onchange="document.getElementById('q5').classList.remove('hid');document.getElementById('q4').classList.add('hid');">
+  								<select required class="turq2 marg2" name="entry.292800088" onchange="document.getElementById('q5').classList.remove('hid');document.getElementById('q4').classList.add('hid');document.getElementById('but0').style='display:none';">
 							    	<option value="" disabled="disabled" selected="selected">Sector</option>
 									<option value="Secteur agricole">Agricolture Sector</option>
 									<option value="Secteur agroalimentaire">Agri-Food Sector</option>
@@ -98,8 +101,9 @@
 							<li id="q5" class="question hid">
 						    <h2 class="shadow framed fromleft">How many employees are there in the company?</h2>
 								<label>
-								  <input required class="fromright marg2" type="number" name="entry.748385404" min="0" max="1000000"  onblur="document.getElementById('q6').classList.remove('hid');document.getElementById('q5').classList.add('hid');">
+								  <input required class="fromright marg2" type="number" name="entry.748385404" min="0" max="1000000"  onblur="document.getElementById('q6').classList.remove('hid');document.getElementById('q5').classList.add('hid');document.getElementById('but0').style='visibility:true';">
 								</label>
+								&nbsp;&nbsp;<button id="but0a" class="btn btn-outline-danger em2"><i class="fa fa-check"></i></button>
 						  <br><br><br><br><br><br><br><br><br><br><br><br><br></li>
 							<li id="q6" class="question hid">
 						    <h2 class="shadow framed fromleft">Who are the main users of your products?</h2>

@@ -407,6 +407,11 @@ body {
 
 /* custom buttons */
 
+#but0a {
+  top:50%;
+  right:50%;	
+}
+
 .btn-game {
   background-color: #ff9900!important;
   border-color: #ffc000!important;

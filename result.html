@@ -148,10 +148,28 @@
 							</div>
 							
 							<div class="hid" id="printdiv">
-                            	<button id="print" type="button" class="btn btn-round center" onclick="document.getElementById('show-industry').style='display:none';document.getElementById('show-country').style='display:none';document.getElementById('show-global').style='display:none';document.getElementById('print').style='display:none';window.print();"><i class="fa fa-print"></i>Imprimer le rapport</button>
+                            	<button id="print" type="button" class="btn btn-round center" onclick="document.getElementById('show-industry').style='display:none';document.getElementById('show-country').style='display:none';document.getElementById('show-global').style='display:none';document.getElementById('print').style='display:none';window.print();$('#emails').removeClass('hid');$('html, body').delay(50).animate({scrollTop: $('#emails').offset().top }, 2000);"><i class="fa fa-print"></i>Imprimer le rapport</button>
 								<br><br>
 								<p></p>
 							</div>
+							
+							<div id="emails" class="hid">	
+								 <script type="text/javascript">var submitted=false;</script>
+								 <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+								 <form action="https://docs.google.com/forms/d/e/1FAIpQLSf32y9BIcd3ZgyL8jcA3Du_D9oyZOTXorvP3suoqMAnoEWZ0A/formResponse?hl=fr" method="POST" id="mG61Hd" target="hidden_iframe" onsubmit="submitted=true;">
+								     <div class="row">
+										<ul>
+											<li id="f3" class="question">
+												<h2 class="shadow framed fromleft">Merci pour vos réponses!<br>Voulez-vous recevoir une rapport complet de l’étude sur la maturité éco-conception des entreprises en Europe?</h2><br><input required type="email" class="form-control form-control-success inshadow fromright" placeholder="" name="entry.1060693203"  onchange="document.getElementById('envoyer3').classList.remove('hid');">
+											</li>
+										</ul>
+										<div id="emailsend">
+											<button id="envoyer3" onclick="$('#merci').removeClass('hid');" class="center btn btn-success btn-round button-submit glow"><h2>Envoyer</h2></button>
+										</div>
+									</div>
+								</form>
+							</div>
+							
 				</div>
 				
 		</div>
