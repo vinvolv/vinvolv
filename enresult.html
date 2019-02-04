@@ -35,8 +35,8 @@
 
 	    		<div class="content-center">
 	    			<div class="container">
-			
-				<span class="resultitle"><h1>BENCHMARK</h1></span>
+
+				<span class="resultitle"><h1><span id="myfirm"></span><!-- BENCHMARK--></h1></span>
 				<br><br>
 				
 				<button type="button" id="show-all" class="onlymoz leftcenter btn btn-danger btn-lg btn-round" onclick="document.getElementById('benchmark-all').classList.remove('hid');">Show benchmarks<i class="fa fa-play"></i></button>
@@ -213,7 +213,8 @@
 		$('#a10').sheetrock({ url: mySpreadsheet, query: "select Q limit 1" });
 		$('#a11').sheetrock({ url: mySpreadsheet, query: "select R limit 1" });
 		$('#a12').sheetrock({ url: mySpreadsheet, query: "select S limit 1" });
-		
+		$('#myfirm').sheetrock({ url: mySpreadsheet, query: "select X limit 1" });
+				
 		setTimeout(
 		  function() 
 		  {
