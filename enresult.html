@@ -61,7 +61,7 @@
 				</div>-->
 						
 						<div style="margin:5%">
-							<span class="label label-danger" style="margin:10%">
+							<span id="youresult" class="label label-danger bigger" style="margin:10%">							
 								<h1 style="text-align:center">Ecodesign Maturity Level: <b><span id="avgall"></span></b></h1>
 								<div style="visibility:hidden;"><span id="a1"></span><span id="a2"></span><span id="a3"></span><span id="a4"></span><span id="a5"></span><span id="a6"></span><span id="a7"></span><span id="a8"></span><span id="a9"></span><span id="a10"></span><span id="a11"></span><span id="a12"></span></div>
 								
@@ -235,6 +235,9 @@
 	   		if ( $('#a11').text()==1 ) { $('#p17b').removeClass("hid"); $('#cat4').removeClass("hid"); } else if ( $('#a11').text()==2 ) { $('#p17c').removeClass("hid"); $('#cat4').removeClass("hid"); } else if ( $('#a11').text()==3 ) { $('#p17d').removeClass("hid"); $('#cat4').removeClass("hid"); }
 	   		if ( $('#a12').text()==1 ) { $('#p18b').removeClass("hid"); $('#cat4').removeClass("hid"); } else if ( $('#a12').text()==2 ) { $('#p18c').removeClass("hid"); $('#cat4').removeClass("hid"); } else if ( $('#a12').text()==3 ) { $('#p18d').removeClass("hid"); $('#cat4').removeClass("hid"); }	
 		    
+			youravg = parseFloat ( $('#avgall').text() );
+			if ( youravg<2 ) { $('#youresult').addClass("big1"); } else if ( youravg<3 ) { $('#youresult').addClass("big2"); } else if ( youravg<4 ) { $('#youresult').addClass("big3"); } else { $('#youresult').addClass("big4"); }
+			
 		  }, 2500);
 		
 	});
