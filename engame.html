@@ -34,7 +34,20 @@
 							<h2 class="shadow framed fromleft">What is the business name of the company / facility / establishment?</h2><br><input required type="text" class="form-control form-control-success inshadow fromright" placeholder="" name="entry.774185163"  onchange="document.getElementById('q1a').classList.remove('hid');document.getElementById('q1').classList.add('hid');">
 						  <br><br><br><br><br><br><br><br><br><br><br><br><br></li>
 						  <li id="q1a" class="question hid">
-							<h2 class="shadow framed fromleft">What is your function within the company?</h2><br><input required type="text" class="form-control form-control-success inshadow fromright" placeholder="" name="entry.873700546"  onchange="document.getElementById('q2').classList.remove('hid');document.getElementById('q1a').classList.add('hid');">
+							<h2 class="shadow framed fromleft">What is your function within the company?</h2>
+  						  <div class="select_categories">
+  						   <div class="select">
+  							<select required class="turq2 marg2" name="entry.873700546" onchange="document.getElementById('q2').classList.remove('hid');document.getElementById('q1a').classList.add('hid');">
+  						    	<option value="" disabled="disabled" selected="selected">function</option>
+  						    	<option value="Manager environnement">Manager environnement</option>
+  								<option value="Quality manager">Quality manager</option>
+  								<option value="Top manager">Top manager</option>
+  								<option value="Production">Production</option>
+  								<option value="Marketing">Marketing</option>
+  								<option value="Other">Other</option>
+  							</select>
+  						   </div>
+  						  </div>
 						  <br><br><br><br><br><br><br><br><br><br><br><br><br></li>		
 						  <li id="q2" class="question hid">
 						    <h2 class="shadow framed fromleft">Do you belong to a multi site/facility group?</h2>
