@@ -162,7 +162,9 @@
 			</tr>
 		</table>
 		
-		<button onclick="" id="envoyer" style="visibility:hidden;" class="leftcenter btn btn-success btn-round button-submit glow"><h2>Show Benchmarks!</h2></button>
+		<div id="showbm"><button onclick="$('#showbm').addClass('hid');$('#spinwheel').removeClass('hid');" id="envoyer" style="visibility:hidden;" class="leftcenter btn btn-success btn-round button-submit glow"><h2>Show Benchmarks!</h2></button></div>
+  		<div id='spinwheel' class="center hid"><br><img src='assets/img/movingarrows.gif'></div><br>
+		
 		<br>
 		<section class="tabs" id="questions">
     		<input id="tab-1" type="radio" name="radio-set" class="tab-selector-1" />
