@@ -34,7 +34,34 @@
     	<div class="wrapper" id="result">
 
 	    		<div class="content-center">
-	    			<div class="container">
+                    
+                    <div class="container hid" id="wrongco">
+
+                         <script type="text/javascript">var submitted=false;</script>
+                         <iframe name="iframe2" style="display:none;"></iframe>
+                         <form action="https://docs.google.com/forms/d/e/1FAIpQLSf32y9BIcd3ZgyL8jcA3Du_D9oyZOTXorvP3suoqMAnoEWZ0A/formResponse?hl=fr" method="POST" id="mG61Hd" target="hidden_iframe" onsubmit="submitted=true;">
+                             <div class="row">
+                                <ul>
+                                    <li id="f4" class="question">
+                                        <h2 id="question4" class="shadow framed fromleft">Merci pour vos réponses!<br>S'il vous plaît laissez votre email pour recevoir le rapport.</h2><br><input required type="email" class="form-control form-control-success inshadow fromright" placeholder="" name="entry.1060693203"  onchange="">
+                                    </li>
+                                </ul>
+                                <input type="hidden" name="entry.1248610054" value="Yes">
+                                <div>
+                                    <br>
+                                    <button id="envoyer4" onclick="$('#merci4').removeClass('hid');" class="center btn btn-success btn-round button-submit glow"><h2>Envoyer</h2></button>
+                                </div>
+                            </div>
+                        </form>
+                        <br><br>
+                        <div id="merci4" class="hid"><h2 class="shadow framed fromleft">Nous vous enverrons votre rapport dès qu'il sera prêt.</h2></div>
+                        <br><br><br>
+
+                    </div>
+                        
+                    
+                    
+	    			<div class="container hid" id="rightco">
 			
 				<span class="resultitle"><h1><span id="myfirm"></span><!-- Références--></h1></span>
 				<br><br>
@@ -164,17 +191,21 @@
 											</li>
 										</ul>
 										<div id="emailsend">
-											<button id="envoyer3" onclick="$('#merci').removeClass('hid');" class="center btn btn-success btn-round button-submit glow"><h2>Envoyer</h2></button>
+											<button id="envoyer3" onclick="$('#merci3').removeClass('hid');window.location='#merci3';" class="center btn btn-success btn-round button-submit glow"><h2>Envoyer</h2></button>
 										</div>
 									</div>
 								</form>
+                                
+                                <br><br>
+                                <div id="merci3" class="hid"><h2 class="shadow framed fromleft">Nous vous enverrons votre rapport dès qu'il sera prêt.</h2></div>
+                                <br><br>
+                                
 							</div>
 							
 				</div>
 				
 		</div>
 	</div>	
-	
 			
     <footer class="footer">
         <div class="container">
@@ -214,7 +245,7 @@
 		$('#a11').sheetrock({ url: mySpreadsheet, query: "select R limit 1" });
 		$('#a12').sheetrock({ url: mySpreadsheet, query: "select S limit 1" });
 		$('#myfirm').sheetrock({ url: mySpreadsheet, query: "select X limit 1" });
-		
+        
 		setTimeout(
 		  function() 
 		  {
@@ -238,6 +269,12 @@
 			youravg = parseFloat ( $('#avgall').text() );
 			if ( youravg<2 ) { $('#youresult').addClass("big1"); } else if ( youravg<3 ) { $('#youresult').addClass("big2"); } else if ( youravg<4 ) { $('#youresult').addClass("big3"); } else { $('#youresult').addClass("big4"); }
 			
+            if (decodeURI(getUrlVars()["co"])!=$('#myfirm').html()) {
+                $('#wrongco').removeClass('hid');
+            } else {
+                $('#rightco').removeClass('hid');
+            } 
+              
 		  }, 2500);
 		
 	});
