@@ -150,7 +150,7 @@
 						<button id="but2" style="visibility:hidden;" onclick="document.getElementById('tab-2').checked=true;window.location='#content2'" class="btn btn-game btn-round btn-lg">Play this Level <i class="fa fa-gamepad"></i></button>
 				</td>
 			</tr>
-			<tr>
+			<tr id="game1">
 				<td id="td3" class="rcorners3 lock wheel">
 					<!--<h1 class="icons"><i class="fabig fa-cogs"></i>⚙♟</h1>--><h2><br><br><br>Implementation and operational organisation</h2><span id="point3" style="visibility:hidden;"><br><h1 class="hid glow" id="cat3"> 0</h1><div id="progress"><div id="bar3"><table class="maturityicons"><tr><td><!--👶-->1</td><td><!--👦-->2</td><td><!--👨-->3</td><td><!--🧓-->4</td></tr></table></div></div></span>
 					<button id="but3" style="visibility:hidden;" onclick="document.getElementById('tab-3').checked=true;window.location='#content3'" class="btn btn-game btn-round btn-lg">Play this Level <i class="fa fa-gamepad"></i></button>
@@ -299,7 +299,7 @@
 		  	</fieldset>		
 		    <span id="r3" style="visibility:hidden"><br><p align="center"><img src="assets/img/wheel.png"></p><h1 style="text-align:center;color:#2e9f64"><!--<i class="fabig fa-cogs"></i>⚙--><br>Level completed!<br><br><br><img src="assets/img/thumbup.png">
 			    <h4 class="center-align">You scored <span id="compare3"> </span> average maturity for this category.</h4><br>
-				<button type="button" class="center btn btn-danger btn-lg btn-round hid" onclick="document.getElementById('td4').classList.remove('lock');document.getElementById('td4').classList.add('unlock');document.getElementById('but3').style='visibility:hidden';document.getElementById('but4').style='visibility:true';document.getElementById('point3').style='visibility:true';movebar(3,parseInt(document.getElementById('cat3').innerHTML*25));document.getElementById('r3').style='display:none';window.location='#game'">See your score <i class="fa fa-play"></i></button></h1>
+				<button type="button" class="center btn btn-danger btn-lg btn-round hid" onclick="document.getElementById('td4').classList.remove('lock');document.getElementById('td4').classList.add('unlock');document.getElementById('but3').style='visibility:hidden';document.getElementById('but4').style='visibility:true';document.getElementById('point3').style='visibility:true';movebar(3,parseInt(document.getElementById('cat3').innerHTML*25));document.getElementById('r3').style='display:none';window.location='#game1'">See your score <i class="fa fa-play"></i></button></h1>
 		    </span>
         </div>
 	
@@ -341,7 +341,7 @@
 		  	</fieldset>		
 		    <span id="r4" style="visibility:hidden"><br><p align="center"><img src="assets/img/dial.png"></p><h1 style="text-align:center;color:#2e9f64"><!--<i class="fabig fa-signal"></i>📈--><br>Level completed!<br><br><br><img src="assets/img/thumbup.png">
 			    <h4 class="center-align">You scored <span id="compare4"> </span> average maturity for this category.</h4><br>
-				<button type="button" class="center btn btn-danger btn-lg btn-round hid" onclick="document.getElementById('but4').style='visibility:hidden';document.getElementById('point4').style='visibility:true';movebar(4,parseInt(document.getElementById('cat4').innerHTML*25));document.getElementById('envoyer').style='visibility:true';document.getElementById('r4').style='display:none';document.getElementById('questions').style='display:none';window.location='#game'">See your score <i class="fa fa-play"></i></button></h1>
+				<button type="button" class="center btn btn-danger btn-lg btn-round hid" onclick="document.getElementById('but4').style='visibility:hidden';document.getElementById('point4').style='visibility:true';movebar(4,parseInt(document.getElementById('cat4').innerHTML*25));document.getElementById('envoyer').style='visibility:true';document.getElementById('r4').style='display:none';document.getElementById('questions').style='display:none';window.location='#game1'">See your score <i class="fa fa-play"></i></button></h1>
 		    </span>
 		</div>
   	  </div>
